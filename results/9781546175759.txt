@@ -1,0 +1,38 @@
+{
+    "title": "Sunrise on the Reaping",
+    "authors": [
+        "Suzanne Collins"
+    ],
+    "publishedDate": "2025",
+    "description": "\"As the day dawns on the fiftieth annual Hunger Games, fear grips the districts of Panem. This year, in honor of the Quarter Quell, twice as many tributes will be taken from their homes. Back in District 12, Haymitch Abernathy is trying not to think too hard about his chances. All he cares about is making it through the day and being with the girl he loves. When Haymitch's name is called, he can feel all his dreams break. He's torn from his family and his love, shuttled to the Capitol with the three other District 12 tributes: a young friend who's nearly a sister to him, a compulsive oddsmaker, and the most stuck-up girl in town. As the Games begin, Haymitch understands he's been set up to fail. But there's something in him that wants to fight . . . and have that fight reverberate far beyond the deadly arena\"--",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "154617575X"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781546175759"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Contests"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=_rA20QEACAAJ&dq=isbn:9781546175759&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=_rA20QEACAAJ&dq=isbn:9781546175759&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Sunrise_on_the_Reaping.html?hl=&id=_rA20QEACAAJ"
+}

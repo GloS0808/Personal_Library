@@ -1,0 +1,44 @@
+{
+    "title": "The Militia House",
+    "subtitle": "A Novel",
+    "authors": [
+        "John Milas"
+    ],
+    "publisher": "Holt Paperbacks",
+    "publishedDate": "2024-07-09",
+    "description": "Longlisted for The Center for Fiction's First Novel Prize \u201cAn extraordinary novel about the quiet and not-so-quiet horrors of war.\u201d \u2014Roxane Gay Stephen King meets Tim O\u2019Brien in John Milas\u2019s The Militia House, a spine-tingling and boldly original gothic horror novel. It\u2019s 2010, and the recently promoted Corporal Loyette and his unit are finishing up their deployment at a new base in Kajaki, Afghanistan. Their duties here are straightforward\u2014loading and unloading cargo into and out of helicopters\u2014and their days are a mix of boredom and dread. The Brits they\u2019re replacing delight in telling them the history of the old barracks just off base, a Soviet-era militia house they claim is haunted, and Loyette and his men don\u2019t need much convincing to make a clandestine trip outside the wire to explore it. It\u2019s a short, middle-of-the-day adventure, but the men experience a mounting agitation after their visit to the militia house. In the days that follow they try to forget about the strange, unsettling sights and sounds from the house, but things are increasingly . . . not right. Loyette becomes determined to ignore his and his marines\u2019 growing unease, convinced that it\u2019s just the strain of war playing tricks on them. But something about the militia house will not let them go. Meticulously plotted and viscerally immediate in its telling, The Militia House is a gripping and brilliant exploration of the unceasing horrors of war that\u2019s no more easily shaken than the militia house itself.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781250857088"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1250857082"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VO_fEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VO_fEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=VO_fEAAAQBAJ&dq=isbn:9781250857088&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=VO_fEAAAQBAJ&dq=isbn:9781250857088&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Militia_House.html?hl=&id=VO_fEAAAQBAJ"
+}

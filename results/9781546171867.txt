@@ -1,0 +1,43 @@
+{
+    "title": "The Hunger Games (Deluxe Edition)",
+    "authors": [
+        "Suzanne Collins"
+    ],
+    "publisher": "Scholastic Press",
+    "publishedDate": "2025-02-04",
+    "description": "A stunning deluxe edition of The Hunger Games, the international bestseller! This paperback edition features gorgeous sprayed edges with stenciled artwork and an iconic new cover. This is a breathtaking collectible perfect for the long-time fan or new Hunger Games reader. Even at the age of sixteen, Katniss Everdeen knows it takes hard work, keen observation, and inner fortitude to survive in the world. Her home, District 12, is under the merciless rule of the Capitol, continually forced to pay after losing a long-ago civil war in the nation of Panem. One of the ways the Capitol keeps control is its annual Hunger Games, a televised fight to the death featuring two young tributes from each of Panem's twelve districts. This gruesome battle is meant to send home a chilling message: Rebellion will always be punished. When Katniss finds herself within the Hunger Games arena, she knows the odds aren't in her favor. Any wrong move will end her life--and even the right moves come with a cost. But if she can survive, there is a chance the districts may survive as well... The Hunger Games has enthralled millions of readers in its examination of the price of war, human nature, and the powerful force of both love and resistance.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "154617186X"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781546171867"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Young Adult Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Y-bQ0AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Y-bQ0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=Y-bQ0AEACAAJ&dq=isbn:9781546171867&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Y-bQ0AEACAAJ&dq=isbn:9781546171867&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Hunger_Games_Deluxe_Edition.html?hl=&id=Y-bQ0AEACAAJ"
+}

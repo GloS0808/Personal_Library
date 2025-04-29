@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISBN Lookup and Save</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="{{ url_for('static', filename='favicon2.jpg') }}" type="image/x-icon">
+    <script src="{{ url_for('static', filename='library.js') }}"></script>
+</head>
+<body>
+    <h1>Personal Library</h1>
+    <h2>ISBN Lookup and Save</h2>
+    <form method="POST">
+        <label for="isbn">Enter ISBN:</label>
+        <input type="text" id="isbn" name="isbn"><br><br>
+        <input type="submit" value="Lookup and Save">
+    </form>
+
+    {% if error %}
+    <p style="color: red;">Error: {{ error }}</p>
+    {% endif %}
+
+    {% if lookup_successful %}
+    <p style="color: green;">
+    Successfully looked up ISBN {{ isbn }} and saved the results to
+    <a href="{{ url_for('download_file', filename=isbn + '.txt') }}" target="_blank">
+        {{ isbn }}.txt
+    </a>.
+    </p>
+    {% endif %}
+
+    <h2>Books in Database</h2>
+    {% if books %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Subtitle</th>
+                    <th>Authors</th>
+                    <th>Category</th>
+                    <th>Publisher</th>
+                    <th>Published Date</th>
+                    <th>Description</th>
+                    <th>Page Count</th>
+                    <th>Average Rating</th>
+                    <th>Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for book in books %}
+                    <tr>
+                        <td>{{ book[0] }}</td>
+                        <td>{{ book[1] }}</td>
+                        <td>{{ book[9] }}</td>  <td>{{ book[8] }}</td>  <td>{{ book[2] }}</td>
+                        <td>{{ book[3] }}</td>
+                        <td>{{ book[4] }}</td>
+                        <td>{{ book[5] }}</td>
+                        <td>{{ book[6] }}</td>
+                        <td><img src="{{ book[7] }}" alt="Thumbnail"></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No books found in the database.</p>
+    {% endif %}
+</body>
+</html>

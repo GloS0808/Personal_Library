@@ -1,0 +1,110 @@
+body {
+    font-family: 'Garamond', serif; /* Use a classic serif font */
+    background-color: #f4f1e8; /* Light beige background, common in old books */
+    color: #0c3001; /* Deep green for text, like old ink */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7; /* Increased line height for readability */
+}
+
+h1 {
+    font-family: 'Garamond', serif;
+    color: #8b4513; /* Brown for headings, like wood */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+form {
+    background-color: #fffaf0; /* Off-white for form background */
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    border: 1px solid #bc8f8f; /* Rosy brown border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 5px 5px 5px #f5f5dc; /* হালকা ছায়া */
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #556b2f; /* Darker olive green for labels */
+    font-weight: bold;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b8860b; /* Darker goldenrod border */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #a0522d; /* Sienna for submit button */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b4513; /* Darker brown on hover */
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+a {
+    color: #a0522d; /* Sienna for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8b4513; /* Darker brown on hover */
+    text-decoration: underline;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fffaf0;
+    border: 1px solid #bc8f8f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #f5f5dc;
+}
+
+table, th, td {
+    border: 1px solid #bc8f8f;
+    padding: 12px; /* একটু বাড়ালাম padding */
+    text-align: left;
+    font-size: 1em;
+}
+
+th {
+    background-color: #d3d3d3; /* হালকা ধূসর */
+    color: #8b4513;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5dc; /* আরো হালকা */
+}
+
+img {
+    max-height: 150px; /* Increased max-height for thumbnails */
+    border: 1px solid #bc8f8f;
+    border-radius: 5px;
+    margin: 5px;
+}

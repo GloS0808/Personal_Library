@@ -1,0 +1,47 @@
+{
+    "title": "The DevOps Handbook",
+    "subtitle": "How to Create World-Class Speed, Reliability, and Security in Technology Organizations",
+    "authors": [
+        "Gene Kim",
+        "Patrick Debois",
+        "John Willis",
+        "Jez Humble"
+    ],
+    "publisher": "It Revolution Press",
+    "publishedDate": "2015-10-07",
+    "description": "For decades, technology leaders have struggled to balance agility, reliability, and security, and the consequences of failure have never been greater. The effective management of technology is critical for business competitiveness. High-performing organizations are 2.5 times more likely to exceed profitability, market share, and productivity goals. The DevOps Handbook shows leaders how to create the cultural norms and the technical practices necessary to maximize organizational learning, increase employee satisfaction, and win in the marketplace.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1942788002"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781942788003"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 480,
+    "printType": "BOOK",
+    "categories": [
+        "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=XrQcrgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=XrQcrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=XrQcrgEACAAJ&dq=isbn:9781942788003&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=XrQcrgEACAAJ&dq=isbn:9781942788003&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_DevOps_Handbook.html?hl=&id=XrQcrgEACAAJ"
+}

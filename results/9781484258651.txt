@@ -1,0 +1,46 @@
+{
+    "title": "Beginning Jakarta EE Web Development",
+    "subtitle": "Jakarta Server Pages, Jakarta Server Faces, and Apache Tomcat for Building Java Web Applications",
+    "authors": [
+        "Luciano Manelli",
+        "Giulio Zambon"
+    ],
+    "publisher": "Apress",
+    "publishedDate": "2020-11-25",
+    "description": "Start building Java-based web applications now, even if you\u2019re a complete newcomer to Java. Comprehensive and example-driven, this book is all you need to develop dynamic Java-based web applications using JSP, connect to databases with JSF, and put them into action using the popular open source Java web server, Apache Tomcat. Beginning Jakarta EE Web Development is a comprehensive introduction to building Java-based web applications using JavaServer Pages (JSP) using Jakarta Server Pages, JavaServer Faces (JSF) using Jakarta Server Faces, and the Apache Tomcat web application server. Other APIs including JSON and the XML-based job specification language (JSL) are covered along the way. Key concepts are made easy to grasp with numerous working examples and a walk-through of the development of a complete ecommerce project. This book is written for professionals by practicing Java web application professionals and experts. What You Will Learn Build Java-based web applications using JSP and JSF with Eclipse Jakarta EE Use the new Jakarta Server Faces APIs to create JSF applications Work with the new Jakarta Server Pages APIs to create JSPs Integrate and implement JSF and JSP together Build an online ecommerce web application along the way Who This Book Is For Programmers new to programming in Java and programming in general.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1484258657"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781484258651"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "printType": "BOOK",
+    "categories": [
+        "Computers"
+    ],
+    "averageRating": 4,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=V5BezQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=V5BezQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=V5BezQEACAAJ&dq=isbn:9781484258651&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=V5BezQEACAAJ&dq=isbn:9781484258651&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_Jakarta_EE_Web_Development.html?hl=&id=V5BezQEACAAJ"
+}

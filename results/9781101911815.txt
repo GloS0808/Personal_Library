@@ -1,0 +1,46 @@
+{
+    "title": "The Memory Police",
+    "subtitle": "A Novel",
+    "authors": [
+        "Yoko Ogawa"
+    ],
+    "publisher": "Vintage",
+    "publishedDate": "2020-07-28",
+    "description": "Finalist for the International Booker Prize and the National Book Award A haunting Orwellian novel about the terrors of state surveillance, from the acclaimed author of The Housekeeper and the Professor. On an unnamed island, objects are disappearing: first hats, then ribbons, birds, roses. . . . Most of the inhabitants are oblivious to these changes, while those few able to recall the lost objects live in fear of the draconian Memory Police, who are committed to ensuring that what has disappeared remains forgotten. When a young writer discovers that her editor is in danger, she concocts a plan to hide him beneath her f loorboards, and together they cling to her writing as the last way of preserving the past. Powerful and provocative, The Memory Police is a stunning novel about the trauma of loss. ONE OF THE BEST BOOKS OF THE YEAR THE NEW YORK TIMES * THE WASHINGTON POST * TIME * CHICAGO TRIBUNE * THE GUARDIAN * ESQUIRE * THE DALLAS MORNING NEWS * FINANCIAL TIMES * LIBRARY JOURNAL * THE A.V. CLUB * KIRKUS REVIEWS * LITERARY HUB American Book Award winner",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781101911815"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1101911816"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 289,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "averageRating": 4,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.5.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=_ZTuDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=_ZTuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=_ZTuDwAAQBAJ&printsec=frontcover&dq=isbn:9781101911815&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=_ZTuDwAAQBAJ&dq=isbn:9781101911815&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Memory_Police.html?hl=&id=_ZTuDwAAQBAJ"
+}
