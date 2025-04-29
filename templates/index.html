@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ISBN Lookup and Save</title>
+    <title>Personal Library</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="{{ url_for('static', filename='favicon2.jpg') }}" type="image/x-icon">
     <script src="{{ url_for('static', filename='library.js') }}"></script>
+        <style>
+        th.sortable {
+            cursor: pointer;
+            position: relative;
+        }
+        th.sortable:hover {
+            background-color: #f0f0f0;
+        }
+        th.sortable::after {
+            content: "↕";
+            position: absolute;
+            right: 8px;
+            opacity: 0.3;
+        }
+        th.sortable.asc::after {
+            content: "↑";
+            opacity: 1;
+        }
+        th.sortable.desc::after {
+            content: "↓";
+            opacity: 1;
+        }
+
+        /* Responsive table */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Minimum width before scrolling */
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            background: #f8f8f8;
+        }
+
+        .pagination button.active {
+            background: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination button:hover:not(.active) {
+            background: #ddd;
+        }
+
+        /* Description truncation */
+        .description-cell {
+            max-width: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .description-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .description-text.expanded {
+            -webkit-line-clamp: unset;
+            display: block;
+        }
+
+        .show-more-btn {
+            color: #4CAF50;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        .show-more-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            th, td {
+                padding: 6px 8px;
+                font-size: 14px;
+            }
+
+            .pagination button {
+                padding: 4px 8px;
+                margin: 0 3px;
+            }
+
+            .description-cell {
+                max-width: 150px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            th, td {
+                padding: 4px 6px;
+                font-size: 12px;
+            }
+
+            img {
+                max-width: 30px;
+            }
+
+            .description-cell {
+                max-width: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Personal Library</h1>
@@ -32,38 +168,57 @@
 
     <h2>Books in Database</h2>
     {% if books %}
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Subtitle</th>
-                    <th>Authors</th>
-                    <th>Category</th>
-                    <th>Publisher</th>
-                    <th>Published Date</th>
-                    <th>Description</th>
-                    <th>Page Count</th>
-                    <th>Average Rating</th>
-                    <th>Thumbnail</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for book in books %}
+        <div class="table-container">
+            <table id="booksTable">
+                <thead>
                     <tr>
-                        <td>{{ book[0] }}</td>
-                        <td>{{ book[1] }}</td>
-                        <td>{{ book[9] }}</td>  <td>{{ book[8] }}</td>  <td>{{ book[2] }}</td>
-                        <td>{{ book[3] }}</td>
-                        <td>{{ book[4] }}</td>
-                        <td>{{ book[5] }}</td>
-                        <td>{{ book[6] }}</td>
-                        <td><img src="{{ book[7] }}" alt="Thumbnail"></td>
+                        <th class="sortable">Title</th>
+                        <th class="sortable">Subtitle</th>
+                        <th class="sortable">Authors</th>
+                        <th class="sortable">Category</th>
+                        <th class="sortable">Publisher</th>
+                        <th class="sortable">Published Date</th>
+                        <th class="sortable">Description</th>
+                        <th class="sortable">Page Count</th>
+                        <th class="sortable">Average Rating</th>
+                        <th>Thumbnail</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+                </thead>
+                <tbody id="tableBody">
+                    {% for book in books %}
+                        <tr>
+                            <td>{{ book[0] }}</td>
+                            <td>{{ book[1] }}</td>
+                            <td>{{ book[9] }}</td>
+                            <td>{{ book[8] }}</td>
+                            <td>{{ book[2] }}</td>
+                            <td>{{ book[3] }}</td>
+                            <td class="description-cell">
+                                <div class="description-text">{{ book[4] }}</div>
+                                {% if book[4]|length > 150 %}
+                                <span class="show-more-btn">Show more</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ book[5] }}</td>
+                            <td>{{ book[6] }}</td>
+                            <td><img src="{{ book[7] }}" alt="Thumbnail"></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be added here by JavaScript -->
+        </div>
     {% else %}
         <p>No books found in the database.</p>
+    {% endif %}
+<!-- Add this near your existing error display -->
+    {% if message %}
+        <p style="color: {% if message_type == 'success' %}green{% else %}red{% endif %};">
+            {{ message }}
+        </p>
     {% endif %}
 </body>
 </html>

@@ -13,10 +13,23 @@ RESULTS_DIR = "results"
 if not os.path.exists(RESULTS_DIR):
     os.makedirs(RESULTS_DIR)
 
+
 def insert_book_data(book_data):
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
         cursor = conn.cursor()
+
+        # Check if book already exists before proceeding
+        isbn_13 = book_data.get('industryIdentifiers', [{}, {}])[0].get('identifier')
+        isbn_10 = book_data.get('industryIdentifiers', [{}, {}])[1].get('identifier')
+
+        cursor.execute("SELECT book_id FROM books WHERE isbn_13 = %s OR isbn_10 = %s",
+                       (isbn_13, isbn_10))
+        existing_book = cursor.fetchone()
+
+        if existing_book:
+            print("Book already exists in the database")
+            return False, "This book is already in your library"
 
         # --- Handle Category ---
         category_id = None
@@ -32,34 +45,28 @@ def insert_book_data(book_data):
             conn.commit()
 
         # --- Handle Book ---
-        cursor.execute("SELECT book_id FROM books WHERE isbn_13 = %s OR isbn_10 = %s",
-                       (book_data.get('industryIdentifiers',[{},{}])[0].get('identifier'), book_data.get('industryIdentifiers',[{},{}])[1].get('identifier')))
-        existing_book = cursor.fetchone()
-        if not existing_book:
-            cursor.execute(
-                """
-                INSERT INTO books (isbn_13, isbn_10, title, subtitle, publisher, published_date,
-                                description, page_count, average_rating, thumbnail, category_id)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                """,
-                (
-                    book_data.get('industryIdentifiers',[{},{}])[0].get('identifier'),
-                    book_data.get('industryIdentifiers',[{},{}])[1].get('identifier'),
-                    book_data.get('title'),
-                    book_data.get('subtitle'),
-                    book_data.get('publisher'),
-                    book_data.get('publishedDate'),
-                    book_data.get('description'),
-                    book_data.get('pageCount'),
-                    book_data.get('averageRating'),
-                    book_data.get('imageLinks', {}).get('thumbnail'),
-                    category_id
-                )
+        cursor.execute(
+            """
+            INSERT INTO books (isbn_13, isbn_10, title, subtitle, publisher, published_date,
+                            description, page_count, average_rating, thumbnail, category_id)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """,
+            (
+                book_data.get('industryIdentifiers',[{},{}])[0].get('identifier'),
+                book_data.get('industryIdentifiers',[{},{}])[1].get('identifier'),
+                book_data.get('title'),
+                book_data.get('subtitle'),
+                book_data.get('publisher'),
+                book_data.get('publishedDate'),
+                book_data.get('description'),
+                book_data.get('pageCount'),
+                book_data.get('averageRating'),
+                book_data.get('imageLinks', {}).get('thumbnail'),
+                category_id
             )
-            book_id = cursor.lastrowid
-            conn.commit()
-        else:
-            book_id = existing_book[0]
+        )
+        book_id = cursor.lastrowid
+        conn.commit()
 
         # --- Handle Authors ---
         if 'authors' in book_data and book_data['authors']:
@@ -74,16 +81,26 @@ def insert_book_data(book_data):
                     conn.commit()
 
                 # Insert into book_authors (many-to-many relationship)
-                cursor.execute(
-                    "INSERT INTO book_authors (book_id, author_id) VALUES (%s, %s)",
-                    (book_id, author_id)
-                )
-                conn.commit()
+                try:
+                    cursor.execute(
+                        "INSERT INTO book_authors (book_id, author_id) VALUES (%s, %s)",
+                        (book_id, author_id)
+                    )
+                    conn.commit()
+                except mysql.connector.Error as err:
+                    if err.errno != 1062:  # Ignore duplicate author-book relationships
+                        raise
 
         print("Book data inserted successfully!")
+        return True, "Book added successfully"
 
     except mysql.connector.Error as err:
-        print(f"Error inserting data: {err}")
+        if err.errno == 1062:  # Duplicate entry error code
+            print("Duplicate entry prevented")
+            return False, "This book is already in your library"
+        else:
+            print(f"Error inserting data: {err}")
+            return False, f"Database error: {err}"
     finally:
         if conn:
             cursor.close()
@@ -122,6 +139,8 @@ def index():
     try:
         lookup_successful = False
         isbn = None
+        message = None
+        message_type = None  # 'success' or 'error'
         books = get_book_data()
 
         if request.method == 'POST':
@@ -131,37 +150,41 @@ def index():
                 response = requests.get(api_url)
                 response.raise_for_status()
                 data = response.json()
-                print("API Response:", data)  # Debug print
+                print("API Response:", data)
 
                 if 'items' in data and data['items']:
                     book_data = data['items'][0]['volumeInfo']
-                    print("Book Data:", book_data)  # Debug print
+                    print("Book Data:", book_data)
 
                     filepath = os.path.join(RESULTS_DIR, f"{isbn}.txt")
                     with open(filepath, 'w') as f:
                         json.dump(book_data, f, indent=4)
 
-                    insert_book_data(book_data)
-                    books = get_book_data()
+                    success, msg = insert_book_data(book_data)
+                    if success:
+                        lookup_successful = True
+                        message_type = 'success'
+                    else:
+                        message_type = 'error'
+                    message = msg
 
-                    return render_template('index.html',
-                                        lookup_successful=True,
-                                        isbn=isbn,
-                                        books=books)
+                    books = get_book_data()  # Refresh book list
                 else:
-                    error_message = 'Book not found with that ISBN.'
-                    return render_template('index.html',
-                                        error=error_message,
-                                        isbn=isbn,
-                                        books=books)
+                    message = 'Book not found with that ISBN.'
+                    message_type = 'error'
 
         return render_template('index.html',
-                            lookup_successful=lookup_successful,
-                            isbn=isbn,
-                            books=books)
+                               lookup_successful=lookup_successful,
+                               isbn=isbn,
+                               books=books,
+                               message=message,
+                               message_type=message_type)
     except Exception as e:
-        print("ERROR:", str(e))  # This will show in your console
-        raise  # Re-raise the exception to see it in the browser
+        print("ERROR:", str(e))
+        return render_template('index.html',
+                               books=get_book_data(),
+                               message=str(e),
+                               message_type='error')
 
 @app.route('/results/<path:filename>')
 def download_file(filename):

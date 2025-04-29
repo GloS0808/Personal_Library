@@ -1,0 +1,43 @@
+{
+    "title": "Three Days to Never",
+    "authors": [
+        "Tim Powers"
+    ],
+    "publisher": "Harper Collins",
+    "publishedDate": "2007-11-27",
+    "description": "Albert Einstein's groundbreaking scientific discoveries made possible the creation of the most terrible weapon the world had ever known. But he made another discovery that he chose to reveal to no one\u2014to keep from human hands a power that dwarfed the atomic bomb. When twelve-year-old Daphne Marrity takes a videotape labeled Pee-wee's Big Adventure from her recently deceased grandmother's house, neither she nor her college-professor father, Frank, realize what they now have in their possession. In an instant they are thrust into the center of a world-altering conspiracy, drawing the dangerous attentions of both the Israeli Secret Service and an ancient European cabal of occultists. Now father and daughter have three days to learn the rules of a terrifying magical chess game in order to escape a fate more profound than death\u2014because the Marritys hold the key to the ultimate destruction of not only what's to come . . . but what already has been.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780380798377"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0380798379"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 415,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "0.2.3.0.preview.2",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=fipda1mMtWYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=fipda1mMtWYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=fipda1mMtWYC&printsec=frontcover&dq=isbn:9780380798377&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=fipda1mMtWYC&dq=isbn:9780380798377&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Three_Days_to_Never.html?hl=&id=fipda1mMtWYC"
+}
