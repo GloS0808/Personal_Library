@@ -13,7 +13,6 @@ RESULTS_DIR = "results"
 if not os.path.exists(RESULTS_DIR):
     os.makedirs(RESULTS_DIR)
 
-
 def insert_book_data(book_data):
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
@@ -134,55 +133,219 @@ def get_book_data():
             conn.close()
 
 
+# Add to app.py
+
+def get_users():
+    """Get list of all users"""
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("SELECT * FROM users ORDER BY name")
+        return cursor.fetchall()
+    except mysql.connector.Error as err:
+        print(f"Error fetching users: {err}")
+        return []
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+
+
+def get_user_books(user_id=None):
+    """Get books with user-specific tracking info"""
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor(dictionary=True)
+
+        query = """
+                SELECT b.*, \
+                       c.category_name, \
+                       GROUP_CONCAT(a.name) AS authors, \
+                       ub.status, \
+                       ub.read_date, \
+                       ub.user_rating, \
+                       ub.current_page, \
+                       ub.notes, \
+                       ub.started_date, \
+                       ub.added_on
+                FROM books b
+                         LEFT JOIN categories c ON b.category_id = c.category_id
+                         LEFT JOIN book_authors ba ON b.book_id = ba.book_id
+                         LEFT JOIN authors a ON ba.author_id = a.author_id
+                         LEFT JOIN user_books ub ON b.book_id = ub.book_id AND ub.user_id = %s
+                GROUP BY b.book_id \
+                """
+        cursor.execute(query, (user_id,))
+        return cursor.fetchall()
+    except mysql.connector.Error as err:
+        print(f"Error fetching user books: {err}")
+        return []
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+
+
+def update_user_book(user_id, book_id, status=None, current_page=None,
+                     rating=None, notes=None, read_date=None, started_date=None):
+    """Update or create user-book relationship"""
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+
+        # Check if relationship exists
+        cursor.execute("""
+                       SELECT user_book_id
+                       FROM user_books
+                       WHERE user_id = %s
+                         AND book_id = %s
+                       """, (user_id, book_id))
+        exists = cursor.fetchone()
+
+        if exists:
+            # Update existing
+            update_fields = []
+            params = []
+
+            if status:
+                update_fields.append("status = %s")
+                params.append(status)
+            if current_page is not None:
+                update_fields.append("current_page = %s")
+                params.append(current_page)
+            if rating is not None:
+                update_fields.append("user_rating = %s")
+                params.append(rating)
+            if notes is not None:
+                update_fields.append("notes = %s")
+                params.append(notes)
+            if read_date:
+                update_fields.append("read_date = %s")
+                params.append(read_date)
+            if started_date:
+                update_fields.append("started_date = %s")
+                params.append(started_date)
+
+            if update_fields:
+                query = f"""
+                    UPDATE user_books 
+                    SET {', '.join(update_fields)}
+                    WHERE user_id = %s AND book_id = %s
+                """
+                params.extend([user_id, book_id])
+                cursor.execute(query, tuple(params))
+        else:
+            # Create new
+            cursor.execute("""
+                           INSERT INTO user_books
+                           (user_id, book_id, status, current_page, user_rating,
+                            notes, read_date, started_date)
+                           VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                           """, (
+                               user_id, book_id, status or 'owned',
+                               current_page, rating, notes, read_date, started_date
+                           ))
+
+        conn.commit()
+        return True
+    except mysql.connector.Error as err:
+        print(f"Error updating user book: {err}")
+        return False
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     try:
         lookup_successful = False
         isbn = None
         message = None
-        message_type = None  # 'success' or 'error'
-        books = get_book_data()
+        message_type = None
+        users = get_users()
+
+        # Get selected user from session or default to first user
+        selected_user_id = request.args.get('user_id') or request.form.get('user_id')
+        if not selected_user_id and users:
+            selected_user_id = users[0]['user_id']
 
         if request.method == 'POST':
-            isbn = request.form['isbn'].strip()
-            if isbn:
-                api_url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
-                response = requests.get(api_url)
-                response.raise_for_status()
-                data = response.json()
-                print("API Response:", data)
+            # Handle ISBN lookup
+            if 'isbn' in request.form:
+                isbn = request.form['isbn'].strip()
+                if isbn:
+                    api_url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
+                    response = requests.get(api_url)
+                    response.raise_for_status()
+                    data = response.json()
 
-                if 'items' in data and data['items']:
-                    book_data = data['items'][0]['volumeInfo']
-                    print("Book Data:", book_data)
+                    if 'items' in data and data['items']:
+                        book_data = data['items'][0]['volumeInfo']
+                        filepath = os.path.join(RESULTS_DIR, f"{isbn}.txt")
+                        with open(filepath, 'w') as f:
+                            json.dump(book_data, f, indent=4)
 
-                    filepath = os.path.join(RESULTS_DIR, f"{isbn}.txt")
-                    with open(filepath, 'w') as f:
-                        json.dump(book_data, f, indent=4)
-
-                    success, msg = insert_book_data(book_data)
-                    if success:
-                        lookup_successful = True
-                        message_type = 'success'
+                        success, msg = insert_book_data(book_data)
+                        if success:
+                            lookup_successful = True
+                            message_type = 'success'
+                        else:
+                            message_type = 'error'
+                        message = msg
                     else:
+                        message = 'Book not found with that ISBN.'
                         message_type = 'error'
-                    message = msg
 
-                    books = get_book_data()  # Refresh book list
+            # Handle book status update
+            elif 'update_book' in request.form:
+                book_id = request.form['book_id']
+                status = request.form.get('status')
+                current_page = request.form.get('current_page')
+                rating = request.form.get('rating')
+                notes = request.form.get('notes')
+                read_date = request.form.get('read_date')
+                started_date = request.form.get('started_date')
+
+                if current_page:
+                    try:
+                        current_page = int(current_page)
+                    except ValueError:
+                        current_page = None
+
+                if rating:
+                    try:
+                        rating = int(rating)
+                    except ValueError:
+                        rating = None
+
+                success = update_user_book(
+                    selected_user_id, book_id, status, current_page,
+                    rating, notes, read_date, started_date
+                )
+
+                if success:
+                    message = "Book status updated successfully!"
+                    message_type = 'success'
                 else:
-                    message = 'Book not found with that ISBN.'
+                    message = "Failed to update book status"
                     message_type = 'error'
+
+        books = get_user_books(selected_user_id) if selected_user_id else []
 
         return render_template('index.html',
                                lookup_successful=lookup_successful,
                                isbn=isbn,
                                books=books,
+                               users=users,
+                               selected_user_id=selected_user_id,
                                message=message,
                                message_type=message_type)
     except Exception as e:
         print("ERROR:", str(e))
         return render_template('index.html',
-                               books=get_book_data(),
+                               books=[],
                                message=str(e),
                                message_type='error')
 

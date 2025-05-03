@@ -165,3 +165,35 @@ document.addEventListener('DOMContentLoaded', function() {
     setupPagination();
     displayPage(currentPage);
 });
+// Add to library.js
+
+// Make tracking forms submit on all changes
+document.querySelectorAll('.tracking-form input, .tracking-form select, .tracking-form textarea').forEach(element => {
+    element.addEventListener('change', function() {
+        this.form.submit();
+    });
+});
+
+// Toggle visibility of tracking sections based on status
+function updateTrackingSections() {
+    document.querySelectorAll('.tracking-form').forEach(form => {
+        const statusSelect = form.querySelector('select[name="status"]');
+        const readingSections = form.querySelectorAll('.progress-section, .dates-section, .rating-section, .notes-section');
+        const readSections = form.querySelectorAll('.dates-section, .rating-section, .notes-section');
+
+        if (statusSelect.value === 'reading') {
+            readingSections.forEach(section => section.style.display = 'block');
+        } else if (statusSelect.value === 'read') {
+            readSections.forEach(section => section.style.display = 'block');
+        } else {
+            readingSections.forEach(section => section.style.display = 'none');
+        }
+    });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // ... existing code ...
+
+    updateTrackingSections();
+});

@@ -76,7 +76,15 @@ CREATE TABLE user_books (
   book_id INT NOT NULL,
   status ENUM('owned', 'reading', 'read', 'wishlist') DEFAULT 'owned',
   added_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  read_date DATE NULL, -- When the book was finished
+  user_rating TINYINT NULL, -- User's personal rating (1-5 stars)
+  current_page INT NULL, -- For tracking reading progress
+  notes TEXT NULL, -- Personal notes about the book
+  started_date DATE,
   PRIMARY KEY (user_book_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id),
-  FOREIGN KEY (book_id) REFERENCES books(book_id)
+  FOREIGN KEY (book_id) REFERENCES books(book_id),
+  UNIQUE KEY (user_id, book_id) -- Prevent duplicate entries
 );
+ALTER TABLE user_books
+ADD COLUMN started_date DATE;
