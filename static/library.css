@@ -1,211 +1,203 @@
-body {
-    font-family: 'Garamond', serif; /* Use a classic serif font */
-    background-color: #f4f1e8; /* Light beige background, common in old books */
-    color: #0c3001; /* Deep green for text, like old ink */
-    margin: 0;
-    padding: 0;
-    line-height: 1.7; /* Increased line height for readability */
-}
-
-h1 {
-    font-family: 'Garamond', serif;
-    color: #8b4513; /* Brown for headings, like wood */
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-}
-
-form {
-    background-color: #fffaf0; /* Off-white for form background */
-    padding: 20px;
-    margin: 20px auto;
-    width: 400px;
-    border: 1px solid #bc8f8f; /* Rosy brown border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 5px 5px 5px #f5f5dc; /* হালকা ছায়া */
-}
-
-
-label {
-    display: block;
-    margin-top: 10px;
-    color: #556b2f; /* Darker olive green for labels */
-    font-weight: bold;
-}
-
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #b8860b; /* Darker goldenrod border */
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-input[type="submit"] {
-    background-color: #a0522d; /* Sienna for submit button */
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #8b4513; /* Darker brown on hover */
-}
-
-p {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-a {
-    color: #a0522d; /* Sienna for links */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #8b4513; /* Darker brown on hover */
-    text-decoration: underline;
-}
-
+/* Improved table styling */
 table {
-    width: 80%;
+    width: 95%;
     margin: 20px auto;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     background-color: #fffaf0;
-    border: 1px solid #bc8f8f;
+    border: 2px solid #8b4513; /* Darker brown border */
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #f5f5dc;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-table, th, td {
-    border: 1px solid #bc8f8f;
-    padding: 12px; /* একটু বাড়ালাম padding */
+th, td {
+    padding: 12px 15px;
     text-align: left;
-    font-size: 1em;
+    border-bottom: 1px solid #d3d3d3; /* Light gray border between rows */
 }
 
 th {
-    background-color: #d3d3d3; /* হালকা ধূসর */
-    color: #8b4513;
+    background-color: #8b4513; /* Dark brown header */
+    color: white;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #f5f5dc; /* আরো হালকা */
+    background-color: #f9f5eb; /* Very light beige for even rows */
 }
 
-img {
-    max-height: 150px; /* Increased max-height for thumbnails */
-    border: 1px solid #bc8f8f;
-    border-radius: 5px;
-    margin: 5px;
+tr:hover {
+    background-color: #f0e6d2; /* Slightly darker beige on hover */
 }
-/* Add to your CSS */
-.message {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+
+/* Improved header styling */
+h1, h2 {
+    font-family: 'Garamond', serif;
+    color: #5a3921; /* Darker brown for better contrast */
     text-align: center;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-.message.success {
-    background-color: #dff0d8;
-    color: #3c763d;
-    border: 1px solid #d6e9c6;
+h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.message.error {
-    background-color: #f2dede;
-    color: #a94442;
-    border: 1px solid #ebccd1;
+h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
 }
-/* User selection */
-.user-selection {
+
+/* Improved form styling */
+form[method="POST"] {
     background-color: #fffaf0;
-    padding: 15px;
-    margin: 20px auto;
-    width: 80%;
+    padding: 25px;
+    margin: 30px auto;
+    width: 450px;
+    border: 2px solid #8b4513;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.user-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+/* Better description cell */
+.description-cell {
+    max-width: 250px;
+    line-height: 1.5;
 }
 
-.user-form label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 15px;
-    background-color: #f5f5dc;
-    border-radius: 20px;
+.description-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.description-text.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.show-more-btn {
+    color: #8b4513;
+    background: none;
+    border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    text-decoration: underline;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 0.9em;
 }
 
-.user-form label:hover {
-    background-color: #e6e6c3;
-}
-
-/* Tracking controls */
-.tracking-controls {
-    min-width: 250px;
-}
-
+/* Form improvements */
 .tracking-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.tracking-form select,
-.tracking-form input[type="number"],
-.tracking-form input[type="date"],
-.tracking-form textarea {
-    width: 100%;
-    padding: 5px;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-control {
+    padding: 8px;
     border: 1px solid #b8860b;
     border-radius: 4px;
+    font-family: 'Garamond', serif;
 }
 
-.tracking-form textarea {
-    min-height: 60px;
-    resize: vertical;
+.submit-btn {
+    background-color: #a0522d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
-.progress-section,
-.rating-section,
-.dates-section,
-.notes-section {
-    display: none;
+.submit-btn:hover {
+    background-color: #8b4513;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .tracking-controls {
-        min-width: 200px;
-    }
+/* Description improvements */
+.description-cell {
+    max-width: 300px;
+    position: relative;
 }
 
-@media screen and (max-width: 480px) {
-    .user-form {
-        flex-direction: column;
-        gap: 8px;
-    }
+.description-text {
+    max-height: 4.5em; /* Show 3 lines of text (1.5em line-height × 3) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.5em;
+}
 
-    .tracking-controls {
-        min-width: 150px;
-    }
+.description-text.expanded {
+    max-height: none;
+    -webkit-line-clamp: unset;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #a0522d;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin-top: 5px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.show-more-btn:hover {
+    color: #8b4513;
+}
+
+/* Message styling */
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+.success-message {
+    color: #28a745;
+    text-align: center;
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+.no-books {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Image improvements */
+.book-thumbnail {
+    max-height: 150px;
+    max-width: 100px;
+    object-fit: contain;
+    border: 1px solid #bc8f8f;
+    border-radius: 4px;
 }
