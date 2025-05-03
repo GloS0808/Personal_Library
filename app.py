@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory, redirect, url_for
 import requests
 import json
 import os
@@ -6,31 +6,159 @@ import mysql.connector
 from config import DB_CONFIG
 
 app = Flask(__name__)
-app.config['PROPAGATE_EXCEPTIONS'] = True  # This will show more detailed errors
+app.config['PROPAGATE_EXCEPTIONS'] = True
 RESULTS_DIR = "results"
 
-# Create the results directory if it doesn't exist
 if not os.path.exists(RESULTS_DIR):
     os.makedirs(RESULTS_DIR)
+
+
+def get_book_data():
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor(dictionary=True)
+
+        # First get all books with their basic info
+        cursor.execute("""
+                       SELECT b.book_id,
+                              b.title,
+                              b.subtitle,
+                              b.publisher,
+                              b.published_date,
+                              b.description,
+                              b.page_count,
+                              b.average_rating,
+                              b.thumbnail,
+                              c.category_name
+                       FROM books b
+                                LEFT JOIN categories c ON b.category_id = c.category_id
+                       """)
+        books = cursor.fetchall()
+
+        # Now enrich each book with additional data
+        for book in books:
+            # Get authors
+            cursor.execute("""
+                           SELECT GROUP_CONCAT(a.name SEPARATOR ', ') AS authors
+                           FROM book_authors ba
+                                    JOIN authors a ON ba.author_id = a.author_id
+                           WHERE ba.book_id = %s
+                           """, (book['book_id'],))
+            authors = cursor.fetchone()
+            book['authors'] = authors['authors'] if authors and authors['authors'] else 'N/A'
+
+            # Get user book info (owner, status, etc)
+            cursor.execute("""
+                           SELECT ub.*, u.name as owner_name
+                           FROM user_books ub
+                                    JOIN users u ON ub.user_id = u.user_id
+                           WHERE ub.book_id = %s LIMIT 1
+                           """, (book['book_id'],))
+            user_book = cursor.fetchone()
+
+            if user_book:
+                book.update({
+                    'status': user_book['status'],
+                    'user_rating': user_book['user_rating'],
+                    'current_page': user_book['current_page'],
+                    'notes': user_book['notes'],
+                    'started_date': user_book['started_date'],
+                    'read_date': user_book['read_date'],
+                    'user_id': user_book['user_id'],
+                    'owner_name': user_book['owner_name']
+                })
+            else:
+                # Set default values if no user_book entry exists
+                book.update({
+                    'status': None,
+                    'user_rating': None,
+                    'current_page': None,
+                    'notes': None,
+                    'started_date': None,
+                    'read_date': None,
+                    'user_id': None,
+                    'owner_name': None
+                })
+
+        return books
+    except mysql.connector.Error as err:
+        print(f"Error fetching book data: {err}")
+        return []
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor(dictionary=True)
+
+        # Debug: Check if we can connect to the database
+        cursor.execute("SELECT COUNT(*) as count FROM books")
+        book_count = cursor.fetchone()['count']
+        print(f"DEBUG: Found {book_count} books in database")
+
+        cursor.execute("SELECT * FROM users")
+        users = cursor.fetchall()
+        print(f"DEBUG: Found {len(users)} users")
+
+        books = get_book_data()
+        print(f"DEBUG: Retrieved {len(books)} books after processing")
+        # Rest of your index route...
+        lookup_successful = False
+        isbn = None
+        if request.method == 'POST':
+            isbn = request.form['isbn'].strip()
+            if isbn:
+                api_url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
+                response = requests.get(api_url)
+                response.raise_for_status()
+                data = response.json()
+
+                if 'items' in data and data['items']:
+                    book_data = data['items'][0]['volumeInfo']
+                    filepath = os.path.join(RESULTS_DIR, f"{isbn}.txt")
+                    with open(filepath, 'w') as f:
+                        json.dump(book_data, f, indent=4)
+
+                    insert_book_data(book_data)
+                    books = get_book_data()
+                    return render_template('index.html',
+                                           lookup_successful=True,
+                                           isbn=isbn,
+                                           books=books,
+                                           users=users)
+                else:
+                    error_message = 'Book not found with that ISBN.'
+                    return render_template('index.html',
+                                           error=error_message,
+                                           isbn=isbn,
+                                           books=books,
+                                           users=users)
+
+        return render_template('index.html',
+                               lookup_successful=lookup_successful,
+                               isbn=isbn,
+                               books=books,
+                               users=users)
+    except Exception as e:
+        print("ERROR:", str(e))
+        raise
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+
 
 def insert_book_data(book_data):
     try:
         conn = mysql.connector.connect(**DB_CONFIG)
         cursor = conn.cursor()
 
-        # Check if book already exists before proceeding
-        isbn_13 = book_data.get('industryIdentifiers', [{}, {}])[0].get('identifier')
-        isbn_10 = book_data.get('industryIdentifiers', [{}, {}])[1].get('identifier')
-
-        cursor.execute("SELECT book_id FROM books WHERE isbn_13 = %s OR isbn_10 = %s",
-                       (isbn_13, isbn_10))
-        existing_book = cursor.fetchone()
-
-        if existing_book:
-            print("Book already exists in the database")
-            return False, "This book is already in your library"
-
-        # --- Handle Category ---
+        # Handle Category
         category_id = None
         if 'categories' in book_data and book_data['categories']:
             category_name = book_data['categories'][0]
@@ -43,31 +171,38 @@ def insert_book_data(book_data):
                 category_id = cursor.lastrowid
             conn.commit()
 
-        # --- Handle Book ---
-        cursor.execute(
-            """
-            INSERT INTO books (isbn_13, isbn_10, title, subtitle, publisher, published_date,
-                            description, page_count, average_rating, thumbnail, category_id)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """,
-            (
-                book_data.get('industryIdentifiers',[{},{}])[0].get('identifier'),
-                book_data.get('industryIdentifiers',[{},{}])[1].get('identifier'),
-                book_data.get('title'),
-                book_data.get('subtitle'),
-                book_data.get('publisher'),
-                book_data.get('publishedDate'),
-                book_data.get('description'),
-                book_data.get('pageCount'),
-                book_data.get('averageRating'),
-                book_data.get('imageLinks', {}).get('thumbnail'),
-                category_id
+        # Handle Book
+        cursor.execute("SELECT book_id FROM books WHERE isbn_13 = %s OR isbn_10 = %s",
+                       (book_data.get('industryIdentifiers', [{}, {}])[0].get('identifier'),
+                        book_data.get('industryIdentifiers', [{}, {}])[1].get('identifier')))
+        existing_book = cursor.fetchone()
+        if not existing_book:
+            cursor.execute(
+                """
+                INSERT INTO books (isbn_13, isbn_10, title, subtitle, publisher, published_date,
+                                   description, page_count, average_rating, thumbnail, category_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """,
+                (
+                    book_data.get('industryIdentifiers', [{}, {}])[0].get('identifier'),
+                    book_data.get('industryIdentifiers', [{}, {}])[1].get('identifier'),
+                    book_data.get('title'),
+                    book_data.get('subtitle'),
+                    book_data.get('publisher'),
+                    book_data.get('publishedDate'),
+                    book_data.get('description'),
+                    book_data.get('pageCount'),
+                    book_data.get('averageRating'),
+                    book_data.get('imageLinks', {}).get('thumbnail'),
+                    category_id
+                )
             )
-        )
-        book_id = cursor.lastrowid
-        conn.commit()
+            book_id = cursor.lastrowid
+            conn.commit()
+        else:
+            book_id = existing_book[0]
 
-        # --- Handle Authors ---
+        # Handle Authors
         if 'authors' in book_data and book_data['authors']:
             for author_name in book_data['authors']:
                 cursor.execute("SELECT author_id FROM authors WHERE name = %s", (author_name,))
@@ -79,279 +214,86 @@ def insert_book_data(book_data):
                     author_id = cursor.lastrowid
                     conn.commit()
 
-                # Insert into book_authors (many-to-many relationship)
-                try:
-                    cursor.execute(
-                        "INSERT INTO book_authors (book_id, author_id) VALUES (%s, %s)",
-                        (book_id, author_id)
-                    )
-                    conn.commit()
-                except mysql.connector.Error as err:
-                    if err.errno != 1062:  # Ignore duplicate author-book relationships
-                        raise
+                # Insert into book_authors
+                cursor.execute(
+                    "INSERT INTO book_authors (book_id, author_id) VALUES (%s, %s)",
+                    (book_id, author_id)
+                )
+                conn.commit()
 
         print("Book data inserted successfully!")
-        return True, "Book added successfully"
 
     except mysql.connector.Error as err:
-        if err.errno == 1062:  # Duplicate entry error code
-            print("Duplicate entry prevented")
-            return False, "This book is already in your library"
-        else:
-            print(f"Error inserting data: {err}")
-            return False, f"Database error: {err}"
+        print(f"Error inserting data: {err}")
     finally:
         if conn:
             cursor.close()
             conn.close()
 
-def get_book_data():
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        cursor = conn.cursor()
-
-        cursor.execute("""
-            SELECT
-                b.title, b.subtitle, b.publisher, b.published_date,
-                b.description, b.page_count, b.average_rating, b.thumbnail,
-                c.category_name,
-                GROUP_CONCAT(a.name) AS authors
-            FROM books b
-            LEFT JOIN categories c ON b.category_id = c.category_id
-            LEFT JOIN book_authors ba ON b.book_id = ba.book_id
-            LEFT JOIN authors a ON ba.author_id = a.author_id
-            GROUP BY b.book_id
-        """)
-        books = cursor.fetchall()
-        return books
-    except mysql.connector.Error as err:
-        print(f"Error fetching book data: {err}")
-        return []
-    finally:
-        if conn:
-            cursor.close()
-            conn.close()
-
-
-# Add to app.py
-
-def get_users():
-    """Get list of all users"""
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT * FROM users ORDER BY name")
-        return cursor.fetchall()
-    except mysql.connector.Error as err:
-        print(f"Error fetching users: {err}")
-        return []
-    finally:
-        if conn:
-            cursor.close()
-            conn.close()
-
-
-def get_user_books(user_id=None):
-    """Get books with user-specific tracking info"""
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        cursor = conn.cursor(dictionary=True)
-
-        query = """
-                SELECT b.*, \
-                       c.category_name, \
-                       GROUP_CONCAT(a.name) AS authors, \
-                       ub.status, \
-                       ub.read_date, \
-                       ub.user_rating, \
-                       ub.current_page, \
-                       ub.notes, \
-                       ub.started_date, \
-                       ub.added_on
-                FROM books b
-                         LEFT JOIN categories c ON b.category_id = c.category_id
-                         LEFT JOIN book_authors ba ON b.book_id = ba.book_id
-                         LEFT JOIN authors a ON ba.author_id = a.author_id
-                         LEFT JOIN user_books ub ON b.book_id = ub.book_id AND ub.user_id = %s
-                GROUP BY b.book_id \
-                """
-        cursor.execute(query, (user_id,))
-        return cursor.fetchall()
-    except mysql.connector.Error as err:
-        print(f"Error fetching user books: {err}")
-        return []
-    finally:
-        if conn:
-            cursor.close()
-            conn.close()
-
-
-def update_user_book(user_id, book_id, status=None, current_page=None,
-                     rating=None, notes=None, read_date=None, started_date=None):
-    """Update or create user-book relationship"""
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        cursor = conn.cursor()
-
-        # Check if relationship exists
-        cursor.execute("""
-                       SELECT user_book_id
-                       FROM user_books
-                       WHERE user_id = %s
-                         AND book_id = %s
-                       """, (user_id, book_id))
-        exists = cursor.fetchone()
-
-        if exists:
-            # Update existing
-            update_fields = []
-            params = []
-
-            if status:
-                update_fields.append("status = %s")
-                params.append(status)
-            if current_page is not None:
-                update_fields.append("current_page = %s")
-                params.append(current_page)
-            if rating is not None:
-                update_fields.append("user_rating = %s")
-                params.append(rating)
-            if notes is not None:
-                update_fields.append("notes = %s")
-                params.append(notes)
-            if read_date:
-                update_fields.append("read_date = %s")
-                params.append(read_date)
-            if started_date:
-                update_fields.append("started_date = %s")
-                params.append(started_date)
-
-            if update_fields:
-                query = f"""
-                    UPDATE user_books 
-                    SET {', '.join(update_fields)}
-                    WHERE user_id = %s AND book_id = %s
-                """
-                params.extend([user_id, book_id])
-                cursor.execute(query, tuple(params))
-        else:
-            # Create new
-            cursor.execute("""
-                           INSERT INTO user_books
-                           (user_id, book_id, status, current_page, user_rating,
-                            notes, read_date, started_date)
-                           VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-                           """, (
-                               user_id, book_id, status or 'owned',
-                               current_page, rating, notes, read_date, started_date
-                           ))
-
-        conn.commit()
-        return True
-    except mysql.connector.Error as err:
-        print(f"Error updating user book: {err}")
-        return False
-    finally:
-        if conn:
-            cursor.close()
-            conn.close()
-
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    try:
-        lookup_successful = False
-        isbn = None
-        message = None
-        message_type = None
-        users = get_users()
-
-        # Get selected user from session or default to first user
-        selected_user_id = request.args.get('user_id') or request.form.get('user_id')
-        if not selected_user_id and users:
-            selected_user_id = users[0]['user_id']
-
-        if request.method == 'POST':
-            # Handle ISBN lookup
-            if 'isbn' in request.form:
-                isbn = request.form['isbn'].strip()
-                if isbn:
-                    api_url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
-                    response = requests.get(api_url)
-                    response.raise_for_status()
-                    data = response.json()
-
-                    if 'items' in data and data['items']:
-                        book_data = data['items'][0]['volumeInfo']
-                        filepath = os.path.join(RESULTS_DIR, f"{isbn}.txt")
-                        with open(filepath, 'w') as f:
-                            json.dump(book_data, f, indent=4)
-
-                        success, msg = insert_book_data(book_data)
-                        if success:
-                            lookup_successful = True
-                            message_type = 'success'
-                        else:
-                            message_type = 'error'
-                        message = msg
-                    else:
-                        message = 'Book not found with that ISBN.'
-                        message_type = 'error'
-
-            # Handle book status update
-            elif 'update_book' in request.form:
-                book_id = request.form['book_id']
-                status = request.form.get('status')
-                current_page = request.form.get('current_page')
-                rating = request.form.get('rating')
-                notes = request.form.get('notes')
-                read_date = request.form.get('read_date')
-                started_date = request.form.get('started_date')
-
-                if current_page:
-                    try:
-                        current_page = int(current_page)
-                    except ValueError:
-                        current_page = None
-
-                if rating:
-                    try:
-                        rating = int(rating)
-                    except ValueError:
-                        rating = None
-
-                success = update_user_book(
-                    selected_user_id, book_id, status, current_page,
-                    rating, notes, read_date, started_date
-                )
-
-                if success:
-                    message = "Book status updated successfully!"
-                    message_type = 'success'
-                else:
-                    message = "Failed to update book status"
-                    message_type = 'error'
-
-        books = get_user_books(selected_user_id) if selected_user_id else []
-
-        return render_template('index.html',
-                               lookup_successful=lookup_successful,
-                               isbn=isbn,
-                               books=books,
-                               users=users,
-                               selected_user_id=selected_user_id,
-                               message=message,
-                               message_type=message_type)
-    except Exception as e:
-        print("ERROR:", str(e))
-        return render_template('index.html',
-                               books=[],
-                               message=str(e),
-                               message_type='error')
 
 @app.route('/results/<path:filename>')
 def download_file(filename):
     return send_from_directory(RESULTS_DIR, filename, as_attachment=False)
+
+
+@app.route('/update_book', methods=['GET', 'POST'])
+def update_book():
+    try:
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor(dictionary=True)
+
+        book_id = request.args.get('book_id') or request.form.get('book_id')
+        user_id = request.form.get('owner')
+
+        if request.method == 'POST':
+            status = request.form.get('status')
+            rating = request.form.get('rating') or None
+            current_page = request.form.get('current_page') or None
+            notes = request.form.get('notes')
+            started_date = request.form.get('started_date') or None
+            read_date = request.form.get('read_date') or None
+
+            query = """
+                    INSERT INTO user_books (user_id, book_id, status, user_rating, current_page, notes, started_date, \
+                                            read_date)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s) ON DUPLICATE KEY \
+                    UPDATE \
+                        status = \
+                    VALUES (status), user_rating = \
+                    VALUES (user_rating), current_page = \
+                    VALUES (current_page), notes = \
+                    VALUES (notes), started_date = \
+                    VALUES (started_date), read_date = \
+                    VALUES (read_date) \
+                    """
+            cursor.execute(query, (user_id, book_id, status, rating, current_page, notes, started_date, read_date))
+            conn.commit()
+            return redirect(url_for('index'))
+
+        # GET: Load current values
+        cursor.execute("SELECT * FROM users")
+        users = cursor.fetchall()
+
+        cursor.execute("""
+                       SELECT b.*, ub.*, c.category_name, u.name as owner_name
+                       FROM books b
+                                LEFT JOIN user_books ub ON ub.book_id = b.book_id
+                                LEFT JOIN categories c ON c.category_id = b.category_id
+                                LEFT JOIN users u ON ub.user_id = u.user_id
+                       WHERE b.book_id = %s
+                       """, (book_id,))
+        book = cursor.fetchone()
+
+        return render_template('update_book.html', book=book, users=users)
+    except Exception as e:
+        print(f"Error: {e}")
+        return "An error occurred", 500
+    finally:
+        if 'cursor' in locals():
+            cursor.close()
+        if 'conn' in locals():
+            conn.close()
+
 
 if __name__ == '__main__':
     app.run(debug=True)

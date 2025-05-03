@@ -86,5 +86,4 @@ CREATE TABLE user_books (
   FOREIGN KEY (book_id) REFERENCES books(book_id),
   UNIQUE KEY (user_id, book_id) -- Prevent duplicate entries
 );
-ALTER TABLE user_books
-ADD COLUMN started_date DATE;
+);
