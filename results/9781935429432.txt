@@ -1,0 +1,43 @@
+{
+    "title": "I Am Here! 2",
+    "authors": [
+        "Ema Toyama"
+    ],
+    "publisher": "National Geographic Books",
+    "publishedDate": "2011-07-26",
+    "description": "Invisible to her classmates, Hikage Sumino is an eighth grader with no self-esteem. Her only friends are the visitors to her Internet blog. One day, the most popular boy in the grade suddenly talks to her. Encouraged by this twist of fate, Hikage determines to transform her life and declare to the world, I Am Here! WHEN THE SUNFLOWER BLOOMS After the sudden disappearance of Black Rabbit from her blog, a series of surprises continues to shake up Hikage's world. What if someone you met online turned out to be someone you knew in real life? In this volume, Hikage, Hinata, and Teru overcome jealousy and betrayal, and together learn valuable lessons about friendship, love, and forgiveness. This book collects chapters 11-19 of I Am Here! (Koko ni iru yo!). FINAL VOLUME!",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781935429432"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1935429434"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=cCCREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=cCCREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=cCCREAAAQBAJ&dq=isbn:9781935429432&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=cCCREAAAQBAJ&dq=isbn:9781935429432&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_Am_Here_2.html?hl=&id=cCCREAAAQBAJ"
+}

@@ -1,0 +1,45 @@
+{
+    "title": "The Ritual",
+    "authors": [
+        "Adam Nevill"
+    ],
+    "publisher": "Macmillan",
+    "publishedDate": "2012-02-14",
+    "description": "A horror debut by one of Britain's most celebrated up-and-coming writers, in which four friends get lost in a forest in Sweden, to find their lives are in mortal peril... as something evil lurks.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780312641849"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0312641842"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 435,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "averageRating": 1,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=iotx3xV0otMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=iotx3xV0otMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=iotx3xV0otMC&printsec=frontcover&dq=isbn:9780312641849&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=iotx3xV0otMC&dq=isbn:9780312641849&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Ritual.html?hl=&id=iotx3xV0otMC"
+}

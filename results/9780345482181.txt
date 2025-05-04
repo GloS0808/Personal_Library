@@ -1,0 +1,44 @@
+{
+    "title": "Speak of the Devil",
+    "subtitle": "A Novel of Suspense",
+    "authors": [
+        "Richard Hawke"
+    ],
+    "publisher": "Ballantine Books",
+    "publishedDate": "2007-02-27",
+    "description": "\u201c[An] amazing thriller . . . [Richard] Hawke\u2019s dialogue is sharp and snappy and the plot moves with all the energy of New York City.\u201d\u2014Cleveland Plain Dealer A child of Hell\u2019s Kitchen and the bastard son of a beloved former police commissioner, Fritz Malone is all too familiar with New York City\u2019s rougher side. So when a gunman opens fire at the crowded Thanksgiving Day parade, Fritz steps into action, giving chase. He then learns that someone dubbed \u201cNightmare\u201d has been taunting the city\u2019s leaders for weeks\u2014and there\u2019s more carnage to come, unless the city meets the madman\u2019s impossible demands. The nervous police need an outside man, and Fritz fits the bill. Racing furiously against time, Fritz finds himself confounded by Nightmare\u2019s multiple masks and messengers. But the dark story behind the story soon begins to emerge, and when Fritz zeroes in on the terrible truth, the killer retaliates by making things personal. Now Fritz must grapple with his deepest fear: Sometimes nightmares really do come true. Praise for Speak of the Devil \u201cHawke razzle-dazzles us with . . . bada-bing narration and quirky, well-drawn characters.\u201d\u2014The Boston Globe \u201c[Packed] with a breathless pace and hairpin turns.\u201d\u2014South Florida Sun Sentinel \u201cFast-moving, first-rate . . . Hawke\u2019s plot grabs us by the throat. . . . He keeps the suspense mounting.\u201d\u2014The Washington Post Book World \u201cSolidly entertaining . . . Hawke makes a big splash on the thriller scene with his debut novel.\u201d\u2014The Philadelphia Inquirer \u201c[Speak of the Devil] tours the city with unusual streetwise panache . . . but this isn\u2019t a book that coasts on its urban geography. It lives by its wits, and its wits would work anywhere.\u201d\u2014The New York Times \u201cA bang-bang thriller . . . We are absolutely powerless to stop reading.\u201d\u2014Chicago Tribune \u201c[A] deftly paced debut that crackles and pops from page 1.\u201d\u2014Booklist (starred review) \u201cThrill-a-minute pacing and inspired plot twists.\u201d\u2014Newsday \u201cA rare combination of intrigue and intensity.\u201d\u2014Michael Connelly",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780345482181"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0345482182"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 397,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.0.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=kaVMVLBL_aYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=kaVMVLBL_aYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=kaVMVLBL_aYC&printsec=frontcover&dq=isbn:9780345482181&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=kaVMVLBL_aYC&dq=isbn:9780345482181&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Speak_of_the_Devil.html?hl=&id=kaVMVLBL_aYC"
+}

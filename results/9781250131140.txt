@@ -1,0 +1,43 @@
+{
+    "title": "Beginner's Guide to Tarot",
+    "authors": [
+        "Juliet Sharman-Burke"
+    ],
+    "publisher": "St. Martin's Essentials",
+    "publishedDate": "2017-06-27",
+    "description": "An original, complete book and card set designed to introduce the beginner into the intricacies of the Tarot The tarot is an ancient art, dating back at least to the mid-fifteenth century, and reading the tarot is a skill that can be learned and ultimately mastered. While there are many books and decks for the advanced tarot enthusiast, there is very little for the less advanced. Now there is The Beginner's Guide to the Tarot, a book and card set designed specifically for the novice. In the fully illustrated, 192 page book, noted tarot expert Juliet Sharman-Burke leads the reader through the cards and suits, the Minor and Major Arcana, and the major layouts for the compete 78 card deck. The book is packed with a newly designed and illustrated deck which draws upon both traditional and modern tarot iconography and is rendered in a clear, distinctive style.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1250131146"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781250131140"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Body, Mind & Spirit"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=0WzfAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=0WzfAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=0WzfAQAACAAJ&dq=isbn:9781250131140&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=0WzfAQAACAAJ&dq=isbn:9781250131140&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Beginner_s_Guide_to_Tarot.html?hl=&id=0WzfAQAACAAJ"
+}

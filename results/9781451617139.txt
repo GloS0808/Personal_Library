@@ -1,0 +1,44 @@
+{
+    "title": "Pimp",
+    "subtitle": "The Story of My Life",
+    "authors": [
+        "Iceberg Slim"
+    ],
+    "publisher": "Cash Money Content",
+    "publishedDate": "2011-05-10",
+    "description": "\u201c[In Pimp], Iceberg Slim breaks down some of the coldest, capitalist concepts I\u2019ve ever heard in my life.\u201d \u2014Dave Chappelle, from his Netflix special The Bird Revelation An immersive experience unlike anything before it, Pimp is the classic hustler\u2019s tale that never seems to go out of style. Iceberg Slim\u2019s autobiographical novel sent shockwaves throughout the literary world when it published in 1969. Groundbreaking for its authentic and oft-brutal account of the sex trade, the book offers readers an unforgettable look at the mores of Chicago\u2019s street life during the 1940s, 50s, and 60s. In the preface, Slim says it best, \u201cIn this book, I will take you, the reader, with me into the secret inner world of the pimp.\u201d With millions of copies sold, Pimp has become vital reading across generations of writers, entertainers and filmmakers alike, making it a timeless piece of American literature.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1451617135"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781451617139"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=HfNblAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=HfNblAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=HfNblAEACAAJ&dq=isbn:9781451617139&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=HfNblAEACAAJ&dq=isbn:9781451617139&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Pimp.html?hl=&id=HfNblAEACAAJ"
+}

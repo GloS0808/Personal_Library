@@ -1,0 +1,43 @@
+{
+    "title": "The Children of Red Peak",
+    "authors": [
+        "Craig DiLouie"
+    ],
+    "publisher": "Redhook",
+    "publishedDate": "2020",
+    "description": "Bram Stoker Award-nominated author Craig DiLouie brings a new twist to the cult horror story in a heart-pounding novel of psychological suspense. \"Horror readers will be hooked.\" (Publishers Weekly) \"A heart-wrenching, thought-provoking, terrifying tale about the meaning of life . . . A great choice for fans of Stephen Graham Jones' The Only Good Indians (2020), Paul Tremblay's Disappearance at Devil's Rock (2016), or Alma Katsu's The Hunger (2018).\"\u200b - Booklist David Young, Deacon Price, and Beth Harris live with a dark secret. As children, they survived a religious group's horrific last days at the isolated mountain Red Peak. Years later, the trauma of what they experienced never feels far behind. When a fellow survivor commits suicide, they finally reunite and share their stories. Long-repressed memories surface, defying understanding and belief. Why did their families go down such a dark road? What really happened on that final night? The answers lie buried at Red Peak. But truth has a price, and escaping a second time may demand the ultimate sacrifice. \"A subtle character story and a chilling tale of horror. It goes deep into the heart of people caught up in terrifying events.\" - Jonathan Maberry, New York Times bestselling author.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0316428132"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780316428132"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=xWRTzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=xWRTzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=xWRTzQEACAAJ&dq=isbn:9780316428132&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=xWRTzQEACAAJ&dq=isbn:9780316428132&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Children_of_Red_Peak.html?hl=&id=xWRTzQEACAAJ"
+}

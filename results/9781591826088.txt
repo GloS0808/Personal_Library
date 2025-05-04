@@ -1,0 +1,40 @@
+{
+    "title": "Fruits Basket Volume 6",
+    "authors": [
+        "Natsuki Takaya"
+    ],
+    "publisher": "TokyoPop",
+    "publishedDate": "2004-12-14",
+    "description": "Tohru Honda was an orphan when one day fate kicked her out of the house and onto land belonging to the mysterious Sohma family. Everything goes well until she discovers the Sohma family's secret: when hugged by members of the opposite sex, they turn into their Chinese zodiac animal!",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "159182608X"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781591826088"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 208,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "comicsContent": true,
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=uQg7zgEACAAJ&dq=isbn:9781591826088&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=uQg7zgEACAAJ&dq=isbn:9781591826088&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Fruits_Basket_Volume_6.html?hl=&id=uQg7zgEACAAJ"
+}

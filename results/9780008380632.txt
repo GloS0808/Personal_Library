@@ -1,0 +1,43 @@
+{
+    "title": "The Embroidered Book",
+    "authors": [
+        "Kate Heartfield"
+    ],
+    "publisher": "Harper Voyager",
+    "publishedDate": "2023-03-30",
+    "description": "'Spellbinding' JJA Harwood 'An entertaining and dark read' Stylist 'An absorbing novel' Guardian 'Beautifully written' Elizabeth Chadwick 'Power is not something you are given. Power is something you take. When you are a woman, it is a little more difficult, that's all' 1768. Charlotte, daughter of the Habsburg Empress, arrives in Naples to marry a man she has never met. Her sister Antoine is sent to France, and in the mirrored corridors of Versailles they rename her Marie Antoinette. The sisters are alone, but they are not powerless. When they were only children, they discovered a book of spells - spells that work, with dark and unpredictable consequences. In a time of vicious court politics, of discovery and dizzying change, they use the book to take control of their lives. But every spell requires a sacrifice. And as love between the sisters turns to rivalry, they will send Europe spiralling into revolution. Brimming with romance, betrayal, and enchantment, The Embroidered Book reimagines a dazzling period of history as you have never seen it before.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0008380635"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780008380632"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=LrfHzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=LrfHzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=LrfHzgEACAAJ&dq=isbn:9780008380632&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=LrfHzgEACAAJ&dq=isbn:9780008380632&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Embroidered_Book.html?hl=&id=LrfHzgEACAAJ"
+}

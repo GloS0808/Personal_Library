@@ -1,0 +1,45 @@
+{
+    "title": "The Dead Zone",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "1980",
+    "description": "Beware, The Wheel of Fortune\u2026 Johnny, the small boy who skated at breakneck speed into an accident that for one horrifying moment plunged him into\u2026the dead zone. Johnny Smith, the small-town schoolteacher who spun the wheel of fortune and won a four-and-a-half-year trip into\u2026the dead zone. John Smith, who awakened from an interminable coma with an accursed power\u2014the power to see the future and the terrible fate awaiting mankind in\u2026the dead zone.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0451155750"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780451155757"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 420,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 23,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.11.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=H8ruHGhl3kYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=H8ruHGhl3kYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=H8ruHGhl3kYC&dq=isbn:9780451155757&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=H8ruHGhl3kYC&dq=isbn:9780451155757&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Dead_Zone.html?hl=&id=H8ruHGhl3kYC"
+}

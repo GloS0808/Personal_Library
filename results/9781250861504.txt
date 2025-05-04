@@ -1,0 +1,44 @@
+{
+    "title": "Starry Messenger",
+    "subtitle": "Cosmic Perspectives on Civilization",
+    "authors": [
+        "Neil deGrasse Tyson"
+    ],
+    "publisher": "Henry Holt",
+    "publishedDate": "2022-09-20",
+    "description": "Bringing his cosmic perspective to civilization on Earth, Neil deGrasse Tyson shines new light on the crucial fault lines of our time\u2014war, politics, religion, truth, beauty, gender, and race\u2014in a way that stimulates a deeper sense of unity for us all. In a time when our political and cultural views feel more polarized than ever, Tyson provides a much-needed antidote to so much of what divides us, while making a passionate case for the twin chariots of enlightenment\u2014a cosmic perspective and the rationality of science. After thinking deeply about how science sees the world and about Earth as a planet, the human brain has the capacity to reset and recalibrates life\u2019s priorities, shaping the actions we might take in response. No outlook on culture, society, or civilization remains untouched. With crystalline prose, Starry Messenger walks us through the scientific palette that sees and paints the world differently. From insights on resolving global conflict to reminders of how precious it is to be alive, Tyson reveals, with warmth and eloquence, an array of brilliant and beautiful truths that apply to us all, informed and enlightened by knowledge of our place in the universe.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781250861504"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1250861500"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=oNZgEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=oNZgEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=oNZgEAAAQBAJ&dq=isbn:9781250861504&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=oNZgEAAAQBAJ&dq=isbn:9781250861504&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Starry_Messenger.html?hl=&id=oNZgEAAAQBAJ"
+}

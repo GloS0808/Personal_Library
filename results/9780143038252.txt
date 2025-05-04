@@ -1,0 +1,45 @@
+{
+    "title": "Three Cups of Tea",
+    "subtitle": "One Man's Mission to Promote Peace . . . One School at a Time",
+    "authors": [
+        "Greg Mortenson",
+        "David Oliver Relin"
+    ],
+    "publisher": "National Geographic Books",
+    "publishedDate": "2007-01-30",
+    "description": "The astonishing, uplifting story of a real-life Indiana Jones and his humanitarian campaign to use education to combat terrorism in the Taliban\u2019s backyard Anyone who despairs of the individual\u2019s power to change lives has to read the story of Greg Mortenson, a homeless mountaineer who, following a 1993 climb of Pakistan\u2019s treacherous K2, was inspired by a chance encounter with impoverished mountain villagers and promised to build them a school. Over the next decade he built fifty-five schools\u2014especially for girls\u2014that offer a balanced education in one of the most isolated and dangerous regions on earth. As it chronicles Mortenson\u2019s quest, which has brought him into conflict with both enraged Islamists and uncomprehending Americans, Three Cups of Tea combines adventure with a celebration of the humanitarian spirit.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780143038252"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0143038257"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "History"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=f5-MEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=f5-MEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=f5-MEAAAQBAJ&dq=isbn:9780143038252&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=f5-MEAAAQBAJ&dq=isbn:9780143038252&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Three_Cups_of_Tea.html?hl=&id=f5-MEAAAQBAJ"
+}

@@ -1,0 +1,38 @@
+{
+    "title": "The Princess Saves Herself in this One",
+    "authors": [
+        "Amanda Lovelace"
+    ],
+    "publishedDate": "2017",
+    "description": "\"From Amanda Lovelace, a poetry collection in four parts: the princess, the damsel, the queen, and you. The first three sections piece together the life of the author while the final section serves as a note to the reader. This moving book explores love, loss, grief, healing, empowerment, and inspiration.\" --Publisher.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1449492819"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781449492816"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "American poetry"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=7pMw0QEACAAJ&dq=isbn:9781449492816&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=7pMw0QEACAAJ&dq=isbn:9781449492816&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Princess_Saves_Herself_in_this_One.html?hl=&id=7pMw0QEACAAJ"
+}

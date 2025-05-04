@@ -1,0 +1,45 @@
+{
+    "title": "Anne Hooper's Kama Sutra",
+    "authors": [
+        "Anne Hooper"
+    ],
+    "publisher": "DK",
+    "publishedDate": "2000",
+    "description": "\"The Kama Sutra\" combines the spice of age-old eroticism with the candid instruction of a contemporary sex guide. The book draws aside the veil of myth and shows how to combine sensuality and sex for a loving, fulfilling relationship. Photos.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0789450720"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780789450722"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Love"
+    ],
+    "averageRating": 3,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=3xbsAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=3xbsAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=3xbsAAAACAAJ&dq=isbn:9780789450722&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=3xbsAAAACAAJ&dq=isbn:9780789450722&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Anne_Hooper_s_Kama_Sutra.html?hl=&id=3xbsAAAACAAJ"
+}

@@ -1,0 +1,45 @@
+{
+    "title": "The Artisanal Kitchen: Party Cakes",
+    "subtitle": "36 Decadent Creations for Festive Occasions",
+    "authors": [
+        "Griffith Day",
+        "Cheryl Day"
+    ],
+    "publisher": "Artisan Books",
+    "publishedDate": "2018-09-04",
+    "description": "Nothing makes a statement like a celebration cake, especially when you bake it from scratch. Cheryl and Griffith Day, New York Times bestselling authors and owners of Savannah\u2019s must-visit Back in the Day Bakery, touch all the high points of American cake magic\u2014coconut, red velvet, carrot with cream cheese frosting, chocolate (both traditional and flourless), spice, angel food, and the essential pineapple upside-down\u2014 with 36 truly decadent, showstopping creations. This book has been adapted from The Back in the Day Bakery Cookbook (Artisan, 2012) and Back in the Day Bakery Made with Love (Artisan, 2015).",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781579658595"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1579658598"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": true
+    },
+    "pageCount": 113,
+    "printType": "BOOK",
+    "categories": [
+        "Cooking"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.1.0.preview.1",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=4_ljDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=4_ljDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=4_ljDwAAQBAJ&printsec=frontcover&dq=isbn:9781579658595&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=4_ljDwAAQBAJ&dq=isbn:9781579658595&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Artisanal_Kitchen_Party_Cakes.html?hl=&id=4_ljDwAAQBAJ"
+}

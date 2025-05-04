@@ -1,0 +1,43 @@
+{
+    "title": "I Was a Doctor in Auschwitz",
+    "authors": [
+        "Gisella Perl",
+        "Phyllis Lassner"
+    ],
+    "publishedDate": "2019-02-28",
+    "description": "Gisella Perl's memoir is an extraordinarily candid account of women's extreme efforts to survive Auschwitz. It was the first memoir by a woman survivor and established the model for understanding the gendered Nazi policies and practices targeting Jewish women as racially poisonous.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1498583946"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781498583947"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 140,
+    "printType": "BOOK",
+    "categories": [
+        "History"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=mI0nvQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=mI0nvQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=mI0nvQEACAAJ&dq=isbn:9781498583947&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=mI0nvQEACAAJ&dq=isbn:9781498583947&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_Was_a_Doctor_in_Auschwitz.html?hl=&id=mI0nvQEACAAJ"
+}

@@ -1,0 +1,40 @@
+{
+    "title": "The Scandalous Lives of Butterflies",
+    "subtitle": "The Annual Scurfpea Publishing Anthology, 2015",
+    "authors": [
+        "Kevin Cole",
+        "Rosemary Moeller",
+        "Cliff Lewis",
+        "Melissa May"
+    ],
+    "publisher": "CreateSpace",
+    "publishedDate": "2015-09-14",
+    "description": "Poems that chart the nuanced spaces between gravity and levity. Poems grounded in the crucible of the Northern Plains but that also transcend region. Such are the poems of the 2015 Scurfpea Publishing anthology which features the work of: Sue Zueger, Norma C. Wilson, Nancy Veglahn, Jennifer Soule, Bradley Soule, M.D., Barbara Schmitz, Bruce Roseland, Xavier Pastrano, Lindy Obach, Rosemary Dunn Moeller, Melissa May, Charles Luden, Cliff Lewis, Kenny Konechne, Brenda K. Johnson, Constance Hoffman, Roberta Haar, John Grey, Maureen Tolman Flannery, Matt Dorweiller, Mark Donovan, Paula Bosco Damon, Carlos R. Cobos, Susan Spaeth Cherry, Craig Challendar, Steve Boint, Cameron Brooks, and Matthew Stensland-Bos.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1516881648"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781516881642"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 136,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=KHxDjgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=KHxDjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=KHxDjgEACAAJ&dq=isbn:9781516881642&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=KHxDjgEACAAJ&dq=isbn:9781516881642&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Scandalous_Lives_of_Butterflies.html?hl=&id=KHxDjgEACAAJ"
+}

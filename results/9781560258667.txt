@@ -1,0 +1,44 @@
+{
+    "title": "Monster Nation",
+    "subtitle": "A Zombie Novel",
+    "authors": [
+        "David Wellington"
+    ],
+    "publisher": "Running Press Adult",
+    "publishedDate": "2006-09-28",
+    "description": "In the heart of America, in the world's most secure prison, something horrible is growing in the dark. A wave of cannibalism and fear is sweeping across the heartland, spreading carnage and infection in its wake. Captain Bannerman Clark of the National Guard has been tasked with an impossible mission: discover what is happening \u2014 and then stop it before it annihilates Los Angeles. In California, he discovers a woman trapped in a hospital overrun with violent madmen. She may hold the secret to the Epidemic but she has lost everything \u2014 even her name. David Wellington's first novel, Monster Island, explored a world overcome by horror and the few people strong enough to survive. Now he takes us back in time to where it all began \u2014 to the day the dead began to rise.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1560258667"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781560258667"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=wQdxtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=wQdxtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=wQdxtAEACAAJ&dq=isbn:9781560258667&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=wQdxtAEACAAJ&dq=isbn:9781560258667&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Monster_Nation.html?hl=&id=wQdxtAEACAAJ"
+}

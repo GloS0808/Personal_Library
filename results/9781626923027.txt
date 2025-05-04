@@ -1,0 +1,44 @@
+{
+    "title": "orange: The Complete Collection 1",
+    "authors": [
+        "Ichigo Takano"
+    ],
+    "publisher": "Seven Seas",
+    "publishedDate": "2016-01-26",
+    "description": "EISNER-NOMINATED SERIES A Plea From the Future On the day that Naho begins 11th grade, she recieves a letter from herself ten years in the future. At first, she writes it off as a prank, but as the letter\u2019s predictions come true one by one Naho realizes that the letter might be the real deal. Her future self tells Naho that a new transfer student, a boy named Kakeru, will soon join her class. The letter begs Naho to watch over him, saying that only Naho can save Kakeru from a terrible future. Who is this mystery boy, and can Naho save him from his destiny? The heart-wrenching sci-fi romance that has over million copies in print in Japan!",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1626923027"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781626923027"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "comicsContent": true,
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=OL7sswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=OL7sswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=OL7sswEACAAJ&dq=isbn:9781626923027&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=OL7sswEACAAJ&dq=isbn:9781626923027&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/orange_The_Complete_Collection_1.html?hl=&id=OL7sswEACAAJ"
+}

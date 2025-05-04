@@ -1,0 +1,43 @@
+{
+    "title": "A Brief History of Time",
+    "authors": [
+        "Stephen Hawking"
+    ],
+    "publisher": "Bantam",
+    "publishedDate": "1998-09-01",
+    "description": "#1 NEW YORK TIMES BESTSELLER A landmark volume in science writing by one of the great minds of our time, Stephen Hawking\u2019s book explores such profound questions as: How did the universe begin\u2014and what made its start possible? Does time always flow forward? Is the universe unending\u2014or are there boundaries? Are there other dimensions in space? What will happen when it all ends? Told in language we all can understand, A Brief History of Time plunges into the exotic realms of black holes and quarks, of antimatter and \u201carrows of time,\u201d of the big bang and a bigger God\u2014where the possibilities are wondrous and unexpected. With exciting images and profound imagination, Stephen Hawking brings us closer to the ultimate secrets at the very heart of creation.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780553380163"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0553380168"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 226,
+    "printType": "BOOK",
+    "categories": [
+        "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.5.4.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=3UZuAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=3UZuAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=3UZuAAAAQBAJ&printsec=frontcover&dq=isbn:9780553380163&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=3UZuAAAAQBAJ&dq=isbn:9780553380163&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/A_Brief_History_of_Time.html?hl=&id=3UZuAAAAQBAJ"
+}

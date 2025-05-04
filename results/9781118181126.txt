@@ -1,0 +1,44 @@
+{
+    "title": "VCP5 VMware Certified Professional on VSphere 5 Study Guide",
+    "subtitle": "Exam VCP-510",
+    "authors": [
+        "Brian Atkinson"
+    ],
+    "publisher": "John Wiley & Sons",
+    "publishedDate": "2012-05-14",
+    "description": "The ideal study guide for candidates seeking the leading virtualization certification The VMware Certified Professional on vSphere 5 (VCP-510) is the most desired certification for virtualization professionals, and this study guide covers all the requirements. Skill in virtualization is a top priority for companies when hiring IT staff, and VMware skills are in high demand. Part of the highly acclaimed Sybex Study Guide series, this comprehensive book guides you through planning, installing, and upgrading ESX/ESXi; configuring networking, storage, and vCenter Server; deploying and managing vir.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781118181126"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1118181123"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": true
+    },
+    "pageCount": 820,
+    "printType": "BOOK",
+    "categories": [
+        "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.1",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=xu4UcX0FqMsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=xu4UcX0FqMsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=xu4UcX0FqMsC&printsec=frontcover&dq=isbn:9781118181126&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=xu4UcX0FqMsC&dq=isbn:9781118181126&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/VCP5_VMware_Certified_Professional_on_VS.html?hl=&id=xu4UcX0FqMsC"
+}

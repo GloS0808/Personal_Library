@@ -1,0 +1,43 @@
+{
+    "title": "The Long Walk",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2016-02-16",
+    "description": "In this #1 national bestseller, \"master storyteller\" (Houston Chronicle) Stephen King, writing as Richard Bachman, tells the tale of the contestants of a grueling walking competition where there can only be one winner--the one that survives. In the near future, when America has become a police state, one hundred boys are selected to enter an annual contest where the winner will be awarded whatever he wants for the rest of his life. Among them is sixteen-year-old Ray Garraty, and he knows the rules--keep a steady walking pace of four miles per hour without stopping. Three warnings and you're out--permanently. A \"psychologically dark tale with commentary on society, teenage life, and cultural entertainment, The Long Walk is still poignant decades after its original publication\" (Publishers Weekly). This edition features an introduction by Stephen King on \"The Importance of Being Bachman.\"",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781501144264"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "150114426X"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.6.4.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=YpyMCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=YpyMCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=YpyMCwAAQBAJ&printsec=frontcover&dq=isbn:9781501144264&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=YpyMCwAAQBAJ&dq=isbn:9781501144264&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Long_Walk.html?hl=&id=YpyMCwAAQBAJ"
+}

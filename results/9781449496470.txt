@@ -1,0 +1,43 @@
+{
+    "title": "Empty Bottles Full of Stories",
+    "authors": [
+        "R. H. Sin",
+        "Robert M. Drake"
+    ],
+    "publishedDate": "2019",
+    "description": "A joint poetry collection from the virally popular and bestselling poets r.h. Sin and Robert M. Drake. What are you hiding behind your smile? If those empty bottles that line the walls of your room could speak, what tales would they spill? So much of your truth is buried beneath the lies you tell yourself. There's a need to scream to the moon; there's this urge to go out into the darkness of the night to purge. There are so many stories living inside your soul, you just want the opportunity to tell them. And when you can't find the will to express what lives within your heart, these words will give you peace. These words will set you free.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1449496474"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781449496470"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "American poetry"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=hgkluQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=hgkluQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=hgkluQEACAAJ&dq=isbn:9781449496470&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=hgkluQEACAAJ&dq=isbn:9781449496470&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Empty_Bottles_Full_of_Stories.html?hl=&id=hgkluQEACAAJ"
+}

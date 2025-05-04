@@ -1,0 +1,43 @@
+{
+    "title": "Shut Up and Listen!",
+    "subtitle": "Hard Business Truths That Will Save Your Ass and Help You Succeed",
+    "authors": [
+        "Tilman Fertitta"
+    ],
+    "publishedDate": "2019",
+    "description": "For entrepreneurs ready to reach the next level of success, small business owner turned multibillionaire Tilman Fertitta shares the commonsense principles that have rocketed his worldwide hospitality empire to the top. For aspiring entrepreneurs or people in business, this book will help you take your company to the next level. When you put this book down, you'll know what you're doing right and what you're doing wrong to operate your business, and if you're just getting started, it will help set you up for success. Tilman Fertitta, also known as the Billion Dollar Buyer, started his hospitality empire thirty years ago with just one restaurant. So he knows the challenges that business owners face, as well as the common pitfalls that cause them to go under. Over the years he's stayed true to the principles that helped him scale his business to what is believed to be the largest single-shareholder company in America, with over $4 billion in revenue, including hundreds of restaurants (Landry's Seafood, Bubba Gump Shrimp Company, Morton's Steakhouse, Mastro's, The Chart House, Rainforest Caf , and over forty more restaurant concepts) and five Golden Nugget Casinos. He's also sole owner of the NBA's Houston Rockets. In Shut Up and Listen , he shares the key insights that made it all possible. When entrepreneurs appear on Billion Dollar Buyer, the biggest obstacles they often face are ones they don't suspect: not knowing your numbers, not knowing your strengths and weaknesses, or not being willing to go that extra mile with your customers. Fertitta has seen it all. He knows that what you aren't paying attention to can either sink your business or become the very things that launch you to the top. As Fertitta says: \"You might think you know what you're doing, but I'm going to show you what you don't know.\" Fertitta shares straight-talk \"Tilmanisms\" around six key action items that any entrepreneur can adopt today: Be the Bull No Spare Customers Change, Change, Change Know Your Numbers Follow the 95/5 Rule Take No Out of Your Vocabulary A groundbreaking, no-holds-barred book, Shut Up and Listen offers practical, hard-earned wisdom from one of the most successful business owners in the world.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1400213738"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781400213733"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=uU99wwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=uU99wwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=uU99wwEACAAJ&dq=isbn:9781400213733&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=uU99wwEACAAJ&dq=isbn:9781400213733&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Shut_Up_and_Listen.html?hl=&id=uU99wwEACAAJ"
+}

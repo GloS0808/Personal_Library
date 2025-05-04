@@ -1,0 +1,44 @@
+{
+    "title": "The Unofficial Ghibli Park Cookbook",
+    "subtitle": "50+ Delightful Recipes Inspired by the Whimsical Theme Park and Movies from Your Favorite Japanese Animation Studio",
+    "authors": [
+        "Andy Cheng"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2024-11-26",
+    "description": "Studio Ghibli has bewitched and delighted since 1985 with their enchanting stories of heroes and heroines featuring magic, love, nature, and, of course, the tastiest-looking animated food ever! In 2022, that charm was brought to life with the opening of Ghibli Park, a theme park so exclusive that it only has one location in Japan and requires reservations made months in advance to enter. Why not experience the excitement of this wondrous place in your own home? With more than 50 movie-inspired recipes straight from the theme park, The Unofficial Ghibli Park Cookbook contains a variety of tantalizing dishes, including: Spicy Shrimp Sandwich; Ketchup Spaghetti Sandwich; Seasonal Fruit Pizza; Shio Musubi Onigiri; Fish Bowl Fruit Punch Float; Matcha Chiffon Cake; and more! A delightful window into the park itself, The Unofficial Ghibli Park Cookbook will take you on a journey to experience the wonders of Hayao Miyazaki's greatest works like never before!",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781646047253"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1646047257"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+        "Cooking"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=yjYtEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=yjYtEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=yjYtEQAAQBAJ&printsec=frontcover&dq=isbn:9781646047253&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=yjYtEQAAQBAJ&dq=isbn:9781646047253&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Unofficial_Ghibli_Park_Cookbook.html?hl=&id=yjYtEQAAQBAJ"
+}

@@ -1,0 +1,44 @@
+{
+    "title": "The Librarian of Burned Books",
+    "subtitle": "A Novel",
+    "authors": [
+        "Brianna Labuskes"
+    ],
+    "publisher": "William Morrow",
+    "publishedDate": "2023-02-21",
+    "description": "For fans of The Rose Code and The Paris Library, The Librarian of Burned Books is a captivating WWII-era novel about the intertwined fates of three women who believe in the power of books to triumph over the very darkest moments of war. Berlin 1933. Following the success of her debut novel, American writer Althea James receives an invitation from Joseph Goebbels himself to participate in a culture exchange program in Germany. For a girl from a small town in Maine, 1933 Berlin seems to be sparklingly cosmopolitan, blossoming in the midst of a great change with the charismatic new chancellor at the helm. Then Althea meets a beautiful woman who promises to show her the real Berlin, and soon she's drawn into a group of resisters who make her question everything she knows about her hosts--and herself. Paris 1936. She may have escaped Berlin for Paris, but Hannah Brecht discovers the City of Light is no refuge from the anti-Semitism and Nazi sympathizers she thought she left behind. Heartbroken and tormented by the role she played in the betrayal that destroyed her family, Hannah throws herself into her work at the German Library of Burned Books. Through the quiet power of books, she believes she can help counter the tide of fascism she sees rising across Europe and atone for her mistakes. But when a dear friend decides actions will speak louder than words, Hannah must decide what stories she is willing to live--or die--for. New York 1944. Since her husband Edward was killed fighting the Nazis, Vivian Childs has been waging her own war: preventing a powerful senator's attempts to censor the Armed Service Editions, portable paperbacks that are shipped by the millions to soldiers overseas. Viv knows just how much they mean to the men through the letters she receives--including the last one she got from Edward. She also knows the only way to win this battle is to counter the senator's propaganda with a story of her own--at the heart of which lies the reclusive and mysterious woman tending the American Library of Nazi-Banned Books in Brooklyn. As Viv unknowingly brings her censorship fight crashing into the secrets of the recent past, the fates of these three women will converge, changing all of them forever. Inspired by the true story of the Council of Books in Wartime--the WWII organization founded by booksellers, publishers, librarians, and authors to use books as \"weapons in the war of ideas\"--The Librarian of Burned Books is an unforgettable historical novel, a haunting love story, and a testament to the beauty, power, and goodness of the written word.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0063259257"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780063259256"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=HiguzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=HiguzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=HiguzwEACAAJ&dq=isbn:9780063259256&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=HiguzwEACAAJ&dq=isbn:9780063259256&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Librarian_of_Burned_Books.html?hl=&id=HiguzwEACAAJ"
+}

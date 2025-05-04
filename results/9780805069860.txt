@@ -1,0 +1,46 @@
+{
+    "title": "The Poetry of Robert Frost",
+    "subtitle": "The Collected Poems, Complete and Unabridged",
+    "authors": [
+        "Robert Frost"
+    ],
+    "publisher": "Macmillan",
+    "publishedDate": "1979",
+    "description": "A complete collection of Robert Frost's poetry.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0805069860"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780805069860"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 642,
+    "printType": "BOOK",
+    "categories": [
+        "Poetry"
+    ],
+    "averageRating": 4,
+    "ratingsCount": 3,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.5.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=KtComZirYE4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=KtComZirYE4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=KtComZirYE4C&printsec=frontcover&dq=isbn:9780805069860&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=KtComZirYE4C&dq=isbn:9780805069860&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Poetry_of_Robert_Frost.html?hl=&id=KtComZirYE4C"
+}

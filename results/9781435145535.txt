@@ -1,0 +1,39 @@
+{
+    "title": "The Constitution of the United States of America with the Declaration of Independence",
+    "authors": [
+        "United States"
+    ],
+    "publisher": "Fall River Press",
+    "publishedDate": "2012",
+    "description": "\"The Constitution of the United States of America,\" inscribed and illustrated by master calligrapher Fink, brings to life the issues underlying the triumphs of this abiding document. Fink has gone back to his original black-and-white art and painted it anew, creating a full-color masterpiece.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1435145534"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781435145535"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 110,
+    "printType": "BOOK",
+    "categories": [
+        "Constitutional history"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=CDzwngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=CDzwngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=CDzwngEACAAJ&dq=isbn:9781435145535&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=CDzwngEACAAJ&dq=isbn:9781435145535&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Constitution_of_the_United_States_of.html?hl=&id=CDzwngEACAAJ"
+}

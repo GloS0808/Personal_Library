@@ -1,0 +1,45 @@
+{
+    "title": "Thinking Smarter",
+    "subtitle": "Seven Steps to Your Fulfilling Retirement... and Life",
+    "authors": [
+        "Shlomo Benartzi",
+        "Roger Lewin"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2015",
+    "description": "Presents a system that, when applied to retirement planning, can help readers decide what they value and want to achieve in retirement.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781591848059"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1591848059"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 146,
+    "printType": "BOOK",
+    "categories": [
+        "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=iOwBDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=iOwBDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=iOwBDAAAQBAJ&printsec=frontcover&dq=isbn:9781591848059&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=iOwBDAAAQBAJ&dq=isbn:9781591848059&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Thinking_Smarter.html?hl=&id=iOwBDAAAQBAJ"
+}

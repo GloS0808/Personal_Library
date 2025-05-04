@@ -33,7 +33,7 @@
         "containsImageBubbles": false
     },
     "language": "en",
-    "previewLink": "http://books.google.com/books?id=aY2LzgEACAAJ&dq=isbn:9780439023511&hl=&cd=1&source=gbs_api",
-    "infoLink": "http://books.google.com/books?id=aY2LzgEACAAJ&dq=isbn:9780439023511&hl=&source=gbs_api",
-    "canonicalVolumeLink": "https://books.google.com/books/about/Mockingjay.html?hl=&id=aY2LzgEACAAJ"
+    "previewLink": "http://books.google.com/books?id=g-odzgEACAAJ&dq=isbn:9780439023511&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=g-odzgEACAAJ&dq=isbn:9780439023511&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Mockingjay.html?hl=&id=g-odzgEACAAJ"
 }

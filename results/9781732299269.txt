@@ -1,0 +1,45 @@
+{
+    "title": "A Girl Walks Home Alone at Night Vol. 1",
+    "authors": [
+        "Ana Lily Amirpour"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2021-11-30",
+    "description": "From critically acclaimed Director and Screenwriter, Ana Lily Amirpour comes the graphic novel spin-off of her 96% Certified Fresh on Rotten Tomatoes feature-length debut, A Girl Walks Home Alone at Night! Strange things are afoot in Bad City. The Iranian ghost town, home to prostitutes, junkies, pimps and other sordid souls, is a bastion of depravity and hopelessness where a lonely vampire, The Girl, stalks the town's most unsavory inhabitants. Collects the first two standalone stories.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781732299269"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1732299269"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 64,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": true,
+        "imageBubbleVersion": "f3bd507a09d565c8"
+    },
+    "comicsContent": true,
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=TlRFEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=TlRFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=TlRFEAAAQBAJ&printsec=frontcover&dq=isbn:9781732299269&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=TlRFEAAAQBAJ&dq=isbn:9781732299269&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/A_Girl_Walks_Home_Alone_at_Night_Vol_1.html?hl=&id=TlRFEAAAQBAJ"
+}

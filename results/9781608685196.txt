@@ -1,0 +1,44 @@
+{
+    "title": "Seven Practices of a Mindful Leader",
+    "subtitle": "Lessons from Google and a Zen Monastery Kitchen",
+    "authors": [
+        "Marc Lesser"
+    ],
+    "publisher": "New World Library",
+    "publishedDate": "2019-02-12",
+    "description": "Seven Practices of a Mindful Leader evolved out of Marc Lesser's work helping to create Search Inside Yourself, a mindfulness-based emotional intelligence program at Google. In this transformative book, he distills a lifetime of contemplative practice and business experience into seven simple, powerful practices for optimizing mindful leadership at work, as well as living a full and meaningful life: \u2022 Love the work \u2022 Do the work \u2022 Don't be an expert \u2022 Connect to your pain \u2022 Connect to the pain of others \u2022 Depend on others \u2022 Keep making it simpler",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781608685196"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1608685195"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": true
+    },
+    "pageCount": 226,
+    "printType": "BOOK",
+    "categories": [
+        "Self-Help"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.1",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=sb2CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=sb2CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=sb2CDwAAQBAJ&printsec=frontcover&dq=isbn:9781608685196&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=sb2CDwAAQBAJ&dq=isbn:9781608685196&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Seven_Practices_of_a_Mindful_Leader.html?hl=&id=sb2CDwAAQBAJ"
+}

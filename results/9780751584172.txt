@@ -1,0 +1,44 @@
+{
+    "title": "The Great British Baking Show: A Bake for All Seasons",
+    "authors": [
+        "Great British Baking Show Bakers",
+        "Paul Hollywood"
+    ],
+    "publisher": "Mobius",
+    "publishedDate": "2021-11-30",
+    "description": "The Great British Baking Show's newest cookbook will be the best yet! Featuring judges recipes and favorites from the 2021 bakers. Official title, cover, and recipes to come.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0751584177"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780751584172"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 288,
+    "printType": "BOOK",
+    "categories": [
+        "Cooking"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=CwA8zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=CwA8zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=CwA8zgEACAAJ&dq=isbn:9780751584172&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=CwA8zgEACAAJ&dq=isbn:9780751584172&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Great_British_Baking_Show_A_Bake_for.html?hl=&id=CwA8zgEACAAJ"
+}

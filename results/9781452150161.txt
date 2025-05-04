@@ -1,0 +1,44 @@
+{
+    "title": "Just Between Us",
+    "subtitle": "Grandmother & Granddaughter : a No-stress, No-rules Journal",
+    "authors": [
+        "Meredith L. Jacobs",
+        "Sofie Jacobs"
+    ],
+    "publishedDate": "2017",
+    "description": "Open this journal and get to know each other in a whole new way! It includes advice and guidance from a veteran journaling team; writing prompts to get the conversation started--and keep it going; pages for drawing fun pictures and making lists; and plenty of free space for writing about whatever is on both of your minds. --cover page 4.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1452150168"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781452150161"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Children's diaries"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=IGA3MQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=IGA3MQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=IGA3MQAACAAJ&dq=isbn:9781452150161&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=IGA3MQAACAAJ&dq=isbn:9781452150161&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Just_Between_Us.html?hl=&id=IGA3MQAACAAJ"
+}

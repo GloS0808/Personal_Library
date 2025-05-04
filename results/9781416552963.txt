@@ -1,0 +1,44 @@
+{
+    "title": "Duma Key",
+    "subtitle": "A Novel",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Pocket Books",
+    "publishedDate": "2008-10-21",
+    "description": "Don\u2019t miss the thrilling novel from undisputed King of Horror and #1 New York Times bestselling author Stephen King about what happens when the barrier between our world and that of the supernatural is breached... No more than a dark pencil line on a blank page. A horizon line, maybe. But also a slot for blackness to pour through... A terrible construction site accident takes Edgar Freemantle\u2019s right arm and scrambles his memory and his mind, leaving him with little but rage as he begins the ordeal of rehabilitation. A marriage that produced two lovely daughters suddenly ends, and Edgar begins to wish he hadn\u2019t survived the injuries that could have killed him. He wants out. His psychologist, Dr. Kamen, suggests a \u201cgeographic cure,\u201d a new life distant from the Twin Cities and the building business Edgar grew from scratch. And Kamen suggests something else. \u201cEdgar, does anything make you happy?\u201d \u201cI used to sketch.\u201d \u201cTake it up again. You need hedges...hedges against the night.\u201d Edgar leaves Minnesota for a rented house on Duma Key, a stunningly beautiful, eerily undeveloped splinter of the Florida coast. The sun setting into the Gulf of Mexico and the tidal rattling of shells on the beach call out to him, and Edgar draws. A visit from Ilse, the daughter he dotes on, starts his movement out of solitude. He meets a kindred spirit in Wireman, a man reluctant to reveal his own wounds, and then Elizabeth Eastlake, a sick old woman whose roots are tangled deep in Duma Key. Now Edgar paints, sometimes feverishly, his exploding talent both a wonder and a weapon. Many of his paintings have a power that cannot be controlled. When Elizabeth\u2019s past unfolds and the ghosts of her childhood begin to appear, the damage of which they are capable is truly devastating. The tenacity of love, the perils of creativity, the mysteries of memory, and the nature of the supernatural\u2014Stephen King gives us yet another novel as fascinating as it is gripping and terrifying.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1416552960"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781416552963"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=AcP8ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=AcP8ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=AcP8ngEACAAJ&dq=isbn:9781416552963&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=AcP8ngEACAAJ&dq=isbn:9781416552963&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Duma_Key.html?hl=&id=AcP8ngEACAAJ"
+}

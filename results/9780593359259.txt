@@ -1,0 +1,43 @@
+{
+    "title": "Hide",
+    "authors": [
+        "Kiersten White"
+    ],
+    "publisher": "Del Rey",
+    "publishedDate": "2023-05-02",
+    "description": "NATIONAL BESTSELLER \u2022 A high-stakes hide-and-seek competition turns deadly in this \u201cmarvelously creepy thrill ride of a book that keeps twisting until the very end\u201d (Karen M. McManus, author of One of Us Is Lying) \u201cThe suspenseful plot combines elements of Thomas Tryon\u2019s classic Harvest Home, Netflix\u2019s Squid Game, and the social commentary of Jordan Peele\u2019s film oeuvre and mixes these with a revelatory pacing reminiscent of Spielberg\u2019s Jaws.\u201d\u2014Booklist The challenge: Spend a week hiding in an abandoned amusement park and don\u2019t get caught. The prize: enough money to change everything. Even though everyone is desperate to win\u2014to seize a dream future or escape a haunting past\u2014Mack is sure she can beat her competitors. All she has to do is hide, and she\u2019s an expert at that. It\u2019s the reason she\u2019s alive and her family isn\u2019t. But as the people around her begin disappearing one by one, Mack realizes that this competition is even more sinister than she imagined, and that together might be the only way to survive. Fourteen competitors. Seven days. Everywhere to hide but nowhere to run. Come out, come out, wherever you are.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780593359259"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0593359259"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=WXunEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=WXunEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=WXunEAAAQBAJ&dq=isbn:9780593359259&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=WXunEAAAQBAJ&dq=isbn:9780593359259&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Hide.html?hl=&id=WXunEAAAQBAJ"
+}

@@ -1,0 +1,45 @@
+{
+    "title": "I'm Glad My Mom Died",
+    "authors": [
+        "Jennette McCurdy"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2022-08-09",
+    "description": "A memoir by American former actress and singer Jennette McCurdy about her career as a child actress and her difficult relationship with her abusive mother who died in 2013",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781982185824"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1982185821"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+        "Biography & Autobiography"
+    ],
+    "averageRating": 5,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.3.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=13mAEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=13mAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=13mAEAAAQBAJ&printsec=frontcover&dq=isbn:9781982185824&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=13mAEAAAQBAJ&dq=isbn:9781982185824&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_m_Glad_My_Mom_Died.html?hl=&id=13mAEAAAQBAJ"
+}

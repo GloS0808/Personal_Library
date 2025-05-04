@@ -1,0 +1,44 @@
+{
+    "title": "Galapagos",
+    "subtitle": "A Novel",
+    "authors": [
+        "Kurt Vonnegut"
+    ],
+    "publisher": "Dial Press Trade Paperback",
+    "publishedDate": "1999-01-12",
+    "description": "\u201cA madcap genealogical adventure . . . Vonnegut is a postmodern Mark Twain.\u201d\u2014The New York Times Book Review Gal\u00e1pagos takes the reader back one million years, to A.D. 1986. A simple vacation cruise suddenly becomes an evolutionary journey. Thanks to an apocalypse, a small group of survivors stranded on the Gal\u00e1pagos Islands are about to become the progenitors of a brave, new, and totally different human race. In this inimitable novel, America\u2019 s master satirist looks at our world and shows us all that is sadly, madly awry\u2013and all that is worth saving. Praise for Gal\u00e1pagos \u201cThe best Vonnegut novel yet!\u201d\u2014John Irving \u201cBeautiful . . . provocative, arresting reading.\u201d\u2014USA Today \u201cA satire in the classic tradition . . . a dark vision, a heartfelt warning.\u201d\u2014The Detroit Free Press \u201cInteresting, engaging, sad and yet very funny . . . Vonnegut is still in top form. If he has no prescription for alleviating the pain of the human condition, at least he is a first-rate diagnostician.\u201d\u2014Susan Isaacs, Newsday \u201cDark . . . original and funny.\u201d\u2014People \u201cA triumph of style, originality and warped yet consistent logic . . . a condensation, an evolution of Vonnegut\u2019s entire career, including all the issues and questions he has pursued relentlessly for four decades.\u201d\u2014The Philadelphia Inquirer \u201cWild details, wry humor, outrageous characters . . . Gal\u00e1pagos is a comic lament, a sadly ironic vison.\u201d\u2014St. Louis Post-Dispatch \u201cA work of high comedy, sadness and imagination.\u201d\u2014The Denver Post \u201cWacky wit and irreverent imagination . . . and the full range of technical innovations have made [Vonnegut] America\u2019s preeminent experimental novelist.\u201d\u2014The Minneapolis Star and Tribune",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780385333870"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0385333870"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 338,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.0.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=72yLDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=72yLDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=72yLDQAAQBAJ&printsec=frontcover&dq=isbn:9780385333870&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=72yLDQAAQBAJ&dq=isbn:9780385333870&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Galapagos.html?hl=&id=72yLDQAAQBAJ"
+}

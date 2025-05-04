@@ -1,0 +1,35 @@
+{
+    "title": "The Best Teen Writing of 2010",
+    "authors": [
+        "Alliance for Young Artists & Writers",
+        "Scholastic Inc"
+    ],
+    "publishedDate": "2010",
+    "description": "A collection of stories, essays, and poems written by teen authors who won medals in The Scholastic Art & Writing Awards.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0545327938"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780545327930"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 285,
+    "printType": "BOOK",
+    "categories": [
+        "Teenagers' writings, American"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=dNsS_gAACAAJ&dq=isbn:9780545327930&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=dNsS_gAACAAJ&dq=isbn:9780545327930&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Best_Teen_Writing_of_2010.html?hl=&id=dNsS_gAACAAJ"
+}

@@ -1,0 +1,43 @@
+{
+    "title": "Summer's Edge",
+    "authors": [
+        "Dana Mele"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2023-07-04",
+    "description": "When five estranged friends return to a summer lake house on the anniversary of their friend's death, unexplainable events begin happening, old betrayals rise to the surface, and the group suspects a killer among them is intent on revenge.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781534493124"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1534493123"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+        "Juvenile Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=_c3DEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=_c3DEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=_c3DEAAAQBAJ&printsec=frontcover&dq=isbn:9781534493124&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=_c3DEAAAQBAJ&dq=isbn:9781534493124&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Summer_s_Edge.html?hl=&id=_c3DEAAAQBAJ"
+}

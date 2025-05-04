@@ -1,0 +1,44 @@
+{
+    "title": "The Little Book of Sufi Stories",
+    "subtitle": "Ancient Wisdom to Nourish the Heart",
+    "authors": [
+        "Neil Douglas-Klotz"
+    ],
+    "publisher": "Red Wheel/Weiser",
+    "publishedDate": "2018",
+    "description": "The stories in this book are drawn from the dozens that Douglas-Klotz has enjoyed telling in his seminars over the past 20 years. Most of them appear in works of the classical Sufis, such as Rumi, Attar, or S'adi. To preserve some of the in-person feeling and bring the language up to date, he has given them his own improvised turns. \"If you want to hear a good story but prefer to read it instead, then read Douglas-Klotz! He writes as if he's sitting in your living room, invited over for afternoon tea to entertain you with some heart-pleasing, often humorous, yet soul-searching Sufi stories. His modernization of these old texts is gentle and mindful, yet unapologetic.\" --Maryam Mafi from the Foreword",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781571748294"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1571748296"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": true
+    },
+    "pageCount": 244,
+    "printType": "BOOK",
+    "categories": [
+        "Religion"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.1.0.preview.1",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=dE9UDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=dE9UDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=dE9UDwAAQBAJ&printsec=frontcover&dq=isbn:9781571748294&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=dE9UDwAAQBAJ&dq=isbn:9781571748294&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Little_Book_of_Sufi_Stories.html?hl=&id=dE9UDwAAQBAJ"
+}

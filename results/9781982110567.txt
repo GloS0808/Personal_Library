@@ -1,0 +1,44 @@
+{
+    "title": "The Institute",
+    "subtitle": "A Novel",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Scribner",
+    "publishedDate": "2019-09-10",
+    "description": "A NEW YORK TIMES 100 NOTABLE BOOKS OF 2019 SELECTION From #1 New York Times bestselling author Stephen King, the most riveting and unforgettable story of kids confronting evil since It. In the middle of the night, in a house on a quiet street in suburban Minneapolis, intruders silently murder Luke Ellis\u2019s parents and load him into a black SUV. The operation takes less than two minutes. Luke will wake up at The Institute, in a room that looks just like his own, except there\u2019s no window. And outside his door are other doors, behind which are other kids with special talents\u2014telekinesis and telepathy\u2014who got to this place the same way Luke did: Kalisha, Nick, George, Iris, and ten-year-old Avery Dixon. They are all in Front Half. Others, Luke learns, graduated to Back Half, \u201clike the roach motel,\u201d Kalisha says. \u201cYou check in, but you don\u2019t check out.\u201d In this most sinister of institutions, the director, Mrs. Sigsby, and her staff are ruthlessly dedicated to extracting from these children the force of their extranormal gifts. There are no scruples here. If you go along, you get tokens for the vending machines. If you don\u2019t, punishment is brutal. As each new victim disappears to Back Half, Luke becomes more and more desperate to get out and get help. But no one has ever escaped from the Institute. As psychically terrifying as Firestarter, and with the spectacular kid power of It, The Institute is Stephen King\u2019s gut-wrenchingly dramatic story of good vs. evil in a world where the good guys don\u2019t always win.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781982110567"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1982110562"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 576,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.5.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=RriuDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=RriuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=RriuDwAAQBAJ&printsec=frontcover&dq=isbn:9781982110567&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=RriuDwAAQBAJ&dq=isbn:9781982110567&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Institute.html?hl=&id=RriuDwAAQBAJ"
+}

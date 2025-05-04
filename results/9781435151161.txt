@@ -1,0 +1,34 @@
+{
+    "title": "The Element Encyclopedia of Fairies",
+    "authors": [
+        "Lucy E. Cooper"
+    ],
+    "publisher": "Anchor Books",
+    "publishedDate": "2014",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "143515116X"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781435151161"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 557,
+    "printType": "BOOK",
+    "categories": [
+        "Fairies"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=H1_xoQEACAAJ&dq=isbn:9781435151161&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=H1_xoQEACAAJ&dq=isbn:9781435151161&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Element_Encyclopedia_of_Fairies.html?hl=&id=H1_xoQEACAAJ"
+}

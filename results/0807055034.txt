@@ -1,0 +1,45 @@
+{
+    "title": "Social Darwinism in American Thought",
+    "authors": [
+        "Richard Hofstadter"
+    ],
+    "publisher": "Beacon Press",
+    "publishedDate": "1992-09-01",
+    "description": "Social Darwinism in American Thought portrays the overall influence of Darwin on American social theory and the notable battle waged among thinkers over the implications of evolutionary theory for social thought and political action. Theorists such as Herbert Spencer and William Graham Sumner adopted the idea of the struggle for existence as justification for the evils as well as the benefits of laissez-faire modern industrial society. Others such as William James and John Dewey argued that human planning was needed to direct social development and improve upon the natural order. Hofstadter's classic study of the ramifications of Darwinism is a major analysis of the social philosophies that animated intellectual movements of the Gilded Age and the Progressive Era.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0807055034"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780807055038"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 292,
+    "printType": "BOOK",
+    "categories": [
+        "Science"
+    ],
+    "averageRating": 3,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.9.0.preview.2",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Ty8aEmWc_ekC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Ty8aEmWc_ekC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=Ty8aEmWc_ekC&printsec=frontcover&dq=isbn:0807055034&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Ty8aEmWc_ekC&dq=isbn:0807055034&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Social_Darwinism_in_American_Thought.html?hl=&id=Ty8aEmWc_ekC"
+}

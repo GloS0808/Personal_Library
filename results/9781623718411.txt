@@ -1,0 +1,44 @@
+{
+    "title": "Ammu",
+    "subtitle": "Indian Home Cooking to Nourish Your Soul",
+    "authors": [
+        "Asma Khan"
+    ],
+    "publisher": "Interlink Books",
+    "publishedDate": "2022-05-24",
+    "description": "A new cookbook from the star of Netflix's Chef's Table and one of the world's most prominent female chefs Heart-warming and full of comforting aromatic Indian flavors: Indian food from home, cooked with heart Ammu is a collection of recipes from Asma Khan\u2019s childhood, her Indian family kitchen. It is a celebration of where she comes from, of home cooking, and the inextricable link between food and love. It is also a chance for Asma to honor her ammu\u2014mother\u2014and to share with us the recipes that made her and rooted her to home. This book is a joyful celebration of memories of food, and its power to heal, restore, and comfort. It includes her ammu's comfort food from childhood, the recipes with which she was taught to cook, celebratory food for special occasions, and slow-cooked recipes passed through the generations of her family. The recipes and the memories she shares all possess something that is universal: food is a way for us to have this conversation about how similar we all are\u2014how it connects us and unites us beyond differing appearances, accents, races and backgrounds. With stunning food and family photos, this cookbook is a must-have for cooks and lovers of Indian food.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1623718414"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781623718411"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Cooking"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=wOGYzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=wOGYzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=wOGYzgEACAAJ&dq=isbn:9781623718411&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=wOGYzgEACAAJ&dq=isbn:9781623718411&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Ammu.html?hl=&id=wOGYzgEACAAJ"
+}

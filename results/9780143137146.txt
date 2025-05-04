@@ -1,0 +1,44 @@
+{
+    "title": "Her Majesty's Royal Coven",
+    "subtitle": "A Novel",
+    "authors": [
+        "Juno Dawson"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2022-05-31",
+    "description": "\u201cSuperb and almost unbearably charming, Her Majesty\u2019s Royal Coven\u2026 expertly launches an exciting new trilogy.\" \u2014The New York Times Book Review \"Talk about a gut punch of a novel. \u2026A provocative exploration of intersectional feminism, loyalty, gender and transphobia [that] invites readers into an intricately woven web of magic, friendship and power.\" \u2014The Nerd Daily A Discovery of Witches meets The Craft in this epic fantasy about a group of childhood friends who are also witches. If you look hard enough at old photographs, we\u2019re there in the background: healers in the trenches; Suffragettes; Bletchley Park oracles; land girls and resistance fighters. Why is it we help in times of crisis? We have a gift. We are stronger than Mundanes, plain and simple. At the dawn of their adolescence, on the eve of the summer solstice, four young girls--Helena, Leonie, Niamh and Elle--took the oath to join Her Majesty's Royal Coven, established by Queen Elizabeth I as a covert government department. Now, decades later, the witch community is still reeling from a civil war and Helena is the reigning High Priestess of the organization. Yet Helena is the only one of her friend group still enmeshed in the stale bureaucracy of HMRC. Elle is trying to pretend she's a normal housewife, and Niamh has become a country vet, using her powers to heal sick animals. In what Helena perceives as the deepest betrayal, Leonie has defected to start her own more inclusive and intersectional coven, Diaspora. And now Helena has a bigger problem. A young warlock of extraordinary capabilities has been captured by authorities and seems to threaten the very existence of HMRC. With conflicting beliefs over the best course of action, the four friends must decide where their loyalties lie: with preserving tradition, or doing what is right. Juno Dawson explores gender and the corrupting nature of power in a delightful and provocative story of magic and matriarchy, friendship and feminism. Dealing with all the aspects of contemporary womanhood, as well as being phenomenally powerful witches, Niamh, Helena, Leonie and Elle may have grown apart but they will always be bound by the sisterhood of the coven.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780143137146"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "014313714X"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 449,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.4.3.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=vJhPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=vJhPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=vJhPEAAAQBAJ&printsec=frontcover&dq=isbn:9780143137146&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=vJhPEAAAQBAJ&dq=isbn:9780143137146&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Her_Majesty_s_Royal_Coven.html?hl=&id=vJhPEAAAQBAJ"
+}

@@ -1,0 +1,35 @@
+{
+    "title": "The Victorian Fairy Tarot",
+    "publisher": "Llewellyn Worldwide",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780738731315"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0738731315"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 266,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tmGpfk4cO5sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tmGpfk4cO5sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=tmGpfk4cO5sC&printsec=frontcover&dq=isbn:9780738731315&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=tmGpfk4cO5sC&dq=isbn:9780738731315&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Victorian_Fairy_Tarot.html?hl=&id=tmGpfk4cO5sC"
+}

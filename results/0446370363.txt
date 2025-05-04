@@ -1,0 +1,36 @@
+{
+    "title": "Lucy, the Beginnings of Humankind",
+    "authors": [
+        "Donald C. Johanson",
+        "Maitland Armstrong Edey"
+    ],
+    "publisher": "Warner Books (NY)",
+    "publishedDate": "1982",
+    "description": "Describes the discovery of the oldest, most complete skeleton of any erect walking human ancestor ever found in 1974 in Ethiopia.",
+    "industryIdentifiers": [
+        {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105005339713"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 446,
+    "printType": "BOOK",
+    "categories": [
+        "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=CQ0-AQAAIAAJ&dq=isbn:0446370363&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=CQ0-AQAAIAAJ&dq=isbn:0446370363&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Lucy_the_Beginnings_of_Humankind.html?hl=&id=CQ0-AQAAIAAJ"
+}

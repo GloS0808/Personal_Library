@@ -1,0 +1,44 @@
+{
+    "title": "The Eyes of the Dragon",
+    "subtitle": "A Novel",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Gallery Books",
+    "publishedDate": "2018-01-09",
+    "description": "\u201cIt is just not possible to stop turning the pages\u201d (The Washington Post) of this bestselling classic tale\u2014an epic fantasy as only Stephen King could envision it. \u201cOnce, in a kingdom called Delain, there was a king with two sons\u2026.\u201d Thus begins one of the most unique tales that master storyteller Stephen King has ever written\u2014a sprawling fantasy of dark magic and the struggle for absolute power that utterly transforms the destinies of two brothers born into royalty. Through this enthralling masterpiece of mythical adventure, intrigue, and terror, you will thrill to this unforgettable narrative filled with relentless, wicked enchantment, and the most terrible of secrets\u2026.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1501192205"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781501192203"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=4XkotAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=4XkotAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=4XkotAEACAAJ&dq=isbn:9781501192203&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=4XkotAEACAAJ&dq=isbn:9781501192203&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Eyes_of_the_Dragon.html?hl=&id=4XkotAEACAAJ"
+}

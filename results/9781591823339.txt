@@ -1,0 +1,40 @@
+{
+    "title": "Gravitation",
+    "authors": [
+        "Maki Murakami"
+    ],
+    "publisher": "TokyoPop",
+    "publishedDate": "2003-08-05",
+    "description": "Determined to become a rock star, Shuichi Shindou is discouraged by some harsh criticism he receives, and must find the strength to overcome his fears and keep trying.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1591823331"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781591823339"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 200,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "comicsContent": true,
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=QOsNPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=QOsNPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=QOsNPwAACAAJ&dq=isbn:9781591823339&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=QOsNPwAACAAJ&dq=isbn:9781591823339&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Gravitation.html?hl=&id=QOsNPwAACAAJ"
+}

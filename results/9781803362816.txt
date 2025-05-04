@@ -1,0 +1,43 @@
+{
+    "title": "The Unofficial Zelda Cookbook",
+    "authors": [
+        "Thibaud Villanova"
+    ],
+    "publisher": "National Geographic Books",
+    "publishedDate": "2022-11-15",
+    "description": "Explore the culinary universe of The Legend of Zelda with over 50 delicious recipes from across the Kingdom of Hyrule! This immersive and sumptuous cookbook samples the culinary delights of all your favorite Legend of Zelda games. Designed as a travel notebook, it tells the journey of a new character: the Gourmet, and delivers numerous recipes inspired from games like Breath of the Wild, Ocarina of Time, Twilight Princess, Wind Waker, and more. Following the previous Gastronogeek books, the Zelda Cookbook offers in-depth recipes, techniques and cooking tips, all explained and made accessible to professionals as well as complete beginners, to help readers discover or rediscover the culinary universe of The Legend of Zelda.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781803362816"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1803362812"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Cooking"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tgOREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tgOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=tgOREAAAQBAJ&dq=isbn:9781803362816&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=tgOREAAAQBAJ&dq=isbn:9781803362816&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Unofficial_Zelda_Cookbook.html?hl=&id=tgOREAAAQBAJ"
+}

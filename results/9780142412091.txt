@@ -1,0 +1,39 @@
+{
+    "title": "Seeing Redd",
+    "authors": [
+        "Frank Beddor"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2008-10-16",
+    "description": "When Alyss Heart returns to her rightful place on the throne of Wonderland, she is put to the test as enemies, both inside and outside the borders of her queendom, push their own agendas and wield horrific weapons, while she strives to unify them all. Reprint.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0142412090"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780142412091"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 371,
+    "printType": "BOOK",
+    "categories": [
+        "Juvenile Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=T9_BNAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=T9_BNAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=T9_BNAEACAAJ&dq=isbn:9780142412091&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=T9_BNAEACAAJ&dq=isbn:9780142412091&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Seeing_Redd.html?hl=&id=T9_BNAEACAAJ"
+}

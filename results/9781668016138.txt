@@ -1,0 +1,43 @@
+{
+    "title": "Holly",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Simon and Schuster",
+    "publishedDate": "2023-09-05",
+    "description": "When Penny Dahl calls the Finders Keepers detective agency hoping for help locating her missing daughter, Holly is reluctant to accept the case. Her partner, Pete, has Covid. Her mother has just died. And Holly is meant to be on leave. But something in Penny Dahl's desperate voice makes it impossible for Holly to turn her down",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781668016138"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1668016133"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 464,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=cuPPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=cuPPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=cuPPEAAAQBAJ&printsec=frontcover&dq=isbn:9781668016138&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=cuPPEAAAQBAJ&dq=isbn:9781668016138&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Holly.html?hl=&id=cuPPEAAAQBAJ"
+}

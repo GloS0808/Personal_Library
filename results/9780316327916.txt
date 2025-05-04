@@ -1,0 +1,44 @@
+{
+    "title": "I Am Malala",
+    "subtitle": "How One Girl Stood Up for Education and Changed the World (Young Readers Edition)",
+    "authors": [
+        "Malala Yousafzai"
+    ],
+    "publisher": "Little, Brown Books for Young Readers",
+    "publishedDate": "2016-06-14",
+    "description": "The bestselling memoir by Nobel Peace Prize winner Malala Yousafzai, now in paperback with a new epilogue! I Am Malala. This is my story. Malala Yousafzai was only ten years old when the Taliban took control of her region. They said music was a crime. They said women weren't allowed to go to the market. They said girls couldn't go to school. Raised in a once-peaceful area of Pakistan transformed by terrorism, Malala was taught to stand up for what she believes. So she fought for her right to be educated. And on October 9, 2012, she nearly lost her life for the cause: She was shot point-blank while riding the bus on her way home from school. No one expected her to survive. Now Malala is an international symbol of peaceful protest and the youngest ever Nobel Peace Prize winner. In this Young Readers Edition of her bestselling memoir, which has been reimagined specifically for a younger audience and includes exclusive photos and material, we hear firsthand the remarkable story of a girl who knew from a young age that she wanted to change the world -- and did. Malala's powerful story will open your eyes to another world and will make you believe in hope, truth, miracles and the possibility that one person -- one young person -- can inspire change in her community and beyond.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0316327913"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780316327916"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+        "Juvenile Nonfiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=brCErgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=brCErgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=brCErgEACAAJ&dq=isbn:9780316327916&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=brCErgEACAAJ&dq=isbn:9780316327916&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_Am_Malala.html?hl=&id=brCErgEACAAJ"
+}

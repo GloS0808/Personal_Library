@@ -1,0 +1,40 @@
+{
+    "title": "Seeking Stillness",
+    "subtitle": "And the Great Nothingness of the Cosmos",
+    "authors": [
+        "Anastacia Nutt"
+    ],
+    "publisher": "R J Stewart Books",
+    "publishedDate": "2015-04-30",
+    "description": "Seeking Stillness and the Great Nothingness of the Cosmos explores the true spiritual imperative behind Stillness from a Western Esoteric perspective, clarifying our understanding and enhancing our capacity to form an enduring relationship with these Cosmic mysteries. A sequence of direct methods is presented which allows us to acquire first hand experience of the qualities of Stillness",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0985600624"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780985600624"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 258,
+    "printType": "BOOK",
+    "categories": [
+        "Body, Mind & Spirit"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=adxErgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=adxErgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=adxErgEACAAJ&dq=isbn:9780985600624&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=adxErgEACAAJ&dq=isbn:9780985600624&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Seeking_Stillness.html?hl=&id=adxErgEACAAJ"
+}

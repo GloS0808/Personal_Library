@@ -1,0 +1,46 @@
+{
+    "title": "The War That Saved My Life",
+    "subtitle": "(Newbery Honor Award Winner)",
+    "authors": [
+        "Kimberly Brubaker Bradley"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2016-05-31",
+    "description": "*Newbery Honor book *Winner of the Schneider Family Book Award *Forbes 25 Top Historical Fiction Books Of All Time selection\ufeff This #1 New York Times bestseller is an exceptionally moving story of triumph against all odds set during World War II, from the acclaimed author of Fighting Words, and for fans of Fish in a Tree and Sarah, Plain and Tall. Ten-year-old Ada has never left her one-room apartment. Her mother is too humiliated by Ada\u2019s twisted foot to let her outside. So when her little brother Jamie is shipped out of London to escape the war, Ada doesn\u2019t waste a minute\u2014she sneaks out to join him. So begins a new adventure for Ada, and for Susan Smith, the woman who is forced to take the two kids in. As Ada teaches herself to ride a pony, learns to read, and watches for German spies, she begins to trust Susan\u2014and Susan begins to love Ada and Jamie. But in the end, will their bond be enough to hold them together through wartime? Or will Ada and her brother fall back into the cruel hands of their mother? \"Achingly lovely...Nuanced and emotionally acute.\"\u2014The Wall Street Journal \"Unforgettable...unflinching.\"\u2014Common Sense Media \"Touching...Emotionally charged.\" \u2014Forbes \u2605 \u201cBrisk and honest...Cause for celebration.\u201d \u2014Kirkus, starred review \u2605 \"Poignant.\"\u2014Publishers Weekly, starred review \u2605 \"Powerful.\"\u2014The Horn Book, starred review \"Affecting.\"\u2014Booklist \"Emotionally satisfying...[A] page-turner.\"\u2014BCCB \u201cExquisitely written...Heart-lifting.\u201d \u2014SLJ \"Astounding...This book is remarkable.\"\u2014Karen Cushman, author The Midwife's Apprentice \"Beautifully told.\"\u2014Patricia MacLachlan, author of Sarah, Plain and Tall \"I read this novel in two big gulps.\"\u2014Gary D. Schmidt, author of Okay for Now \"I love Ada's bold heart...Her story's riveting.\"\u2014Sheila Turnage, author of Three Times Lucky",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780147510488"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0147510481"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+        "Juvenile Fiction"
+    ],
+    "averageRating": 5,
+    "ratingsCount": 11,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.10.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Vx5hDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Vx5hDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=Vx5hDQAAQBAJ&printsec=frontcover&dq=isbn:9780147510488&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Vx5hDQAAQBAJ&dq=isbn:9780147510488&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_War_That_Saved_My_Life.html?hl=&id=Vx5hDQAAQBAJ"
+}

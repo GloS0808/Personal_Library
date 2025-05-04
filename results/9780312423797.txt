@@ -1,0 +1,46 @@
+{
+    "title": "Dry",
+    "subtitle": "A Memoir",
+    "authors": [
+        "Augusten Burroughs"
+    ],
+    "publisher": "Macmillan",
+    "publishedDate": "2003",
+    "description": "Augusten Burroughs describes his experiences working in advertising in Manhattan and chronicles his battle with alcoholism.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0312423799"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780312423797"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 324,
+    "printType": "BOOK",
+    "categories": [
+        "Advertising agencies"
+    ],
+    "averageRating": 4,
+    "ratingsCount": 10,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.10.10.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Gw8fNuT_UlUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Gw8fNuT_UlUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=Gw8fNuT_UlUC&printsec=frontcover&dq=isbn:9780312423797&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Gw8fNuT_UlUC&dq=isbn:9780312423797&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Dry.html?hl=&id=Gw8fNuT_UlUC"
+}

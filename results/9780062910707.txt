@@ -1,0 +1,43 @@
+{
+    "title": "The Cartographers",
+    "authors": [
+        "Peng Shepherd"
+    ],
+    "publisher": "William Morrow Paperbacks",
+    "publishedDate": "2023-03-21",
+    "description": "\"The Cartographers is one of those brilliant books you have to read twice.\" -- Washington Post \"There are echoes of Borges and Bradbury, Pynchon and Finian's Rainbow, but Ms. Shepherd's exhilarating and enjoyable work casts a magical glow all its own.\" -- Wall Street Journal From the critically acclaimed author of The Book of M, a highly imaginative thriller about a young woman who discovers that a strange map in her deceased father's belongings holds an incredible, deadly secret--one that will lead her on an extraordinary adventure and to the truth about her family's dark history. What is the purpose of a map? Nell Young's whole life and greatest passion is cartography. Her father, Dr. Daniel Young, is a legend in the field and Nell's personal hero. But she hasn't seen or spoken to him ever since he cruelly fired her and destroyed her reputation after an argument over an old, cheap gas station highway map. But when Dr. Young is found dead in his office at the New York Public Library, with the very same seemingly worthless map hidden in his desk, Nell can't resist investigating. To her surprise, she soon discovers that the map is incredibly valuable and exceedingly rare. In fact, she may now have the only copy left in existence...because a mysterious collector has been hunting down and destroying every last one--along with anyone who gets in the way. But why? To answer that question, Nell embarks on a dangerous journey to reveal a dark family secret and discovers the true power that lies in maps... Perfect for fans of Joe Hill and V. E. Schwab, The Cartographers is an ode to art and science, history and magic--a spectacularly imaginative, modern story about an ancient craft and places still undiscovered.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0062910701"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780062910707"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=ZFg6zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=ZFg6zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=ZFg6zwEACAAJ&dq=isbn:9780062910707&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=ZFg6zwEACAAJ&dq=isbn:9780062910707&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Cartographers.html?hl=&id=ZFg6zwEACAAJ"
+}

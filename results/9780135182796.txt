@@ -1,0 +1,43 @@
+{
+    "title": "SQL in 10 Minutes a Day, Sams Teach Yourself",
+    "authors": [
+        "Ben Forta"
+    ],
+    "publisher": "Sams Publishing",
+    "publishedDate": "2019-12-10",
+    "description": "Sams Teach Yourself SQL in 10 Minutes offers straightforward, practical answers when you need fast results. By working through the book's 22 lessons of 10 minutes or less, students will learn what they need to know to take advantage of the SQL language. Lessons cover IBM DB2, Microsoft SQL Server and SQL Server Express, MariaDB, MySQL, Oracle and Oracle express, PostgreSQL, and SQLite. Full-color code examples help you understand how SQL statements are structured Tips point out shortcuts and solutions Cautions help you avoid common pitfalls Notes explain additional concepts, and provide additional information 10 minutes is all students need to learn how to... Use the major SQL statements Construct complex SQL statements using multiple clauses and operators Retrieve, sort, and format database contents Pinpoint the data you need using a variety of filtering techniques Use aggregate functions to summarize data Join two or more related tables Insert, update, and delete data Create and alter database tables Work with views, stored procedures, and more",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0135182794"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780135182796"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=uLzXtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=uLzXtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=uLzXtAEACAAJ&dq=isbn:9780135182796&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=uLzXtAEACAAJ&dq=isbn:9780135182796&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/SQL_in_10_Minutes_a_Day_Sams_Teach_Yours.html?hl=&id=uLzXtAEACAAJ"
+}

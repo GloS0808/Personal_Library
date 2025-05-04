@@ -1,0 +1,41 @@
+{
+    "title": "I Take My Coffee Black",
+    "subtitle": "Reflections on Tupac, Musical Theater, Faith, and Being Black in America",
+    "authors": [
+        "Tyler Merritt"
+    ],
+    "publisher": "Worthy Books",
+    "publishedDate": "2023-04-04",
+    "description": "Tyler Merritt's video \"Before You Call the Cops\" has been viewed more than 60 million times. The viral video's main point--the more you know someone, the more empathy, understanding, and compassion you have for that person--is the springboard for this book. By sharing his highs and exposing his lows, Tyler welcomes us into his world, allowing us to get to know him and helping bridge the divides that seem to grow wider every day. In I Take My Coffee Black, Tyler tells hilarious stories from his own life as a black man in America. He talks about his multi-cultural childhood in Las Vegas that didn't necessarily prepare him for life in the South, his passion for rap music and musical theater, how Jesus barged in uninvited and changed his life forever (it all started with a Triple F.A.T. Goose jacket) and the shocking events that occurred after his video went viral that no one has heard. Throughout his stories, he also seamlessly weaves in lessons about privilege, the legacy of lynching and sharecropping, and why you don't cross black mamas, teaching readers about the history of encoded racism that still undergirds our society today. By turns witty, insightful, touching, and laugh-out-loud funny, I Take My Coffee Black not only paints a portrait of one man's experience of being Black in America, but also expresses the valuable connections we miss when we do not take the time to learn about others' lives and experiences. This book enlightens, illuminates, and entertains--ultimately building the kind of empathy that might just be the antidote against the racial injustice in our society.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1546029427"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781546029427"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1m3bzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1m3bzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=1m3bzgEACAAJ&dq=isbn:9781546029427&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=1m3bzgEACAAJ&dq=isbn:9781546029427&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_Take_My_Coffee_Black.html?hl=&id=1m3bzgEACAAJ"
+}

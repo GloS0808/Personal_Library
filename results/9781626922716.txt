@@ -1,0 +1,43 @@
+{
+    "title": "orange: The Complete Collection 2",
+    "authors": [
+        "Ichigo Takano"
+    ],
+    "publisher": "National Geographic Books",
+    "publishedDate": "2016-05-31",
+    "description": "EISNER-NOMINATED SERIES A highly-acclaimed shoujo manga about love and time travel! Everyone has regrets in life. So who wouldn't take the chance to change the past if given the opportunity? When sixteen-year-old Takamiya Naho receives a mysterious letter, claiming to be from her twenty-seven-year-old self, her life is suddenly thrown into flux. The letter informs her that a new transfer student by the name of Naruse Kakeru will be joining her class, and to keep her eye on him. What is Naho to make of the letter's contents and its cryptic warning?Orange: The Complete Collection 2 also includes a bonus story, Haruiro Astronaut. This five chapter story is about a pair of twins who discover that they can't share everything in life - or at least not an alien that suddenly becomes a part of it. Seven Seas released orange: The Complete Collection 1 and orange: The Complete Collection 2 as separate 384-page omnibus editions. Each omnibus collection contains wrap-around covers, color inserts, and captivating shoujo-style artwork.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781626922716"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1626922713"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=g32QEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=g32QEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=g32QEAAAQBAJ&dq=isbn:9781626922716&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=g32QEAAAQBAJ&dq=isbn:9781626922716&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/orange_The_Complete_Collection_2.html?hl=&id=g32QEAAAQBAJ"
+}

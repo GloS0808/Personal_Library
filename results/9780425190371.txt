@@ -1,0 +1,44 @@
+{
+    "title": "Practical Magic",
+    "subtitle": "25th Anniversary Edition",
+    "authors": [
+        "Alice Hoffman"
+    ],
+    "publisher": "National Geographic Books",
+    "publishedDate": "2003-08-05",
+    "description": "*25th Anniversary Edition*\u2014with an Introduction by the Author! The Owens sisters confront the challenges of life and love in this bewitching novel from the New York Times bestselling author of The Rules of Magic, Magic Lessons, and The Book of Magic. For more than two hundred years, the Owens women have been blamed for everything that has gone wrong in their Massachusetts town. Gillian and Sally have endured that fate as well: as children, the sisters were forever outsiders, taunted, talked about, pointed at. Their elderly aunts almost seemed to encourage the whispers of witchery, with their musty house and their exotic concoctions and their crowd of black cats. But all Gillian and Sally wanted was to escape. One will do so by marrying, the other by running away. But the bonds they share will bring them back\u2014almost as if by magic... \u201cSplendid...Practical Magic is one of [Hoffman's] best novels, showing on every page her gift for touching ordinary life as if with a wand, to reveal how extraordinary life really is.\u201d\u2014Newsweek \u201c[A] delicious fantasy of witchcraft and love in a world where gardens smell of lemon verbena and happy endings are possible.\u201d\u2014Cosmopolitan",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780425190371"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0425190374"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=koCNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=koCNEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=koCNEAAAQBAJ&dq=isbn:9780425190371&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=koCNEAAAQBAJ&dq=isbn:9780425190371&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Practical_Magic.html?hl=&id=koCNEAAAQBAJ"
+}

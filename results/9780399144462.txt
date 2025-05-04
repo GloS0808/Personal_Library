@@ -1,0 +1,39 @@
+{
+    "title": "Who Moved My Cheese?",
+    "subtitle": "An Amazing Way to Deal with Change in Your Work and in Your Life",
+    "authors": [
+        "Spencer Johnson"
+    ],
+    "publishedDate": "1998",
+    "description": "A parable that teaches lessons about change and how to deal with it.",
+    "industryIdentifiers": [
+        {
+            "type": "OTHER",
+            "identifier": "PSU:000065179680"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 104,
+    "printType": "BOOK",
+    "categories": [
+        "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=APNWAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=APNWAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=APNWAAAAYAAJ&dq=isbn:9780399144462&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=APNWAAAAYAAJ&dq=isbn:9780399144462&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Who_Moved_My_Cheese.html?hl=&id=APNWAAAAYAAJ"
+}

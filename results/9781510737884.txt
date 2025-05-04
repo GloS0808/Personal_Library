@@ -1,0 +1,44 @@
+{
+    "title": "FantasticLand",
+    "subtitle": "A Novel",
+    "authors": [
+        "Mike Bockoven"
+    ],
+    "publisher": "Skyhorse",
+    "publishedDate": "2018-11-20",
+    "description": "A modern take on Lord of the Flies meets Battle Royale that probes the consequences of a social civilization built online. Since the 1970s, FantasticLand has been the theme park where \u201cFun is Guaranteed!\u201d But when a hurricane ravages the Florida coast and isolates the park, the employees find it anything but fun. Five weeks later, the authorities who rescue the survivors encounter a scene of horror. Photos soon emerge online of heads on spikes outside of rides and viscera and human bones littering the gift shops, breaking records for hits, views, likes, clicks, and shares. How could a group of survivors, mostly teenagers, commit such terrible acts? Presented as a fact-finding investigation and a series of first-person interviews, FantasticLand pieces together the grisly series of events. Park policy was that the mostly college-aged employees surrender their electronic devices to preserve the authenticity of the FantasticLand experience. Cut off from the world and left on their own, the teenagers soon form rival tribes who viciously compete for food, medicine, social dominance, and even human flesh. This new social network divides the ravaged dreamland into territories ruled by the Pirates, the ShopGirls, the Freaks, and the Mole People. If meticulously curated online personas can replace private identities, what takes over when those constructs are lost?",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "151073788X"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781510737884"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 304,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=jGSiswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=jGSiswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=jGSiswEACAAJ&dq=isbn:9781510737884&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=jGSiswEACAAJ&dq=isbn:9781510737884&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/FantasticLand.html?hl=&id=jGSiswEACAAJ"
+}

@@ -1,0 +1,43 @@
+{
+    "title": "Autumn",
+    "authors": [
+        "David Moody"
+    ],
+    "publisher": "St. Martin's Griffin",
+    "publishedDate": "2010-10-26",
+    "description": "A bastard hybrid of War of the Worlds and Night of the Living Dead, Autumn chronicles the struggle of a small group of survivors forced to contend with a world torn apart by a deadly disease. After 99% of the population of the planet is killed in less than 24 hours, for the very few who have managed to stay alive, things are about to get much worse. Animated by \"phase two\" of some unknown contagion, the dead begin to rise. At first slow, blind, dumb and lumbering, quickly the bodies regain their most basic senses and abilities... sight, hearing, locomotion... As well as the instinct toward aggression and violence. Held back only by the restraints of their rapidly decomposing flesh, the dead seem to have only one single goal - to lumber forth and destroy the sole remaining attraction in the silent, lifeless world: those who have survived the plague, who now find themselves outnumbered 1,000,000 to 1... Without ever using the 'Z' word, Autumn offers a new perspective on the traditional zombie story. There's no flesh eating, no fast-moving corpses, no gore for gore's sake. Combining the atmosphere and tone of George Romero's classic living dead films with the attitude and awareness of 28 Days (and Weeks) later, this horrifying and suspenseful novel is filled with relentless cold, dark fear.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "031256998X"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780312569983"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 320,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=c2vvAQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=c2vvAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=c2vvAQAACAAJ&dq=isbn:9780312569983&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=c2vvAQAACAAJ&dq=isbn:9780312569983&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Autumn.html?hl=&id=c2vvAQAACAAJ"
+}

@@ -1,0 +1,44 @@
+{
+    "title": "As Old as Time",
+    "subtitle": "A Twisted Tale",
+    "authors": [
+        "Liz Braswell"
+    ],
+    "publisher": "Disney-Hyperion",
+    "publishedDate": "2018-03-06",
+    "description": "What if Belle's mother cursed the Beast? As Old as Time is the third book in the hit YA line that reimagines classic Disney stories in surprising new ways. When Belle touches the Beast's enchanted rose, memories flood through Belle's mind-memories of a mother she thought she would never see again. And, stranger still, she sees that her beautiful mother is none other than the enchantress who cursed the castle and all its inhabitants. Shocked and confused, Belle and the Beast will have to unravel a dark mystery about their families that is 21 years in the making.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1484707311"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781484707319"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Young Adult Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=oNgivgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=oNgivgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=oNgivgAACAAJ&dq=isbn:9781484707319&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=oNgivgAACAAJ&dq=isbn:9781484707319&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/As_Old_as_Time.html?hl=&id=oNgivgAACAAJ"
+}

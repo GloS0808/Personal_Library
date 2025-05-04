@@ -1,0 +1,44 @@
+{
+    "title": "Timeline",
+    "subtitle": "A Novel",
+    "authors": [
+        "Michael Crichton"
+    ],
+    "publisher": "Ballantine Books",
+    "publishedDate": "2013-01-01",
+    "description": "In this thriller from the author of Jurassic Park, Sphere, and Congo, a group of young scientists travel back in time to medieval France on a daring rescue mission that becomes a struggle to stay alive. #1 NEW YORK TIMES BESTSELLER \u201cCompulsive reading . . . brilliantly imagined.\u201d\u2014Los Angeles Times In an Arizona desert, a man wanders in a daze, speaking words that make no sense. Within twenty-four hours he is dead, his body swiftly cremated by his only known associates. Halfway around the world, archaeologists make a shocking discovery at a medieval site. Suddenly they are swept off to the headquarters of a secretive multinational corporation that has developed an astounding technology. Now this group is about to get a chance not to study the past but to enter it. And with history opened up to the present, the dead awakened to the living, these men and women will soon find themselves fighting for their very survival\u2014six hundred years ago. \u201cExciting . . . classic adventure . . . [a] swashbuckling novel . . . Crichton delivers.\u201d\u2014USA Today \u201cMore screams per page . . . than Jurassic Park and The Lost World combined . . . The pace will leave many breathlessly grasping for oxygen masks.\u201d\u2014The San Diego Union-Tribune \u201cOne of his best . . . [a] nonstop roller coaster of a novel.\u201d\u2014The Philadelphia Inquirer",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780345539014"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "034553901X"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 498,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.5.0.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=UQL2n6NrQ_MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=UQL2n6NrQ_MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=UQL2n6NrQ_MC&printsec=frontcover&dq=isbn:9780345539014&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=UQL2n6NrQ_MC&dq=isbn:9780345539014&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Timeline.html?hl=&id=UQL2n6NrQ_MC"
+}

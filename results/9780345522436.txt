@@ -1,0 +1,44 @@
+{
+    "title": "I Am Here!",
+    "subtitle": "Vol. 1",
+    "authors": [
+        "Ema Toyama"
+    ],
+    "publisher": "Del Rey",
+    "publishedDate": "2010",
+    "description": "A SUNFLOWER IN THE SHADE Invisible to her classmates, Hikage Sumino is an eighth grader with no self-esteem. Her only friends are the visitors to her Internet blog. One day, the most popular boy in the grade suddenly talks to her. Encouraged by this twist of fate, Hikage determines to transform her life. Includes special extras after the story!",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0345522435"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780345522436"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Cartoons and comics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=0PDbQgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=0PDbQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=0PDbQgAACAAJ&dq=isbn:9780345522436&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=0PDbQgAACAAJ&dq=isbn:9780345522436&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_Am_Here.html?hl=&id=0PDbQgAACAAJ"
+}

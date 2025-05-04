@@ -1,0 +1,44 @@
+{
+    "title": "The Women of Troy",
+    "subtitle": "A Novel",
+    "authors": [
+        "Pat Barker"
+    ],
+    "publisher": "Vintage",
+    "publishedDate": "2022-09-06",
+    "description": "A daring and timely feminist retelling of The Iliad from the perspective of the women of Troy who endured it\u2014an extraordinary follow up to The Silence of the Girls from the Booker Prize-winning author of The Regeneration Trilogy and \u201cone of contemporary literature\u2019s most thoughtful and compelling writers\" (The Washington Post). Troy has fallen and the victorious Greeks are eager to return home with the spoils of an endless war\u2014including the women of Troy themselves. They await a fair wind for the Aegean. It does not come, because the gods are offended. The body of King Priam lies unburied and desecrated, and so the victors remain in suspension, camped in the shadows of the city they destroyed as the coalition that held them together begins to unravel. Old feuds resurface and new suspicions and rivalries begin to fester. Largely unnoticed by her captors, the one time Trojan queen Briseis, formerly Achilles's slave, now belonging to his companion Alcimus, quietly takes in these developments. She forges alliances when she can, with Priam's aged wife the defiant Hecuba and with the disgraced soothsayer Calchas, all the while shrewdly seeking her path to revenge.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780593311325"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0593311329"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 305,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=c0OAEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=c0OAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=c0OAEAAAQBAJ&printsec=frontcover&dq=isbn:9780593311325&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=c0OAEAAAQBAJ&dq=isbn:9780593311325&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Women_of_Troy.html?hl=&id=c0OAEAAAQBAJ"
+}

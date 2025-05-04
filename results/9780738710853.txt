@@ -1,0 +1,43 @@
+{
+    "title": "White Spells for Protection",
+    "authors": [
+        "Ileana Abrev"
+    ],
+    "publisher": "White Spells",
+    "publishedDate": "2007",
+    "description": "Nasty gossip, raging bosses, a nit-picky mother-in-law . . . we''ve all experienced our share of negative energy. Why not try a little magic to protect yourself, your home, and your loved ones? This beginner''s spellbook introduces defense magic and offers three levels of spells depending on your needs. There are simple \"quick fix\" spells-such as protecting your children with tiger-eye crystals and guarding your finances with fresh basil. And there are also powerful rituals for shielding yourself from strong negative forces, curses, and hexes. Each spell is safe and ethical, and the magical tools you''ll need-candles, essential oils, herbs, and the like-are easy to find. This adorable yet dynamic spellbook also includes spells to break self-inflicted curses responsible for depression, overeating, guilt, envy, fear, and more.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "0738710857"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9780738710853"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Body, Mind & Spirit"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=zrsNmQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=zrsNmQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=zrsNmQEACAAJ&dq=isbn:9780738710853&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=zrsNmQEACAAJ&dq=isbn:9780738710853&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/White_Spells_for_Protection.html?hl=&id=zrsNmQEACAAJ"
+}

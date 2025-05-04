@@ -1,0 +1,43 @@
+{
+    "title": "The Final Girl Support Group",
+    "authors": [
+        "Grady Hendrix"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2022-06-14",
+    "description": "THE INSTANT NEW YORK TIMES BESTSELLER VOTED GOODREADS CHOICE AWARD BEST HORROR NOVEL OF 2021 A Good Morning America Buzz Pick \u201cThe horror master\u2026puts his unique spin on slasher movie tropes.\u201d-USA Today A can't-miss summer read, selected by The New York Times, Oprah Daily, Time, USA Today, The Philadelphia Inquirer, CNN, LitHub, BookRiot, Bustle, Popsugar and the New York Public Library In horror movies, the final girls are the ones left standing when the credits roll. They made it through the worst night of their lives\u2026but what happens after? Like his bestselling novel The Southern Book Club\u2019s Guide to Slaying Vampires, Grady Hendrix\u2019s latest is a fast-paced, frightening, and wickedly humorous thriller. From chain saws to summer camp slayers, The Final Girl Support Group pays tribute to and slyly subverts our most popular horror films\u2014movies like The Texas Chainsaw Massacre, A Nightmare on Elm Street, and Scream. Lynnette Tarkington is a real-life final girl who survived a massacre. For more than a decade, she\u2019s been meeting with five other final girls and their therapist in a support group for those who survived the unthinkable, working to put their lives back together. Then one woman misses a meeting, and their worst fears are realized\u2014someone knows about the group and is determined to rip their lives apart again, piece by piece. But the thing about final girls is that no matter how bad the odds, how dark the night, how sharp the knife, they will never, ever give up.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780593201244"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0593201248"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 353,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.5.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=zPVvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=zPVvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=zPVvEAAAQBAJ&printsec=frontcover&dq=isbn:9780593201244&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=zPVvEAAAQBAJ&dq=isbn:9780593201244&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Final_Girl_Support_Group.html?hl=&id=zPVvEAAAQBAJ"
+}

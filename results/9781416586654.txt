@@ -1,0 +1,44 @@
+{
+    "title": "Just After Sunset",
+    "subtitle": "Stories",
+    "authors": [
+        "Stephen King"
+    ],
+    "publisher": "Pocket Books",
+    "publishedDate": "2009-09-22",
+    "description": "The classic short story collection from the #1 New York Times bestselling author. \"The mind gets up to funny tricks, doesn't it? Shadows grow faces.\" A book salesman with a grievance picks up a mute hitchhiker, not knowing the silent man in the passenger seat listens altogether too well...An exercise routine on a stationary bicycle takes its rider on a captivating\u2014and then terrifying\u2014journey...A blind girl works a miracle with a kiss and the touch of her hand...A psychiatric patient's irrational thinking might create an apocalyptic threat in the Maine countryside or keep the world from falling victim to it. Stories include: -Willa -The Gingerbread Girl -Harvey's Dream -Rest Stop -Stationary Bike -The Things They Left Behind -Graduation Afternoon -N. -The Cat from Hell -The New York Times at Special Bargain Rates -Mute -Ayana -A Very Tight Place These are just some of the tales to be found in the #1 bestselling collection Just After Sunset. Call it dusk or call it twilight, it's a time when human intercourse takes on an unnatural cast, when the imagination begins to reach for shadows as they dissipate to darkness and the living daylights can be scared right out of you. It's the perfect time for master storyteller Stephen King.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1416586652"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781416586654"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 576,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=qUmBlAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=qUmBlAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=qUmBlAEACAAJ&dq=isbn:9781416586654&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=qUmBlAEACAAJ&dq=isbn:9781416586654&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Just_After_Sunset.html?hl=&id=qUmBlAEACAAJ"
+}

@@ -1,0 +1,44 @@
+{
+    "title": "I Was Told to Come Alone",
+    "subtitle": "My Journey Behind the Lines of Jihad",
+    "authors": [
+        "Souad Mekhennet"
+    ],
+    "publisher": "Henry Holt",
+    "publishedDate": "2017-06-13",
+    "description": "\"The journalist who broke the \"Jihadi John\" story draws on her personal experience to bridge the gap between the Muslim world and the West and explain the rise of Islamic radicalism Souad Mekhennet has lived her entire life between worlds. The daughter of a Turkish mother and a Moroccan father, she was born and educated in Germany and has worked for several American newspapers. Since the 9/11 attacks she has reported stories among the most dangerous members of her religion; when she is told to come alone to an interview, she never knows what awaits at her destination. In this compelling and evocative book, Mekhennet seeks to answer the question, \"What is in the minds of these young jihadists, and how can we understand and defuse it?\" She has unique and exclusive access into the world of jihad and sometimes her reporting has put her life in danger. We accompany her from Germany to the heart of the Muslim world -- from the Middle East to North Africa, from Sunni Pakistan to Shia Iran, and the Turkish/ Syrian border region where ISIS is a daily presence. She then returns to Europe, first in London, where she uncovers the identity of the notorious ISIS executioner \"Jihadi John,\" and then in Paris and Brussels, where terror has come to the heart of Western civilization. Too often we find ourselves unable to see the human stories behind the headlines, and so Mekhennet - with a foot in many different camps - is the ideal guide to take us where no Western reporter can go. Her story is a journey that changes her life and will have a deep impact on us as well\"--",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9781627798976"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "1627798978"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 368,
+    "printType": "BOOK",
+    "categories": [
+        "Biography & Autobiography"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=QNUnDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=QNUnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=QNUnDwAAQBAJ&printsec=frontcover&dq=isbn:9781627798976&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=QNUnDwAAQBAJ&dq=isbn:9781627798976&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/I_Was_Told_to_Come_Alone.html?hl=&id=QNUnDwAAQBAJ"
+}

@@ -1,0 +1,36 @@
+{
+    "title": "The Poetry of Robert Frost",
+    "subtitle": "The Collected Poems, Complete and Unabridged",
+    "authors": [
+        "Robert Frost"
+    ],
+    "publisher": "Jonathan Cape",
+    "publishedDate": "1969-11-15",
+    "description": "This is the only comprehensive volume of Frost's published verse. These pages comprise the entire contents of his eleven books of poetry, from A Boy's Will (1913) to In the Clearing (1962). Book jacket.",
+    "industryIdentifiers": [
+        {
+            "type": "OTHER",
+            "identifier": "UVA:X000132244"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 662,
+    "printType": "BOOK",
+    "categories": [
+        "Poetry"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=lo4rAAAAYAAJ&dq=isbn:0030725356&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=lo4rAAAAYAAJ&dq=isbn:0030725356&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Poetry_of_Robert_Frost.html?hl=&id=lo4rAAAAYAAJ"
+}

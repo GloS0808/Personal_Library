@@ -1,0 +1,43 @@
+{
+    "title": "The Hunger",
+    "authors": [
+        "Alma Katsu"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2019-03-05",
+    "description": "\"Deeply, deeply disturbing, hard to put down, not recommended reading after dark.\" --Stephen King A tense and gripping reimagining of one of America's most haunting human disasters: the Donner Party with a supernatural twist. Evil is invisible, and it is everywhere. That is the only way to explain the series of misfortunes that have plagued the wagon train known as the Donner Party. Depleted rations, bitter quarrels, and the mysterious death of a little boy have driven the isolated travelers to the brink of madness. Though they dream of what awaits them in the West, long-buried secrets begin to emerge, and dissent among them escalates to the point of murder and chaos, unknowingly propelling them into one of the deadliest and most disastrous Western adventures in American history. As members of the group begin to disappear, the survivors start to wonder if there really is something disturbing, and hungry, waiting for them in the mountains...and whether the evil that has unfolded around them may have in fact been growing within them all along. Effortlessly combining the supernatural and the historical, The Hunger is an eerie, thrilling look at the volatility of human nature, pushed to its breaking point.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780735212534"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0735212538"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 417,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.2.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VcCGDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VcCGDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=VcCGDwAAQBAJ&printsec=frontcover&dq=isbn:9780735212534&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=VcCGDwAAQBAJ&dq=isbn:9780735212534&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Hunger.html?hl=&id=VcCGDwAAQBAJ"
+}

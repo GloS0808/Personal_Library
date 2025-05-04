@@ -1,0 +1,41 @@
+{
+    "title": "Autumn",
+    "subtitle": "The City",
+    "authors": [
+        "David Moody"
+    ],
+    "publishedDate": "2005-01-01",
+    "description": "Everything that means anything to you is taken away in seconds. No warning. No explanation. Nothing. AUTUMN: THE CITY is the first sequel to the acclaimed horror novel AUTUMN (now available as a free download from www.theinfected.co.uk). A virulent disease rips across the face of the planet, killing billions of people in less than twenty-four hours. A small group of survivors cower in fear in the desolate remains of a silent city. As the full extent of the devastation caused by the disease is revealed the desperate people fight to keep thousands upon thousands of plague victims at bay and to continue to survive from day to day. They fight to stay alive. The unexpected appearance of a company of soldiers again threatens the survivor's fragile existence. Do they trust this sudden military presence? Will the military bring them hope and answers, or just more fear, pain and destruction? Far more than an ordinary sequel, AUTUMN: THE CITY expands on the nightmare of the first novel and takes the reader closer to discovering what caused the death of billions of people on a single inauspicious September day.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780955005114"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0955005116"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 280,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "averageRating": 4,
+    "ratingsCount": 6,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.0",
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=atWkurlMUHUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=atWkurlMUHUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=atWkurlMUHUC&dq=isbn:9780955005114&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=atWkurlMUHUC&dq=isbn:9780955005114&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Autumn.html?hl=&id=atWkurlMUHUC"
+}

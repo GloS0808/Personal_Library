@@ -1,0 +1,44 @@
+{
+    "title": "Fruits Basket",
+    "authors": [
+        "Natsuki Takaya"
+    ],
+    "publisher": "TokyoPop",
+    "publishedDate": "2004-02-10",
+    "description": "Tohru Honda was an orphan with no place to go until the mysterious Sohma family offered her a place to call home. Now her ordinary high school life is turned upside down as she's introduced to the Sohma's world of magical curses and family secrets.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_10",
+            "identifier": "1591826039"
+        },
+        {
+            "type": "ISBN_13",
+            "identifier": "9781591826033"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 216,
+    "printType": "BOOK",
+    "categories": [
+        "Comics & Graphic Novels"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "comicsContent": true,
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=3ZlptQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=3ZlptQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=3ZlptQEACAAJ&dq=isbn:9781591826033&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=3ZlptQEACAAJ&dq=isbn:9781591826033&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Fruits_Basket.html?hl=&id=3ZlptQEACAAJ"
+}

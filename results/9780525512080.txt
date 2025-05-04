@@ -1,0 +1,44 @@
+{
+    "title": "Lone Women",
+    "subtitle": "A Novel",
+    "authors": [
+        "Victor LaValle"
+    ],
+    "publisher": "One World",
+    "publishedDate": "2023-03-28",
+    "description": "NATIONAL BESTSELLER \u2022 Blue skies, empty land\u2014and enough wide-open space to hide a horrifying secret. A woman with a past, a mysterious trunk, a town on the edge of nowhere, and an \u201cabsorbing, powerful\u201d (BuzzFeed) new vision of the American West, from the award-winning author of The Changeling. \u201cPropulsive . . . LaValle combines chills with deep insights into our country\u2019s divides.\u201d\u2014Los Angeles Times ONE OF BOOKPAGE'S TEN BEST BOOKS OF THE YEAR \u2022 FINALIST FOR THE LOS ANGELES TIMES BOOK PRIZE AND LOCUS AWARD \u2022 LONGLISTED FOR THE MARK TWAIN AMERICAN VOICE IN LITERATURE AWARD A BEST BOOK OF THE YEAR: The New York Times Book Review, Time, NPR, Chicago Tribune, Los Angeles Times, The Washington Post, Esquire, Vulture, Paste, Tordotcom, Book Riot, Polygon, Chicago Public Library, Kirkus Reviews, Library Journal Adelaide Henry carries an enormous steamer trunk with her wherever she goes. It\u2019s locked at all times. Because when the trunk opens, people around Adelaide start to disappear. The year is 1915, and Adelaide is in trouble. Her secret sin killed her parents, forcing her to flee California in a hellfire rush and make her way to Montana as a homesteader. Dragging the trunk with her at every stop, she will become one of the \u201clone women\u201d taking advantage of the government\u2019s offer of free land for those who can tame it\u2014except that Adelaide isn\u2019t alone. And the secret she\u2019s tried so desperately to lock away might be the only thing that will help her survive the harsh territory. Crafted by a modern master of magical suspense, Lone Women blends shimmering prose, an unforgettable cast of adventurers who find horror and sisterhood in a brutal landscape, and a portrait of early-twentieth-century America like you\u2019ve never seen. And at its heart is the gripping story of a woman desperate to bury her past\u2014or redeem it.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780525512080"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "052551208X"
+        }
+    ],
+    "readingModes": {
+        "text": false,
+        "image": false
+    },
+    "pageCount": 305,
+    "printType": "BOOK",
+    "categories": [
+        "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.1.0.preview.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1it-EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1it-EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=1it-EAAAQBAJ&printsec=frontcover&dq=isbn:9780525512080&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=1it-EAAAQBAJ&dq=isbn:9780525512080&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Lone_Women.html?hl=&id=1it-EAAAQBAJ"
+}

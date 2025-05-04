@@ -1,0 +1,44 @@
+{
+    "title": "The Bone Woman",
+    "subtitle": "A Forensic Anthropologist's Search for Truth in the Mass Graves of Rwanda, Bosnia, Croatia, and Kosovo",
+    "authors": [
+        "Clea Koff"
+    ],
+    "publisher": "National Geographic Books",
+    "publishedDate": "2005-02-08",
+    "description": "In 1994, Rwanda was the scene of the first acts since World War II to be legally defined as genocide. Two years later, Clea Koff, a twenty-three-year-old forensic anthropologist, left the safe confines of a lab in Berkeley, California, to serve as one of sixteen scientists chosen by the United Nations to unearth the physical evidence of the Rwandan genocide. Over the next four years, Koff\u2019s grueling investigations took her across geography synonymous with some of the worst crimes of the twentieth century. The Bone Woman is Koff\u2019s unflinching, riveting account of her seven UN missions to Bosnia, Croatia, Kosovo, and Rwanda, as she shares what she saw, how it affected her, who was prosecuted based on evidence she found, and what she learned about the world. Yet even as she recounts the hellish nature of her work and the heartbreak of the survivors, she imbues her story with purpose, humanity, and a sense of justice. A tale of science in service of human rights, The Bone Woman is, even more profoundly, a story of hope and enduring moral principles.",
+    "industryIdentifiers": [
+        {
+            "type": "ISBN_13",
+            "identifier": "9780812968859"
+        },
+        {
+            "type": "ISBN_10",
+            "identifier": "0812968859"
+        }
+    ],
+    "readingModes": {
+        "text": true,
+        "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+        "Social Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+    },
+    "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=WyOPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=WyOPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=WyOPEAAAQBAJ&dq=isbn:9780812968859&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=WyOPEAAAQBAJ&dq=isbn:9780812968859&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Bone_Woman.html?hl=&id=WyOPEAAAQBAJ"
+}
