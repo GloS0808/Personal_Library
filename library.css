@@ -1,0 +1,544 @@
+/* Improved table styling */
+
+table {
+
+    width: 95%;
+
+    margin: 20px auto;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    background-color: #fffaf0;
+
+    border: 2px solid #8b4513;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+th, td {
+
+    padding: 12px 15px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+
+th {
+
+    background-color: #8b4513;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+tr:nth-child(even) {
+
+    background-color: #f9f5eb;
+
+}
+
+
+tr:hover {
+
+    background-color: #f0e6d2;
+
+}
+
+
+/* Improved header styling */
+
+h1, h2 {
+
+    font-family: 'Garamond', serif;
+
+    color: #5a3921;
+
+    text-align: center;
+
+    margin: 20px 0;
+
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+
+}
+
+
+h1 {
+
+    font-size: 2.5em;
+
+    border-bottom: 2px solid #8b4513;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 30px;
+
+}
+
+
+h2 {
+
+    font-size: 1.8em;
+
+    margin-top: 40px;
+
+}
+
+
+/* Input forms container - side by side */
+
+.input-forms-container {
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    margin: 30px auto;
+
+    max-width: 1000px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* ISBN Form styling */
+
+.isbn-form {
+
+    background-color: #fffaf0;
+
+    padding: 25px;
+
+    border: 2px solid #8b4513;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    flex: 1;
+
+    min-width: 300px;
+
+}
+
+
+.isbn-form label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+    color: #5a3921;
+
+}
+
+
+.isbn-form input[type="text"] {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #b8860b;
+
+    border-radius: 4px;
+
+    font-size: 1em;
+
+    margin-bottom: 15px;
+
+    box-sizing: border-box;
+
+}
+
+
+.isbn-form input[type="submit"] {
+
+    width: 100%;
+
+    background-color: #a0522d;
+
+    color: white;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 1em;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+.isbn-form input[type="submit"]:hover {
+
+    background-color: #8b4513;
+
+}
+
+
+/* Search Form styling */
+
+.search-form {
+
+    background-color: #fffaf0;
+
+    padding: 25px;
+
+    border: 2px solid #8b4513;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    flex: 1;
+
+    min-width: 300px;
+
+}
+
+
+.search-form label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+    color: #5a3921;
+
+}
+
+
+.search-form input[type="text"] {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #b8860b;
+
+    border-radius: 4px;
+
+    font-size: 1em;
+
+    margin-bottom: 15px;
+
+    box-sizing: border-box;
+
+}
+
+
+.search-form button {
+
+    width: 100%;
+
+    background-color: #6b8e23;
+
+    color: white;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 1em;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+.search-form button:hover {
+
+    background-color: #556b2f;
+
+}
+
+
+/* Hidden row styling for search */
+
+.book-row.hidden {
+
+    display: none;
+
+}
+
+
+/* Better description cell */
+
+.description-cell {
+
+    max-width: 250px;
+
+    line-height: 1.5;
+
+}
+
+
+.description-text {
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 3;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    line-height: 1.5;
+
+}
+
+
+.description-text.expanded {
+
+    -webkit-line-clamp: unset;
+
+}
+
+
+.show-more-btn {
+
+    color: #8b4513;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+
+    padding: 0;
+
+    margin-top: 5px;
+
+    font-size: 0.9em;
+
+}
+
+
+/* Form improvements */
+
+.tracking-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.form-control {
+
+    padding: 8px;
+
+    border: 1px solid #b8860b;
+
+    border-radius: 4px;
+
+    font-family: 'Garamond', serif;
+
+}
+
+
+.submit-btn {
+
+    background-color: #a0522d;
+
+    color: white;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 1em;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+.submit-btn:hover {
+
+    background-color: #8b4513;
+
+}
+
+
+/* Message styling */
+
+.error-message {
+
+    color: #d9534f;
+
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: #f8d7da;
+
+    border: 1px solid #f5c6cb;
+
+    border-radius: 4px;
+
+    margin: 10px auto;
+
+    max-width: 80%;
+
+}
+
+
+.success-message {
+
+    color: #28a745;
+
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: #d4edda;
+
+    border: 1px solid #c3e6cb;
+
+    border-radius: 4px;
+
+    margin: 10px auto;
+
+    max-width: 80%;
+
+}
+
+
+.no-books {
+
+    text-align: center;
+
+    font-style: italic;
+
+    color: #6c757d;
+
+}
+
+
+/* Image improvements */
+
+.book-thumbnail {
+
+    max-height: 150px;
+
+    max-width: 100px;
+
+    object-fit: contain;
+
+    border: 1px solid #bc8f8f;
+
+    border-radius: 4px;
+
+}
+
+
+/* Pagination styling */
+
+.pagination {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 20px 0;
+
+    flex-wrap: wrap;
+
+}
+
+
+.pagination button {
+
+    background-color: #8b4513;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 16px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+.pagination button:hover {
+
+    background-color: #a0522d;
+
+}
+
+
+.pagination button.active {
+
+    background-color: #6b4423;
+
+    font-weight: bold;
+
+}
+
+
+.pagination button:disabled {
+
+    background-color: #ccc;
+
+    cursor: not-allowed;
+
+}

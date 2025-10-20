@@ -1,0 +1,111 @@
+body {
+    font-family: 'Garamond', serif;
+    background-color: #000000; /* Black background like the image */
+    color: #f5deb3; /* Light beige text (similar to the books) */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+h1 {
+    font-family: 'Garamond', serif;
+    color: #f5deb3; /* Beige color for headings too */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.8em;
+    letter-spacing: 2px; /* Slight spacing to match clean style */
+}
+
+form {
+    background-color: #111111; /* Very dark grey instead of pure white */
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    border: 1px solid #f5deb3; /* Beige border */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #f5deb3; /* Slight glowing effect */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #f5deb3;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #222222; /* Dark input background */
+    border: 1px solid #f5deb3;
+    border-radius: 5px;
+    color: #f5deb3;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #f5deb3;
+    color: #000000;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d2b48c; /* A little darker beige on hover */
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+a {
+    color: #f5deb3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d2b48c;
+    text-decoration: underline;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #111111;
+    border: 1px solid #f5deb3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #f5deb3;
+}
+
+table, th, td {
+    border: 1px solid #f5deb3;
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+    color: #f5deb3;
+}
+
+th {
+    background-color: #222222;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+img {
+    max-height: 150px;
+    border: 1px solid #f5deb3;
+    border-radius: 5px;
+    margin: 5px;
+}

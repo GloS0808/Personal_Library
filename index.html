@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Library</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='library.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="{{ url_for('static', filename='favicon2.jpg') }}" type="image/x-icon">
+    <script src="{{ url_for('static', filename='library.js') }}"></script>
+</head>
+<body>
+    <h1>Personal Library</h1>
+
+    <div class="input-forms-container">
+        <form method="POST" class="isbn-form">
+            <label for="isbn">Enter ISBN:</label>
+            <input type="text" id="isbn" name="isbn" required>
+            <input type="submit" value="Lookup and Save">
+        </form>
+
+        <div class="search-form">
+            <label for="search">Search Books:</label>
+            <input type="text" id="search" name="search" placeholder="Search by title, author, category...">
+            <button type="button" id="clearSearch">Clear</button>
+        </div>
+    </div>
+
+    {% if error %}
+    <p class="error-message">Error: {{ error }}</p>
+    {% endif %}
+
+    {% if lookup_successful %}
+    <p class="success-message">
+        Successfully looked up ISBN {{ isbn }} and saved the results to
+        <a href="{{ url_for('download_file', filename=isbn + '.txt') }}" target="_blank">
+            {{ isbn }}.txt
+        </a>.
+    </p>
+    {% endif %}
+
+    <h2>Books in Database</h2>
+    {% if books %}
+        <div class="table-container">
+            <table id="booksTable">
+                <thead>
+                    <tr>
+                        <th class="sortable">Title</th>
+                        <th class="sortable">Subtitle</th>
+                        <th class="sortable">Authors</th>
+                        <th class="sortable">Category</th>
+                        <th class="sortable">Publisher</th>
+                        <th class="sortable">Published Date</th>
+                        <th>Description</th>
+                        <th class="sortable">Page Count</th>
+                        <th class="sortable">Rating</th>
+                        <th>Thumbnail</th>
+                        <th>Tracking</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                {% for book in books %}
+                <tr class="book-row">
+                    <td>{{ book.title or 'N/A' }}</td>
+                    <td>{{ book.subtitle or 'N/A' }}</td>
+                    <td>{{ book.authors or 'N/A' }}</td>
+                    <td>{{ book.category_name or 'N/A' }}</td>
+                    <td>{{ book.publisher or 'N/A' }}</td>
+                    <td>{{ book.published_date or 'N/A' }}</td>
+                    <td class="description-cell">
+                        <div class="description-text {% if book.description and book.description|length > 150 %}collapsed{% endif %}">
+                            {{ book.description or 'No description available' }}
+                        </div>
+                        {% if book.description and book.description|length > 150 %}
+                        <button class="show-more-btn">Show more</button>
+                        {% endif %}
+                    </td>
+                    <td>{{ book.page_count or 'N/A' }}</td>
+                    <td>
+                        {% if book.user_rating %}
+                            {{ book.user_rating }}/5 ★
+                        {% else %}
+                            {{ book.average_rating or 'N/A' }}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if book.thumbnail %}
+                            <img src="{{ book.thumbnail }}" alt="Book cover" class="book-thumbnail">
+                        {% else %}
+                            No image
+                        {% endif %}
+                    </td>
+                    <td class="tracking-controls">
+                        <form method="POST" action="{{ url_for('update_book') }}" class="tracking-form">
+                            <input type="hidden" name="book_id" value="{{ book.book_id }}">
+
+                            <div class="form-group">
+
+                                <label>Current Owner:</label>
+
+                                <select name="owner" class="form-control" required>
+
+                                    <option value="">Select Owner</option>
+
+                                    {% for user in users %}
+
+                                    <option value="{{ user.user_id }}"
+
+                                        {% if book.user_id == user.user_id %}selected{% endif %}>
+
+                                        {{ user.name }}
+
+                                    </option>
+
+                                    {% endfor %}
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Status:</label>
+
+                                <select name="status" class="form-control">
+
+                                    <option value="owned" {% if book.status == 'owned' %}selected{% endif %}>Owned</option>
+
+                                    <option value="reading" {% if book.status == 'reading' %}selected{% endif %}>Reading</option>
+
+                                    <option value="read" {% if book.status == 'read' %}selected{% endif %}>Read</option>
+
+                                    <option value="wishlist" {% if book.status == 'wishlist' %}selected{% endif %}>Wishlist</option>
+
+                                </select>
+
+                            </div>
+
+
+                            {% if book.status == 'reading' %}
+
+                            <div class="form-group">
+
+                                <label>Current Page:</label>
+
+                                <input type="number" name="current_page" class="form-control"
+
+                                       value="{{ book.current_page or 0 }}" min="0"
+
+                                       max="{{ book.page_count or '' }}">
+
+                            </div>
+
+                            {% endif %}
+
+
+                            <div class="form-group">
+
+                                <label>Your Rating:</label>
+
+                                <select name="rating" class="form-control">
+
+                                    <option value="">--</option>
+
+                                    <option value="1" {% if book.user_rating == 1 %}selected{% endif %}>1 ★</option>
+
+                                    <option value="2" {% if book.user_rating == 2 %}selected{% endif %}>2 ★</option>
+
+                                    <option value="3" {% if book.user_rating == 3 %}selected{% endif %}>3 ★</option>
+
+                                    <option value="4" {% if book.user_rating == 4 %}selected{% endif %}>4 ★</option>
+
+                                    <option value="5" {% if book.user_rating == 5 %}selected{% endif %}>5 ★</option>
+
+                                </select>
+
+                            </div>
+
+
+                            {% if book.status == 'reading' or book.status == 'read' %}
+
+                            <div class="form-group">
+
+                                <label>Started Date:</label>
+
+                                <input type="date" name="started_date" class="form-control"
+
+                                       value="{{ book.started_date or '' }}">
+
+                            </div>
+
+                            {% endif %}
+
+
+                            {% if book.status == 'read' %}
+
+                            <div class="form-group">
+
+                                <label>Finished Date:</label>
+
+                                <input type="date" name="read_date" class="form-control"
+
+                                       value="{{ book.read_date or '' }}">
+
+                            </div>
+
+                            {% endif %}
+
+                            <div class="form-group">
+                                <label>Notes:</label>
+                                <textarea name="notes" class="form-control"
+                                          placeholder="Your notes about this book">{{ book.notes or '' }}</textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Save Changes</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be added here by JavaScript -->
+        </div>
+    {% else %}
+        <p class="no-books">No books found in the database.</p>
+    {% endif %}
+</body>
+</html>
