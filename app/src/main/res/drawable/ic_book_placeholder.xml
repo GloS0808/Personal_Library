@@ -1,0 +1,58 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background Color (matches the cream/beige in the image) -->
+    <!-- Note: Icons are often drawn on a background, but here we define the shapes -->
+
+    <!-- TOP SHELF BOOKS -->
+    <!-- Leftmost Book (Vertical) -->
+    <path
+        android:fillColor="#F0E6D2"
+        android:pathData="M35,10 H75 C78,10 80,12 80,15 V95 C80,98 78,100 75,100 H35 C32,100 30,98 30,95 V15 C30,12 32,10 35,10 Z" />
+    <!-- Detail on Leftmost Book -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M42,20 H68 C69,20 70,21 70,22 V25 C70,26 69,27 68,27 H42 C41,27 40,26 40,25 V22 C40,21 41,20 42,20 Z" />
+
+    <!-- Middle Book (Tilted) -->
+    <group
+        android:pivotX="110"
+        android:pivotY="100"
+        android:rotation="15">
+        <path
+            android:fillColor="#F0E6D2"
+            android:pathData="M95,5 H130 C133,5 135,7 135,10 V90 C135,93 133,95 130,95 H95 C92,95 90,93 90,90 V10 C90,7 92,5 95,5 Z" />
+        <path
+            android:fillColor="#000000"
+            android:pathData="M100,15 H125 C126,15 127,16 127,17 V20 C127,21 126,22 125,22 H100 C99,22 98,21 98,20 V17 C98,16 99,15 100,15 Z" />
+    </group>
+
+    <!-- Rightmost Book (More Tilted) -->
+    <group
+        android:pivotX="160"
+        android:pivotY="100"
+        android:rotation="25">
+        <path
+            android:fillColor="#F0E6D2"
+            android:pathData="M145,15 H175 C178,15 180,17 180,20 V90 C180,93 178,95 175,95 H145 C142,95 140,93 140,90 V20 C140,17 142,15 145,15 Z" />
+    </group>
+
+    <!-- SHELF -->
+    <path
+        android:fillColor="#F0E6D2"
+        android:pathData="M5,105 H195 C198,105 200,107 200,110 C200,113 198,115 195,115 H5 C2,115 0,113 0,110 C0,107 2,105 5,105 Z" />
+
+    <!-- BOTTOM OPEN BOOK -->
+    <!-- Left Page -->
+    <path
+        android:fillColor="#F0E6D2"
+        android:pathData="M95,135 C95,135 70,115 25,125 V175 C70,165 95,195 95,195 Z" />
+    <!-- Right Page -->
+    <path
+        android:fillColor="#F0E6D2"
+        android:pathData="M105,135 C105,135 130,115 175,125 V175 C130,165 105,195 105,195 Z" />
+
+</vector>

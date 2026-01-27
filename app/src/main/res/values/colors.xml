@@ -1,0 +1,24 @@
+<resources>
+    <!-- Brand colors from CSS -->
+    <color name="brand_primary">#8B4513</color> <!-- SaddleBrown -->
+    <color name="brand_primary_dark">#5A3921</color> <!-- Darker brown -->
+    <color name="brand_accent">#A0522D</color> <!-- Sienna -->
+
+    <!-- Backgrounds -->
+    <color name="background">#FFFAF0</color> <!-- FloralWhite -->
+    <color name="surface">#F9F5EB</color> <!-- Light beige -->
+    <color name="surface_variant">#F0E6D2</color> <!-- Darker beige -->
+
+    <!-- Text -->
+    <color name="text_primary">#5A3921</color>
+    <color name="text_secondary">#8B4513</color>
+
+    <!-- Status colors -->
+    <color name="status_reading">#1976D2</color>
+    <color name="status_completed">#388E3C</color>
+    <color name="status_wishlist">#F57C00</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

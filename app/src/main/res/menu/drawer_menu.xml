@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_readers"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/manage_readers" />
+
+    <item android:title="Support &amp; Feedback">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@android:drawable/ic_menu_edit"
+                android:title="@string/leave_feedback" />
+            <item
+                android:id="@+id/nav_crash_analytics"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="@string/send_crash_analytics"
+                app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>
