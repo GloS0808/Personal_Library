@@ -6,23 +6,27 @@ plugins {
 }
 
 android {
-    namespace = "com.example.personallibrary"
-    compileSdk = 35 // Updated to 35 for better Android 15 support
+    namespace = "com.personallibrary.app.v2"
+    compileSdk = 35
+    ndkVersion = "26.1.10909125"
 
     defaultConfig {
-        applicationId = "com.example.personallibrary"
+        applicationId = "com.personallibrary.app.v2"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0 Personal Library 2026"
+        versionCode = 1004
+        versionName = "1.004 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            ndk {
+                debugSymbolLevel = "FULL"
+            }
         }
     }
 
@@ -38,7 +42,7 @@ android {
     
     packaging {
         jniLibs {
-            useLegacyPackaging = false // Ensures libraries are uncompressed and aligned
+            useLegacyPackaging = false
         }
     }
 }
@@ -55,7 +59,7 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    val roomVersion = "2.7.0-alpha01"
+    val roomVersion = "2.6.1"
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
@@ -75,4 +79,6 @@ dependencies {
     implementation("androidx.camera:camera-camera2:$cameraxVersion")
     implementation("androidx.camera:camera-lifecycle:$cameraxVersion")
     implementation("androidx.camera:camera-view:$cameraxVersion")
+
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
 }

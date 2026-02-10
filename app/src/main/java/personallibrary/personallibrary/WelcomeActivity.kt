@@ -1,4 +1,4 @@
-package com.example.personallibrary
+package com.personallibrary.app.v2
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.personallibrary.databinding.ActivityWelcomeBinding
+import com.personallibrary.app.v2.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity() {
 

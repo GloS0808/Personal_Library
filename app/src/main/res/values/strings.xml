@@ -78,4 +78,7 @@
     <string name="leave_feedback">Leave Feedback</string>
     <string name="send_crash_analytics">Send Crash Analytics</string>
     <string name="share_book_data">Share Book Data</string>
+    <string name="select_reader_error">Please select a reader</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_url">https://www.termsfeed.com/live/b671bc8b-6641-49a1-bdb1-8c6970755cf6</string>
 </resources>

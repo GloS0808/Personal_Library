@@ -1,4 +1,4 @@
-package com.example.personallibrary
+package com.personallibrary.app
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.personallibrary.databinding.ActivityManageReadersBinding
+import com.personallibrary.app.databinding.ActivityManageReadersBinding
 
 class ManageReadersActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.personallibrary
+package com.personallibrary.app.v2
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -12,7 +12,7 @@ import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.personallibrary.databinding.ActivityBarcodeScannerBinding
+import com.personallibrary.app.v2.databinding.ActivityBarcodeScannerBinding
 import com.google.mlkit.vision.barcode.BarcodeScanner
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.barcode.common.Barcode

@@ -1,4 +1,4 @@
-package com.example.personallibrary
+package com.personallibrary.app
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.personallibrary.databinding.ItemReaderBinding
+import com.personallibrary.app.databinding.ItemReaderBinding
 
 class ReaderAdapter(
     private val onEditClick: (User) -> Unit,

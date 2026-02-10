@@ -13,9 +13,19 @@
                 android:icon="@android:drawable/ic_menu_edit"
                 android:title="@string/leave_feedback" />
             <item
+                android:id="@+id/nav_privacy"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="@string/privacy_policy" />
+            <item
                 android:id="@+id/nav_crash_analytics"
                 android:icon="@android:drawable/ic_menu_info_details"
                 android:title="@string/send_crash_analytics"
+                app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/nav_share_data"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/share_book_data"
                 app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
                 app:showAsAction="always" />
         </menu>
