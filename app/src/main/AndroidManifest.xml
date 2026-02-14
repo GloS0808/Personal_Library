@@ -11,17 +11,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Storage permissions for picking book covers -->
-    <!-- Android 14+ (Partial access) -->
     <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
-    <!-- Android 13+ -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
-    <!-- Storage permissions for older Android versions (Below API 33) -->
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
 
-    <!-- Only needed if saving files/exports to public folders (Below API 29) -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
@@ -37,7 +33,7 @@
 
         <!-- Main launcher activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.personallibrary.app.v2.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,28 +43,28 @@
 
         <!-- Welcome setup activity -->
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.personallibrary.app.v2.WelcomeActivity"
             android:exported="false" />
 
         <!-- Book detail activity -->
         <activity
-            android:name=".BookDetailActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.personallibrary.app.v2.BookDetailActivity"
+            android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
 
         <!-- Add book activity -->
         <activity
-            android:name=".AddBookActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.personallibrary.app.v2.AddBookActivity"
+            android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
 
         <!-- Barcode scanner activity -->
         <activity
-            android:name=".BarcodeScannerActivity"
+            android:name="com.personallibrary.app.v2.BarcodeScannerActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
 
         <!-- Manage readers activity -->
         <activity
-            android:name=".ManageReadersActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.personallibrary.app.v2.ManageReadersActivity"
+            android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
 
     </application>
 

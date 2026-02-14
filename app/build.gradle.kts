@@ -7,15 +7,15 @@ plugins {
 
 android {
     namespace = "com.personallibrary.app.v2"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = "26.1.10909125"
 
     defaultConfig {
         applicationId = "com.personallibrary.app.v2"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1004
-        versionName = "1.004 Personal Library 2026"
+        versionCode = 1005
+        versionName = "1.005 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -51,12 +51,17 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
     compilerOptions {
         jvmTarget.set(JvmTarget.JVM_17)
     }
+    exclude("**/personallibrary/personallibrary/**")
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    exclude("**/personallibrary/personallibrary/**")
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("com.google.android.material:material:1.13.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     val roomVersion = "2.6.1"
@@ -72,9 +77,10 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     ksp("com.github.bumptech.glide:ksp:4.16.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
-    implementation("com.google.mlkit:barcode-scanning:17.2.0")
     
-    val cameraxVersion = "1.3.1"
+    implementation("com.google.mlkit:barcode-scanning:17.3.0")
+    
+    val cameraxVersion = "1.4.1"
     implementation("androidx.camera:camera-core:$cameraxVersion")
     implementation("androidx.camera:camera-camera2:$cameraxVersion")
     implementation("androidx.camera:camera-lifecycle:$cameraxVersion")

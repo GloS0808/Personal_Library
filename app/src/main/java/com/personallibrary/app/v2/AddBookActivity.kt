@@ -18,7 +18,7 @@ class AddBookActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddBookBinding
     private lateinit var viewModel: BookViewModel
     private var customImageUri: Uri? = null
-    private var currentVolumeInfo: VolumeInfo? = null
+    private var currentVolumeInfo: GoogleBooksResponse.VolumeInfo? = null
 
     private val scanBarcodeLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -79,42 +79,45 @@ class AddBookActivity : AppCompatActivity() {
 
         // Observe search results
         viewModel.searchResult.observe(this) { result ->
+            if (result == null) return@observe
             binding.progressBar.visibility = View.GONE
 
-            result?.onSuccess { volumeInfo ->
-                currentVolumeInfo = volumeInfo
-                // Show book preview
-                binding.bookPreviewCard.visibility = View.VISIBLE
-                binding.textTitle.text = volumeInfo.title ?: getString(R.string.unknown_title)
-                binding.textAuthors.text = volumeInfo.authors?.joinToString(", ") ?: getString(R.string.unknown_author)
-                binding.textPublisher.text = getString(R.string.publisher_label, volumeInfo.publisher ?: getString(R.string.unknown_publisher))
-                binding.textPages.text = getString(R.string.pages_label, volumeInfo.pageCount?.toString() ?: getString(R.string.not_available))
+            if (result.isSuccess) {
+                val volumeInfo = result.getOrNull()
+                if (volumeInfo != null) {
+                    currentVolumeInfo = volumeInfo
+                    // Show book preview
+                    binding.bookPreviewCard.visibility = View.VISIBLE
+                    binding.textTitle.text = volumeInfo.title ?: getString(R.string.unknown_title)
+                    binding.textAuthors.text = volumeInfo.authors?.joinToString(", ") ?: getString(R.string.unknown_author)
+                    binding.textPublisher.text = getString(R.string.publisher_label, volumeInfo.publisher ?: getString(R.string.unknown_publisher))
+                    binding.textPages.text = getString(R.string.pages_label, volumeInfo.pageCount?.toString() ?: getString(R.string.not_available))
 
-                if (customImageUri == null) {
-                    volumeInfo.imageLinks?.thumbnail?.let { url ->
-                        Glide.with(this)
-                            .load(url)
-                            .placeholder(R.drawable.ic_book_placeholder)
-                            .into(binding.imageThumbnail)
+                    if (customImageUri == null) {
+                        volumeInfo.imageLinks?.thumbnail?.let { url ->
+                            Glide.with(this)
+                                .load(url)
+                                .placeholder(R.drawable.ic_book_placeholder)
+                                .into(binding.imageThumbnail)
+                        }
+                    }
+
+                    // Add book button
+                    binding.buttonAdd.setOnClickListener {
+                        binding.progressBar.visibility = View.VISIBLE
+                        val updatedVolumeInfo = if (customImageUri != null) {
+                            volumeInfo.copy(imageLinks = GoogleBooksResponse.ImageLinks(customImageUri.toString(), customImageUri.toString()))
+                        } else {
+                            volumeInfo
+                        }
+                        viewModel.insertBookFromApi(updatedVolumeInfo)
                     }
                 }
-
-                // Add book button
-                binding.buttonAdd.setOnClickListener {
-                    binding.progressBar.visibility = View.VISIBLE
-                    val updatedVolumeInfo = if (customImageUri != null) {
-                        volumeInfo.copy(imageLinks = ImageLinks(customImageUri.toString(), customImageUri.toString()))
-                    } else {
-                        volumeInfo
-                    }
-                    viewModel.insertBookFromApi(updatedVolumeInfo)
-                }
-            }
-
-            result?.onFailure { exception ->
+            } else {
+                val exception = result.exceptionOrNull()
                 Snackbar.make(
                     binding.root,
-                    getString(R.string.error_book_not_found, exception.message ?: ""),
+                    getString(R.string.error_book_not_found, exception?.message ?: ""),
                     Snackbar.LENGTH_LONG
                 ).show()
             }
@@ -122,17 +125,17 @@ class AddBookActivity : AppCompatActivity() {
 
         // Observe insert results
         viewModel.insertResult.observe(this) { result ->
+            if (result == null) return@observe
             binding.progressBar.visibility = View.GONE
 
-            result?.onSuccess {
+            if (result.isSuccess) {
                 Snackbar.make(binding.root, getString(R.string.book_added_successfully), Snackbar.LENGTH_SHORT).show()
                 finish()
-            }
-
-            result?.onFailure { exception ->
+            } else {
+                val exception = result.exceptionOrNull()
                 Snackbar.make(
                     binding.root,
-                    getString(R.string.error_adding_book, exception.message ?: ""),
+                    getString(R.string.error_adding_book, exception?.message ?: ""),
                     Snackbar.LENGTH_LONG
                 ).show()
             }
