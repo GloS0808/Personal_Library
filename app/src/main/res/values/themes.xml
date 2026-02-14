@@ -21,5 +21,15 @@
         <item name="android:textColorPrimary">@color/text_primary</item>
         <item name="android:textColorSecondary">@color/text_secondary</item>
         <item name="android:textColorHint">@color/text_secondary</item>
+
+        <!-- Dialog Styles -->
+        <item name="alertDialogTheme">@style/Theme.PersonalLibrary.Dialog</item>
+    </style>
+
+    <style name="Theme.PersonalLibrary.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <!-- Make the title bar (which "Sort by" uses) have better contrast -->
+        <item name="colorSurface">@color/brand_primary</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 </resources>

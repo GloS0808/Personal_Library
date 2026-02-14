@@ -86,12 +86,6 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_readers -> startActivity(Intent(this, ManageReadersActivity::class.java))
                 R.id.nav_feedback -> showFeedbackDialog()
-                R.id.nav_crash_analytics -> {
-                    val actionView = menuItem.actionView as? SwitchCompat
-                    val newState = !(actionView?.isChecked ?: false)
-                    actionView?.isChecked = newState
-                    savePreference("crash_analytics_enabled", newState)
-                }
                 R.id.nav_share_data -> {
                     val actionView = menuItem.actionView as? SwitchCompat
                     val newState = !(actionView?.isChecked ?: false)
@@ -103,11 +97,6 @@ class MainActivity : AppCompatActivity() {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
-
-        // Initialize switch states
-        val crashItem = binding.navigationView.menu.findItem(R.id.nav_crash_analytics)
-        (crashItem.actionView as? SwitchCompat)?.isChecked = 
-            getSharedPreferences("app_prefs", Context.MODE_PRIVATE).getBoolean("crash_analytics_enabled", true)
 
         val shareItem = binding.navigationView.menu.findItem(R.id.nav_share_data)
         // Check EncryptedSharedPreferences
@@ -157,13 +146,13 @@ class MainActivity : AppCompatActivity() {
     private fun setupCrashCatcher() {
         val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
         Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
-            if (getSharedPreferences("app_prefs", Context.MODE_PRIVATE).getBoolean("crash_analytics_enabled", true)) {
-                val stackTrace = throwable.stackTraceToString()
-                getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
-                    .edit()
-                    .putString("last_crash_log", stackTrace)
-                    .apply()
-            }
+            // We'll keep the logic but it's now always enabled or could be handled differently
+            // Since the toggle is gone, we'll just log it if a crash occurs.
+            val stackTrace = throwable.stackTraceToString()
+            getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+                .edit()
+                .putString("last_crash_log", stackTrace)
+                .apply()
             defaultHandler?.uncaughtException(thread, throwable)
         }
     }
