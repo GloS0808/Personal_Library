@@ -66,6 +66,16 @@
             android:name="com.personallibrary.app.v2.ManageReadersActivity"
             android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.personallibrary.app.v2.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

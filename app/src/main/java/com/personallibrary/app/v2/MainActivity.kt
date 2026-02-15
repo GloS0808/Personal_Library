@@ -14,11 +14,14 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.SwitchCompat
+import androidx.core.content.FileProvider
 import androidx.core.view.GravityCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.personallibrary.app.v2.databinding.ActivityMainBinding
 import com.google.android.material.textfield.TextInputEditText
+import java.io.File
+import java.io.FileOutputStream
 
 class MainActivity : AppCompatActivity() {
 
@@ -86,21 +89,51 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_readers -> startActivity(Intent(this, ManageReadersActivity::class.java))
                 R.id.nav_feedback -> showFeedbackDialog()
-                R.id.nav_share_data -> {
-                    val actionView = menuItem.actionView as? SwitchCompat
-                    val newState = !(actionView?.isChecked ?: false)
-                    actionView?.isChecked = newState
-                    // Using EncryptedSharedPreferences for data sharing preference
-                    SecurityUtils.setShareDataEnabled(this, newState)
+                R.id.nav_privacy -> {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.termsfeed.com/live/b671bc8b-6641-49a1-bdb1-8c6970755cf6"))
+                    startActivity(intent)
                 }
+                R.id.nav_share_data -> exportLibraryToCsv()
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
+    }
 
-        val shareItem = binding.navigationView.menu.findItem(R.id.nav_share_data)
-        // Check EncryptedSharedPreferences
-        (shareItem.actionView as? SwitchCompat)?.isChecked = SecurityUtils.isShareDataEnabled(this)
+    private fun exportLibraryToCsv() {
+        val books = viewModel.allBooksWithDetails.value ?: return
+        if (books.isEmpty()) {
+            Toast.makeText(this, "Library is empty", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        try {
+            val csvFile = File(cacheDir, "my_library_export.csv")
+            FileOutputStream(csvFile).use { fos ->
+                fos.write("Title,Author,ISBN13,Category,Status,Rating\n".toByteArray())
+                books.forEach { bookWithDetails ->
+                    val title = bookWithDetails.book.title.replace(",", " ")
+                    val author = bookWithDetails.authors.joinToString(" & ") { it.name }.replace(",", " ")
+                    val isbn = bookWithDetails.book.isbn13 ?: bookWithDetails.book.isbn10 ?: ""
+                    val category = bookWithDetails.category?.categoryName ?: ""
+                    val status = bookWithDetails.userBook?.status ?: ""
+                    val rating = bookWithDetails.userBook?.userRating?.toString() ?: ""
+
+                    fos.write("$title,$author,$isbn,$category,$status,$rating\n".toByteArray())
+                }
+            }
+
+            val uri = FileProvider.getUriForFile(this, "${packageName}.fileprovider", csvFile)
+            val intent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/csv"
+                putExtra(Intent.EXTRA_SUBJECT, "My Personal Library Export")
+                putExtra(Intent.EXTRA_STREAM, uri)
+                addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            }
+            startActivity(Intent.createChooser(intent, "Share Library via"))
+        } catch (e: Exception) {
+            Toast.makeText(this, "Export failed: ${e.message}", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun showFeedbackDialog() {
@@ -146,8 +179,6 @@ class MainActivity : AppCompatActivity() {
     private fun setupCrashCatcher() {
         val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
         Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
-            // We'll keep the logic but it's now always enabled or could be handled differently
-            // Since the toggle is gone, we'll just log it if a crash occurs.
             val stackTrace = throwable.stackTraceToString()
             getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
                 .edit()

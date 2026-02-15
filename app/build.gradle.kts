@@ -14,8 +14,8 @@ android {
         applicationId = "com.personallibrary.app.v2"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1006
-        versionName = "1.006 Personal Library 2026"
+        versionCode = 1007
+        versionName = "1.007 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
