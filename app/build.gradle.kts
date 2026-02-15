@@ -14,10 +14,14 @@ android {
         applicationId = "com.personallibrary.app.v2"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1008
-        versionName = "1.008 Personal Library 2026"
+        versionCode = 1009
+        versionName = "1.009 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            debugSymbolLevel = "FULL"
+        }
     }
 
     buildTypes {
