@@ -100,6 +100,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="@string/book_title"
+                android:textColor="@color/text_primary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -110,6 +111,7 @@
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:text="@string/subtitle"
+                android:textColor="@color/text_secondary"
                 android:textSize="18sp" />
 
             <TextView
@@ -119,6 +121,7 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/authors"
+                android:textColor="@color/text_primary"
                 android:textSize="16sp" />
 
             <TextView
@@ -127,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/publisher"
+                android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
             <TextView
@@ -135,6 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/published_date"
+                android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
             <TextView
@@ -143,6 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/pages"
+                android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
             <TextView
@@ -151,6 +157,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/category"
+                android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
             <TextView
@@ -159,6 +166,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="@string/rating"
+                android:textColor="@color/text_secondary"
                 android:textSize="14sp" />
 
             <TextView
@@ -166,6 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/description"
+                android:textColor="@color/text_primary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -175,6 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/description"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp" />
 
             <View
@@ -188,6 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/my_reading_info"
+                android:textColor="@color/text_primary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -196,6 +207,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/reader_name"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -211,6 +223,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/status"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -226,6 +239,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/my_rating"
+                android:textColor="@color/text_primary"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -248,7 +262,8 @@
                     android:id="@+id/edit_current_page"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textColor="@color/text_primary" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -263,7 +278,8 @@
                     android:id="@+id/edit_started_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="date" />
+                    android:inputType="date"
+                    android:textColor="@color/text_primary" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -278,7 +294,8 @@
                     android:id="@+id/edit_read_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="date" />
+                    android:inputType="date"
+                    android:textColor="@color/text_primary" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -294,7 +311,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
-                    android:minLines="3" />
+                    android:minLines="3"
+                    android:textColor="@color/text_primary" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

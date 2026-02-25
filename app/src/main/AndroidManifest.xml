@@ -33,7 +33,7 @@
 
         <!-- Main launcher activity -->
         <activity
-            android:name="com.personallibrary.app.v2.MainActivity"
+            android:name="com.personallibrary.app.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,32 +43,32 @@
 
         <!-- Welcome setup activity -->
         <activity
-            android:name="com.personallibrary.app.v2.WelcomeActivity"
+            android:name="com.personallibrary.app.WelcomeActivity"
             android:exported="false" />
 
         <!-- Book detail activity -->
         <activity
-            android:name="com.personallibrary.app.v2.BookDetailActivity"
-            android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
+            android:name="com.personallibrary.app.BookDetailActivity"
+            android:parentActivityName="com.personallibrary.app.MainActivity" />
 
         <!-- Add book activity -->
         <activity
-            android:name="com.personallibrary.app.v2.AddBookActivity"
-            android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
+            android:name="com.personallibrary.app.AddBookActivity"
+            android:parentActivityName="com.personallibrary.app.MainActivity" />
 
         <!-- Barcode scanner activity -->
         <activity
-            android:name="com.personallibrary.app.v2.BarcodeScannerActivity"
+            android:name="com.personallibrary.app.BarcodeScannerActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
 
         <!-- Manage readers activity -->
         <activity
-            android:name="com.personallibrary.app.v2.ManageReadersActivity"
-            android:parentActivityName="com.personallibrary.app.v2.MainActivity" />
+            android:name="com.personallibrary.app.ManageReadersActivity"
+            android:parentActivityName="com.personallibrary.app.MainActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.personallibrary.app.v2.fileprovider"
+            android:authorities="com.personallibrary.app.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
