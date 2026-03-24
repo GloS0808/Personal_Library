@@ -40,13 +40,13 @@
 
                     <ImageButton
                         android:id="@+id/button_hamburger"
-                        android:layout_width="56dp"
-                        android:layout_height="56dp"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:contentDescription="@string/app_name"
-                        android:padding="12dp"
+                        android:padding="16dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/ic_hamburger"
                         app:tint="@color/brand_primary" />
@@ -83,23 +83,25 @@
 
                     <ImageButton
                         android:id="@+id/button_sort"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
                         android:layout_marginStart="8dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:contentDescription="@string/sort_by"
-                        android:scaleType="center"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
                         android:src="@android:drawable/ic_menu_sort_alphabetically"
                         app:tint="@color/brand_primary" />
 
                     <ImageButton
                         android:id="@+id/button_add_book_top"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
                         android:layout_marginStart="4dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:contentDescription="@string/add_book"
-                        android:scaleType="center"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
                         android:src="@android:drawable/ic_input_add"
                         app:tint="@color/brand_primary" />
                 </LinearLayout>
