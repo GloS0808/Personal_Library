@@ -1,12 +1,16 @@
 package com.personallibrary.app.di
 
 import android.content.Context
+import android.content.SharedPreferences
 import com.personallibrary.app.AuthorDao
 import com.personallibrary.app.BookAuthorDao
 import com.personallibrary.app.BookDao
 import com.personallibrary.app.BookRepository
 import com.personallibrary.app.CategoryDao
+import com.personallibrary.app.GoogleBooksApi
+import com.personallibrary.app.ITBookstoreApi
 import com.personallibrary.app.LibraryDatabase
+import com.personallibrary.app.OpenLibraryApi
 import com.personallibrary.app.UserBookDao
 import com.personallibrary.app.UserDao
 import dagger.Module
@@ -24,6 +28,12 @@ object DatabaseModule {
     @Singleton
     fun provideDatabase(@ApplicationContext context: Context): LibraryDatabase {
         return LibraryDatabase.getDatabase(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideSharedPreferences(@ApplicationContext context: Context): SharedPreferences {
+        return context.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
     }
 
     @Provides
@@ -46,7 +56,12 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideBookRepository(database: LibraryDatabase): BookRepository {
-        return BookRepository(database)
+    fun provideBookRepository(
+        database: LibraryDatabase,
+        googleBooksApi: GoogleBooksApi,
+        openLibraryApi: OpenLibraryApi,
+        itBookstoreApi: ITBookstoreApi
+    ): BookRepository {
+        return BookRepository(database, googleBooksApi, openLibraryApi, itBookstoreApi)
     }
 }

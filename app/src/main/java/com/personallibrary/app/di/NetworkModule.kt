@@ -1,6 +1,7 @@
 package com.personallibrary.app.di
 
 import com.personallibrary.app.GoogleBooksApi
+import com.personallibrary.app.ITBookstoreApi
 import com.personallibrary.app.OpenLibraryApi
 import dagger.Module
 import dagger.Provides
@@ -52,5 +53,16 @@ object NetworkModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(OpenLibraryApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideITBookstoreApi(okHttpClient: OkHttpClient): ITBookstoreApi {
+        return Retrofit.Builder()
+            .baseUrl(ITBookstoreApi.BASE_URL)
+            .client(okHttpClient)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(ITBookstoreApi::class.java)
     }
 }

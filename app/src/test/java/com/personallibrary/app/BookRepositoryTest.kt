@@ -93,4 +93,35 @@ class BookRepositoryTest {
         assertTrue(result.isFailure)
         assertEquals("Book not found in any supported database", result.exceptionOrNull()?.message)
     }
+
+    @Test
+    fun `searchBookByIsbn returns success from Google Books and does not call others`() = runTest {
+        val isbn = "1234567890"
+        
+        val mockVolumeInfo = VolumeInfo(
+            title = "Google Title",
+            subtitle = null,
+            authors = listOf("Google Author"),
+            publisher = null,
+            publishedDate = null,
+            description = null,
+            industryIdentifiers = null,
+            pageCount = null,
+            categories = null,
+            averageRating = null,
+            imageLinks = null
+        )
+        val mockResponse = GoogleBooksResponse(items = listOf(GoogleBooksResponse.BookItem("id", mockVolumeInfo)))
+        
+        `when`(googleBooksApi.searchBookByIsbn("isbn:$isbn")).thenReturn(Response.success(mockResponse))
+
+        val result = repository.searchBookByIsbn(isbn)
+
+        assertTrue(result.isSuccess)
+        assertEquals("Google Title", result.getOrNull()?.title)
+        
+        verify(googleBooksApi).searchBookByIsbn("isbn:$isbn")
+        verifyNoInteractions(openLibraryApi)
+        verifyNoInteractions(itBookstoreApi)
+    }
 }

@@ -1,5 +1,6 @@
 package com.personallibrary.app
 
+import android.content.SharedPreferences
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import kotlinx.coroutines.Dispatchers
@@ -24,6 +25,8 @@ class BookViewModelTest {
 
     @Mock
     private lateinit var repository: BookRepository
+    @Mock
+    private lateinit var sharedPreferences: SharedPreferences
 
     private lateinit var viewModel: BookViewModel
 
@@ -34,8 +37,9 @@ class BookViewModelTest {
         
         // Mock default behaviors
         `when`(repository.getAllUsers()).thenReturn(flowOf(emptyList()))
+        `when`(sharedPreferences.getBoolean(anyString(), anyBoolean())).thenReturn(false)
         
-        viewModel = BookViewModel(repository)
+        viewModel = BookViewModel(repository, sharedPreferences)
     }
 
     @After
@@ -52,6 +56,13 @@ class BookViewModelTest {
         
         verify(repository).insertUser(any())
     }
+
+    private fun <T> any(): T {
+        org.mockito.Mockito.any<T>()
+        return uninitialized()
+    }
+
+    private fun <T> uninitialized(): T = null as T
 
     @Test
     fun `setQuery updates allBooksWithDetails`() = runTest {

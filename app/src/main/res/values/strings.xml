@@ -81,4 +81,24 @@
     <string name="select_reader_error">Please select a reader</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="privacy_policy_url">https://www.termsfeed.com/live/b671bc8b-6641-49a1-bdb1-8c6970755cf6</string>
+    <string name="statistics">Statistics</string>
+    <string name="reading_progress">Reading Progress</string>
+    <string name="books_read">Books Read</string>
+    <string name="currently_reading">Currently Reading</string>
+    <string name="to_read">To Read</string>
+    <string name="pages_read">Pages Read</string>
+    <string name="no_stats_available">No statistics available yet.</string>
+    <string name="crash_detected_title">Application Crash Detected</string>
+    <string name="crash_detected_message">The app closed unexpectedly last time. Would you like to send a crash report to help us fix the issue?</string>
+    <string name="send_report">Send Report</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="crash_report_subject">Crash Report</string>
+    <string name="feedback_subject">App Feedback</string>
+    <string name="export_empty_error">Library is empty</string>
+    <string name="export_failed">Export failed: %1$s</string>
+    <string name="share_library_chooser">Share Library via</string>
+    <string name="no_email_app">No email app found</string>
+    <string name="feedback_dialog_title">We\'d love to hear from you!</string>
+    <string name="feedback_hint">Tell us what you think...</string>
+    <string name="send">Send</string>
 </resources>

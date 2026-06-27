@@ -111,7 +111,7 @@ fun StatisticsScreen(
                     Column(modifier = Modifier.padding(vertical = 8.dp)) {
                         Text(text = book.book.title, style = MaterialTheme.typography.bodyLarge)
                         LinearProgressIndicator(
-                            progress = { progress },
+                            progress = progress,
                             modifier = Modifier.fillMaxWidth().height(8.dp),
                             color = MaterialTheme.colorScheme.primary,
                             trackColor = MaterialTheme.colorScheme.surfaceVariant,
@@ -145,7 +145,7 @@ fun StatCard(label: String, count: Int, total: Int, color: Color) {
             }
             Spacer(Modifier.height(8.dp))
             LinearProgressIndicator(
-                progress = { progress },
+                progress = progress,
                 modifier = Modifier.fillMaxWidth().height(12.dp),
                 color = color,
                 trackColor = color.copy(alpha = 0.2f),

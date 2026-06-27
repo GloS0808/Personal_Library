@@ -3,6 +3,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     id("com.android.application")
     id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -14,8 +16,8 @@ android {
         applicationId = "com.personallibrary.app"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1011
-        versionName = "1.011 Personal Library 2026"
+        versionCode = 1012
+        versionName = "1.012 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -42,12 +44,17 @@ android {
     buildFeatures {
         viewBinding = true
         buildConfig = true
+        compose = true
     }
     
     packaging {
         jniLibs {
             useLegacyPackaging = false
         }
+    }
+
+    testOptions {
+        unitTests.isReturnDefaultValues = true
     }
 }
 
@@ -92,4 +99,31 @@ dependencies {
     implementation("androidx.camera:camera-view:$cameraxVersion")
 
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
+    implementation("androidx.activity:activity-ktx:1.10.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.6")
+
+    // Test dependencies
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:5.8.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
+    testImplementation("com.google.dagger:hilt-android-testing:2.60")
+    kspTest("com.google.dagger:hilt-android-compiler:2.60")
+
+    // Compose
+    val composeBom = platform("androidx.compose:compose-bom:2024.01.00")
+    implementation(composeBom)
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.compose.runtime:runtime-livedata")
+    implementation("io.coil-kt:coil-compose:2.5.0")
+
+    // Hilt
+    implementation("com.google.dagger:hilt-android:2.60")
+    ksp("com.google.dagger:hilt-android-compiler:2.60")
 }

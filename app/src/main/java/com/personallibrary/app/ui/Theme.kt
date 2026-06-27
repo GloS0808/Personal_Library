@@ -21,7 +21,7 @@ private val DarkColorScheme = darkColorScheme(
 
 @Composable
 fun PersonalLibraryTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean,
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
