@@ -11,11 +11,18 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.WindowSizeClass
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.*
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.livedata.observeAsState
@@ -41,6 +48,7 @@ class MainActivity : ComponentActivity() {
 
     private val viewModel: BookViewModel by viewModels()
 
+    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
@@ -53,7 +61,9 @@ class MainActivity : ComponentActivity() {
         setupCrashCatcher()
 
         setContent {
+            val windowSizeClass = calculateWindowSizeClass(this)
             val isDarkMode by viewModel.isDarkMode.collectAsState()
+            
             PersonalLibraryTheme(darkTheme = isDarkMode) {
                 var showFeedbackDialog by remember { mutableStateOf(false) }
                 var crashLogState by remember { mutableStateOf<String?>(null) }
@@ -69,6 +79,7 @@ class MainActivity : ComponentActivity() {
 
                 MainScreen(
                     viewModel = viewModel,
+                    windowSizeClass = windowSizeClass,
                     onBookClick = { book ->
                         val intent = Intent(this, BookDetailActivity::class.java)
                         intent.putExtra("BOOK_ID", book.book.bookId)
@@ -200,6 +211,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(
     viewModel: BookViewModel,
+    windowSizeClass: WindowSizeClass,
     onBookClick: (BookWithDetails) -> Unit,
     onAddBookClick: () -> Unit,
     onReadersClick: () -> Unit,
@@ -214,189 +226,272 @@ fun MainScreen(
     var searchQuery by remember { mutableStateOf("") }
     var isSearchActive by remember { mutableStateOf(false) }
 
-    ModalNavigationDrawer(
-        drawerState = drawerState,
-        drawerContent = {
-            ModalDrawerSheet {
-                Spacer(Modifier.height(12.dp))
-                NavigationDrawerItem(
-                    icon = { Icon(Icons.Default.AccountCircle, contentDescription = null) },
-                    label = { Text(stringResource(R.string.manage_readers)) },
-                    selected = false,
-                    onClick = {
-                        scope.launch { drawerState.close() }
-                        onReadersClick()
-                    }
-                )
-                NavigationDrawerItem(
-                    icon = { Icon(Icons.Default.Email, contentDescription = null) },
-                    label = { Text(stringResource(R.string.leave_feedback)) },
-                    selected = false,
-                    onClick = {
-                        scope.launch { drawerState.close() }
-                        onFeedbackClick()
-                    }
-                )
-                NavigationDrawerItem(
-                    icon = { Icon(Icons.Default.Info, contentDescription = null) },
-                    label = { Text(stringResource(R.string.privacy_policy)) },
-                    selected = false,
-                    onClick = {
-                        scope.launch { drawerState.close() }
-                        onPrivacyClick()
-                    }
-                )
-                NavigationDrawerItem(
-                    icon = { Icon(Icons.Default.BarChart, contentDescription = null) },
-                    label = { Text(stringResource(R.string.statistics)) },
-                    selected = false,
-                    onClick = {
-                        scope.launch { drawerState.close() }
-                        onStatisticsClick()
-                    }
-                )
-                NavigationDrawerItem(
-                    icon = { Icon(Icons.Default.Share, contentDescription = null) },
-                    label = { Text(stringResource(R.string.share_book_data)) },
-                    selected = false,
-                    onClick = {
-                        scope.launch { drawerState.close() }
-                        onExportClick()
-                    }
-                )
-                Spacer(Modifier.weight(1f))
-                val isDarkMode by viewModel.isDarkMode.collectAsState()
-                Row(
-                    modifier = Modifier.fillMaxWidth().padding(16.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.SpaceBetween
-                ) {
-                    Text("Dark Mode")
-                    Switch(
-                        checked = isDarkMode,
-                        onCheckedChange = { viewModel.toggleDarkMode(it) }
-                    )
+    val usePermanentDrawer = windowSizeClass.widthSizeClass != WindowWidthSizeClass.Compact
+
+    val drawerContent = @Composable {
+        ModalDrawerSheet {
+            Spacer(Modifier.height(12.dp))
+            NavigationDrawerItem(
+                icon = { Icon(Icons.Default.AccountCircle, contentDescription = null) },
+                label = { Text(stringResource(R.string.manage_readers)) },
+                selected = false,
+                onClick = {
+                    scope.launch { drawerState.close() }
+                    onReadersClick()
                 }
+            )
+            NavigationDrawerItem(
+                icon = { Icon(Icons.Default.Email, contentDescription = null) },
+                label = { Text(stringResource(R.string.leave_feedback)) },
+                selected = false,
+                onClick = {
+                    scope.launch { drawerState.close() }
+                    onFeedbackClick()
+                }
+            )
+            NavigationDrawerItem(
+                icon = { Icon(Icons.Default.Info, contentDescription = null) },
+                label = { Text(stringResource(R.string.privacy_policy)) },
+                selected = false,
+                onClick = {
+                    scope.launch { drawerState.close() }
+                    onPrivacyClick()
+                }
+            )
+            NavigationDrawerItem(
+                icon = { Icon(Icons.Default.BarChart, contentDescription = null) },
+                label = { Text(stringResource(R.string.statistics)) },
+                selected = false,
+                onClick = {
+                    scope.launch { drawerState.close() }
+                    onStatisticsClick()
+                }
+            )
+            NavigationDrawerItem(
+                icon = { Icon(Icons.Default.Share, contentDescription = null) },
+                label = { Text(stringResource(R.string.share_book_data)) },
+                selected = false,
+                onClick = {
+                    scope.launch { drawerState.close() }
+                    onExportClick()
+                }
+            )
+            Spacer(Modifier.weight(1f))
+            val isDarkMode by viewModel.isDarkMode.collectAsState()
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(16.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Text("Dark Mode")
+                Switch(
+                    checked = isDarkMode,
+                    onCheckedChange = { viewModel.toggleDarkMode(it) }
+                )
             }
         }
-    ) {
-        Scaffold(
-            topBar = {
-                if (isSearchActive) {
-                    SearchBar(
-                        query = searchQuery,
-                        onQueryChange = {
-                            searchQuery = it
-                            viewModel.setQuery(it)
-                        },
-                        onSearch = { isSearchActive = false },
-                        active = true,
-                        onActiveChange = { isSearchActive = it },
-                        placeholder = { Text(stringResource(R.string.search_hint)) },
-                        leadingIcon = {
+    }
+
+    if (usePermanentDrawer) {
+        PermanentNavigationDrawer(
+            drawerContent = {
+                PermanentDrawerSheet(Modifier.width(240.dp)) {
+                    drawerContent()
+                }
+            }
+        ) {
+            MainScaffold(
+                viewModel = viewModel,
+                windowSizeClass = windowSizeClass,
+                drawerState = drawerState,
+                scope = scope,
+                books = books,
+                isSearchActive = isSearchActive,
+                searchQuery = searchQuery,
+                onSearchActiveChange = { isSearchActive = it },
+                onSearchQueryChange = { searchQuery = it },
+                onBookClick = onBookClick,
+                onAddBookClick = onAddBookClick,
+                showMenuIcon = false
+            )
+        }
+    } else {
+        ModalNavigationDrawer(
+            drawerState = drawerState,
+            drawerContent = drawerContent
+        ) {
+            MainScaffold(
+                viewModel = viewModel,
+                windowSizeClass = windowSizeClass,
+                drawerState = drawerState,
+                scope = scope,
+                books = books,
+                isSearchActive = isSearchActive,
+                searchQuery = searchQuery,
+                onSearchActiveChange = { isSearchActive = it },
+                onSearchQueryChange = { searchQuery = it },
+                onBookClick = onBookClick,
+                onAddBookClick = onAddBookClick,
+                showMenuIcon = true
+            )
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MainScaffold(
+    viewModel: BookViewModel,
+    windowSizeClass: WindowSizeClass,
+    drawerState: DrawerState,
+    scope: kotlinx.coroutines.CoroutineScope,
+    books: List<BookWithDetails>,
+    isSearchActive: Boolean,
+    searchQuery: String,
+    onSearchActiveChange: (Boolean) -> Unit,
+    onSearchQueryChange: (String) -> Unit,
+    onBookClick: (BookWithDetails) -> Unit,
+    onAddBookClick: () -> Unit,
+    showMenuIcon: Boolean
+) {
+    Scaffold(
+        topBar = {
+            if (isSearchActive) {
+                SearchBar(
+                    query = searchQuery,
+                    onQueryChange = {
+                        onSearchQueryChange(it)
+                        viewModel.setQuery(it)
+                    },
+                    onSearch = { onSearchActiveChange(false) },
+                    active = true,
+                    onActiveChange = { onSearchActiveChange(it) },
+                    placeholder = { Text(stringResource(R.string.search_hint)) },
+                    leadingIcon = {
+                        IconButton(onClick = { 
+                            onSearchActiveChange(false)
+                            onSearchQueryChange("")
+                            viewModel.setQuery("")
+                        }) {
+                            Icon(Icons.Default.ArrowBack, contentDescription = null)
+                        }
+                    },
+                    trailingIcon = {
+                        if (searchQuery.isNotEmpty()) {
                             IconButton(onClick = { 
-                                isSearchActive = false
-                                searchQuery = ""
+                                onSearchQueryChange("")
                                 viewModel.setQuery("")
                             }) {
-                                Icon(Icons.Default.ArrowBack, contentDescription = null)
+                                Icon(Icons.Default.Clear, contentDescription = null)
                             }
-                        },
-                        trailingIcon = {
-                            if (searchQuery.isNotEmpty()) {
-                                IconButton(onClick = { 
-                                    searchQuery = ""
-                                    viewModel.setQuery("")
-                                }) {
-                                    Icon(Icons.Default.Clear, contentDescription = null)
-                                }
-                            }
-                        },
-                        modifier = Modifier.fillMaxWidth()
-                    ) { }
-                } else {
-                    TopAppBar(
-                        title = { Text(stringResource(R.string.app_name)) },
-                        navigationIcon = {
+                        }
+                    },
+                    modifier = Modifier.fillMaxWidth()
+                ) { }
+            } else {
+                TopAppBar(
+                    title = { Text(stringResource(R.string.app_name)) },
+                    navigationIcon = {
+                        if (showMenuIcon) {
                             IconButton(onClick = { scope.launch { drawerState.open() } }) {
                                 Icon(Icons.Default.Menu, contentDescription = "Menu")
                             }
-                        },
-                        actions = {
-                            IconButton(onClick = { isSearchActive = true }) {
-                                Icon(Icons.Default.Search, contentDescription = "Search")
-                            }
-                            var showSortMenu by remember { mutableStateOf(false) }
-                            IconButton(onClick = { showSortMenu = true }) {
-                                Icon(Icons.Default.MoreVert, contentDescription = "Sort")
-                            }
-                            DropdownMenu(
-                                expanded = showSortMenu,
-                                onDismissRequest = { showSortMenu = false }
-                            ) {
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(R.string.sort_date_added)) },
-                                    onClick = {
-                                        viewModel.setSortOrder(SortOrder.DATE_ADDED)
-                                        showSortMenu = false
-                                    }
-                                )
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(R.string.sort_title_asc)) },
-                                    onClick = {
-                                        viewModel.setSortOrder(SortOrder.TITLE_ASC)
-                                        showSortMenu = false
-                                    }
-                                )
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(R.string.sort_title_desc)) },
-                                    onClick = {
-                                        viewModel.setSortOrder(SortOrder.TITLE_DESC)
-                                        showSortMenu = false
-                                    }
-                                )
-                                DropdownMenuItem(
-                                    text = { Text(stringResource(R.string.sort_author)) },
-                                    onClick = {
-                                        viewModel.setSortOrder(SortOrder.AUTHOR)
-                                        showSortMenu = false
-                                    }
-                                )
-                            }
                         }
+                    },
+                    actions = {
+                        IconButton(onClick = { onSearchActiveChange(true) }) {
+                            Icon(Icons.Default.Search, contentDescription = "Search")
+                        }
+                        var showSortMenu by remember { mutableStateOf(false) }
+                        IconButton(onClick = { showSortMenu = true }) {
+                            Icon(Icons.Default.MoreVert, contentDescription = "Sort")
+                        }
+                        DropdownMenu(
+                            expanded = showSortMenu,
+                            onDismissRequest = { showSortMenu = false }
+                        ) {
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.sort_date_added)) },
+                                onClick = {
+                                    viewModel.setSortOrder(SortOrder.DATE_ADDED)
+                                    showSortMenu = false
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.sort_title_asc)) },
+                                onClick = {
+                                    viewModel.setSortOrder(SortOrder.TITLE_ASC)
+                                    showSortMenu = false
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.sort_title_desc)) },
+                                onClick = {
+                                    viewModel.setSortOrder(SortOrder.TITLE_DESC)
+                                    showSortMenu = false
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text(stringResource(R.string.sort_author)) },
+                                onClick = {
+                                    viewModel.setSortOrder(SortOrder.AUTHOR)
+                                    showSortMenu = false
+                                }
+                            )
+                        }
+                    }
+                )
+            }
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = onAddBookClick) {
+                Icon(Icons.Default.Add, contentDescription = stringResource(R.string.add_book))
+            }
+        }
+    ) { padding ->
+        if (books.isEmpty()) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(
+                        stringResource(R.string.no_books),
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                    Text(
+                        stringResource(R.string.empty_hint),
+                        style = MaterialTheme.typography.bodyMedium
                     )
                 }
-            },
-            floatingActionButton = {
-                FloatingActionButton(onClick = onAddBookClick) {
-                    Icon(Icons.Default.Add, contentDescription = stringResource(R.string.add_book))
-                }
             }
-        ) { padding ->
-            if (books.isEmpty()) {
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(padding),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(
-                            stringResource(R.string.no_books),
-                            style = MaterialTheme.typography.headlineMedium
-                        )
-                        Text(
-                            stringResource(R.string.empty_hint),
-                            style = MaterialTheme.typography.bodyMedium
-                        )
-                    }
-                }
-            } else {
+        } else {
+            if (windowSizeClass.widthSizeClass == WindowWidthSizeClass.Compact) {
                 LazyColumn(
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(padding),
                     contentPadding = PaddingValues(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    items(books) { book ->
+                        BookItem(book = book, onClick = { onBookClick(book) })
+                    }
+                }
+            } else {
+                val columns = when (windowSizeClass.widthSizeClass) {
+                    WindowWidthSizeClass.Medium -> 2
+                    else -> 3
+                }
+                LazyVerticalGrid(
+                    columns = GridCells.Fixed(columns),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding),
+                    contentPadding = PaddingValues(8.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     items(books) { book ->

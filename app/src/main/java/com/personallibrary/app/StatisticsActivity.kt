@@ -10,6 +10,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.WindowSizeClass
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
@@ -18,7 +22,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.personallibrary.app.ui.PersonalLibraryTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,13 +30,16 @@ class StatisticsActivity : ComponentActivity() {
 
     private val viewModel: BookViewModel by viewModels()
 
+    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val windowSizeClass = calculateWindowSizeClass(this)
             val isDarkMode by viewModel.isDarkMode.collectAsState()
             PersonalLibraryTheme(darkTheme = isDarkMode) {
                 StatisticsScreen(
                     viewModel = viewModel,
+                    windowSizeClass = windowSizeClass,
                     onBack = { finish() }
                 )
             }
@@ -45,6 +51,7 @@ class StatisticsActivity : ComponentActivity() {
 @Composable
 fun StatisticsScreen(
     viewModel: BookViewModel,
+    windowSizeClass: WindowSizeClass,
     onBack: () -> Unit
 ) {
     val books by viewModel.allBooksWithDetails.observeAsState(emptyList())
@@ -89,9 +96,17 @@ fun StatisticsScreen(
 
                 Spacer(Modifier.height(16.dp))
 
-                StatCard(stringResource(R.string.books_read), readBooks, totalBooks, Color.Green)
-                StatCard(stringResource(R.string.currently_reading), readingBooks, totalBooks, Color.Blue)
-                StatCard(stringResource(R.string.to_read), toReadBooks, totalBooks, Color.Gray)
+                if (windowSizeClass.widthSizeClass == WindowWidthSizeClass.Compact) {
+                    StatCard(stringResource(R.string.books_read), readBooks, totalBooks, Color.Green)
+                    StatCard(stringResource(R.string.currently_reading), readingBooks, totalBooks, Color.Blue)
+                    StatCard(stringResource(R.string.to_read), toReadBooks, totalBooks, Color.Gray)
+                } else {
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Box(Modifier.weight(1f)) { StatCard(stringResource(R.string.books_read), readBooks, totalBooks, Color.Green) }
+                        Box(Modifier.weight(1f)) { StatCard(stringResource(R.string.currently_reading), readingBooks, totalBooks, Color.Blue) }
+                        Box(Modifier.weight(1f)) { StatCard(stringResource(R.string.to_read), toReadBooks, totalBooks, Color.Gray) }
+                    }
+                }
 
                 Spacer(Modifier.height(32.dp))
 
@@ -103,28 +118,51 @@ fun StatisticsScreen(
 
                 Spacer(Modifier.height(16.dp))
 
-                books.filter { it.userBook?.status == "reading" }.forEach { book ->
-                    val currentPage = book.userBook?.currentPage ?: 0
-                    val totalPages = book.book.pageCount ?: 1
-                    val progress = if (totalPages > 0) currentPage.toFloat() / totalPages else 0f
-                    
-                    Column(modifier = Modifier.padding(vertical = 8.dp)) {
-                        Text(text = book.book.title, style = MaterialTheme.typography.bodyLarge)
-                        LinearProgressIndicator(
-                            progress = progress,
-                            modifier = Modifier.fillMaxWidth().height(8.dp),
-                            color = MaterialTheme.colorScheme.primary,
-                            trackColor = MaterialTheme.colorScheme.surfaceVariant,
-                        )
-                        Text(
-                            text = "$currentPage / $totalPages pages (${(progress * 100).toInt()}%)",
-                            style = MaterialTheme.typography.bodySmall,
-                            modifier = Modifier.align(Alignment.End)
-                        )
+                val readingBooksList = books.filter { it.userBook?.status == "reading" }
+                
+                if (windowSizeClass.widthSizeClass == WindowWidthSizeClass.Compact) {
+                    readingBooksList.forEach { book ->
+                        PageProgressItem(book)
+                    }
+                } else {
+                    // Chunk into rows for tablet
+                    readingBooksList.chunked(2).forEach { rowBooks ->
+                        Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                            rowBooks.forEach { book ->
+                                Box(Modifier.weight(1f)) {
+                                    PageProgressItem(book)
+                                }
+                            }
+                            if (rowBooks.size == 1) {
+                                Spacer(Modifier.weight(1f))
+                            }
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+@Composable
+fun PageProgressItem(book: BookWithDetails) {
+    val currentPage = book.userBook?.currentPage ?: 0
+    val totalPages = book.book.pageCount ?: 1
+    val progress = if (totalPages > 0) currentPage.toFloat() / totalPages else 0f
+    
+    Column(modifier = Modifier.padding(vertical = 8.dp)) {
+        Text(text = book.book.title, style = MaterialTheme.typography.bodyLarge, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+        LinearProgressIndicator(
+            progress = progress,
+            modifier = Modifier.fillMaxWidth().height(8.dp),
+            color = MaterialTheme.colorScheme.primary,
+            trackColor = MaterialTheme.colorScheme.surfaceVariant,
+        )
+        Text(
+            text = "$currentPage / $totalPages pages (${(progress * 100).toInt()}%)",
+            style = MaterialTheme.typography.bodySmall,
+            modifier = Modifier.align(Alignment.End)
+        )
     }
 }
 
@@ -140,7 +178,7 @@ fun StatCard(label: String, count: Int, total: Int, color: Color) {
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                Text(text = label, fontWeight = FontWeight.Bold)
+                Text(text = label, fontWeight = FontWeight.Bold, maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
                 Text(text = "$count / $total")
             }
             Spacer(Modifier.height(8.dp))
