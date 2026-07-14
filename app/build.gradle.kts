@@ -16,8 +16,8 @@ android {
         applicationId = "com.personallibrary.app"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1016
-        versionName = "1.016 Personal Library 2026"
+        versionCode = 1018
+        versionName = "1.018 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -25,7 +25,9 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            
             ndk {
                 debugSymbolLevel = "FULL"
             }
