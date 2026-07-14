@@ -16,14 +16,10 @@ android {
         applicationId = "com.personallibrary.app"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1015
-        versionName = "1.015 Personal Library 2026"
+        versionCode = 1016
+        versionName = "1.016 Personal Library 2026"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-        ndk {
-            debugSymbolLevel = "FULL"
-        }
     }
 
     buildTypes {
@@ -45,6 +41,10 @@ android {
         viewBinding = true
         buildConfig = true
         compose = true
+    }
+
+    androidResources {
+        localeFilters += "en"
     }
     
     packaging {
