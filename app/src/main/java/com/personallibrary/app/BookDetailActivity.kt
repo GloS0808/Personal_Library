@@ -3,6 +3,7 @@ package com.personallibrary.app
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -27,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.personallibrary.app.ui.PersonalLibraryTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class BookDetailActivity : ComponentActivity() {
@@ -35,6 +37,7 @@ class BookDetailActivity : ComponentActivity() {
 
     @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
 
         val bookId = intent.getIntExtra("BOOK_ID", -1)
@@ -71,6 +74,9 @@ fun BookDetailScreen(
     val bookWithDetails by viewModel.currentBook.observeAsState()
     val users by viewModel.allUsers.observeAsState(emptyList())
     var showDeleteDialog by remember { mutableStateOf(false) }
+    val snackbarHostState = remember { SnackbarHostState() }
+    val scope = rememberCoroutineScope()
+    val saveSuccessMessage = stringResource(R.string.save_success)
 
     Scaffold(
         topBar = {
@@ -87,7 +93,8 @@ fun BookDetailScreen(
                     }
                 }
             )
-        }
+        },
+        snackbarHost = { SnackbarHost(snackbarHostState) }
     ) { padding ->
         bookWithDetails?.let { book ->
             if (windowSizeClass.widthSizeClass == WindowWidthSizeClass.Compact) {
@@ -100,7 +107,7 @@ fun BookDetailScreen(
                 ) {
                     BookInfoSection(book)
                     Divider(modifier = Modifier.padding(vertical = 24.dp))
-                    UserBookSection(book, users, viewModel)
+                    UserBookSection(book, users, viewModel, snackbarHostState, scope, saveSuccessMessage)
                 }
             } else {
                 Row(
@@ -122,7 +129,7 @@ fun BookDetailScreen(
                             .weight(1f)
                             .verticalScroll(rememberScrollState())
                     ) {
-                        UserBookSection(book, users, viewModel)
+                        UserBookSection(book, users, viewModel, snackbarHostState, scope, saveSuccessMessage)
                     }
                 }
             }
@@ -199,7 +206,14 @@ fun BookInfoSection(book: BookWithDetails) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun UserBookSection(book: BookWithDetails, users: List<User>, viewModel: BookViewModel) {
+fun UserBookSection(
+    book: BookWithDetails,
+    users: List<User>,
+    viewModel: BookViewModel,
+    snackbarHostState: SnackbarHostState,
+    scope: kotlinx.coroutines.CoroutineScope,
+    saveSuccessMessage: String
+) {
     Column {
         Text(
             stringResource(R.string.my_reading_info),
@@ -339,6 +353,9 @@ fun UserBookSection(book: BookWithDetails, users: List<User>, viewModel: BookVie
                     readDate = readDate.ifBlank { null }
                 )
                 viewModel.updateUserBook(updatedUserBook)
+                scope.launch {
+                    snackbarHostState.showSnackbar(saveSuccessMessage)
+                }
             },
             modifier = Modifier.fillMaxWidth()
         ) {

@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId = "com.personallibrary.app"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1016
         versionName = "1.016 Personal Library 2026"
 

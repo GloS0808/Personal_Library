@@ -11,6 +11,7 @@ data class OpenLibraryResponse(
     @SerializedName("number_of_pages")
     val pageCount: Int?,
     val cover: Cover?,
+    val description: Any?,
     val identifiers: Identifiers?
 ) {
     data class Author(val name: String)

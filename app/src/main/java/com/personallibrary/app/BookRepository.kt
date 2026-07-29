@@ -45,31 +45,53 @@ class BookRepository @Inject constructor(
         return withContext(Dispatchers.IO) {
             Log.d(TAG, "Starting book search for ISBN: $isbn")
             
-            // Try Google Books API first
+            var bestCandidate: VolumeInfo? = null
+
+            // Try Google Books API
             val googleResult = tryGoogleBooks(isbn)
             if (googleResult.isSuccess) {
-                Log.i(TAG, "Google Books search successful for $isbn")
-                return@withContext googleResult
+                val info = googleResult.getOrNull()
+                if (info?.description != null) {
+                    Log.i(TAG, "Google Books search successful with description for $isbn")
+                    return@withContext googleResult
+                }
+                bestCandidate = info
+                Log.i(TAG, "Google Books search successful but NO description for $isbn")
             } else {
                 Log.w(TAG, "Google Books failed for $isbn: ${googleResult.exceptionOrNull()?.message}")
             }
 
-            // If Google Books fails, try Open Library API
+            // Try Open Library API
             val openLibraryResult = tryOpenLibrary(isbn)
             if (openLibraryResult.isSuccess) {
-                Log.i(TAG, "Open Library search successful for $isbn")
-                return@withContext openLibraryResult
+                val info = openLibraryResult.getOrNull()
+                if (info?.description != null) {
+                    Log.i(TAG, "Open Library search successful with description for $isbn")
+                    return@withContext openLibraryResult
+                }
+                if (bestCandidate == null) bestCandidate = info
+                Log.i(TAG, "Open Library search successful but NO description for $isbn")
             } else {
                 Log.w(TAG, "Open Library failed for $isbn: ${openLibraryResult.exceptionOrNull()?.message}")
             }
 
-            // If Open Library fails, try IT Bookstore API
+            // Try IT Bookstore API
             val itBookstoreResult = tryITBookstore(isbn)
             if (itBookstoreResult.isSuccess) {
-                Log.i(TAG, "IT Bookstore search successful for $isbn")
-                return@withContext itBookstoreResult
+                val info = itBookstoreResult.getOrNull()
+                if (info?.description != null) {
+                    Log.i(TAG, "IT Bookstore search successful with description for $isbn")
+                    return@withContext itBookstoreResult
+                }
+                if (bestCandidate == null) bestCandidate = info
+                Log.i(TAG, "IT Bookstore search successful but NO description for $isbn")
             } else {
                 Log.w(TAG, "IT Bookstore failed for $isbn: ${itBookstoreResult.exceptionOrNull()?.message}")
+            }
+
+            if (bestCandidate != null) {
+                Log.i(TAG, "Returning best candidate (no description) for $isbn")
+                return@withContext Result.success(bestCandidate)
             }
 
             Log.e(TAG, "All book lookup providers failed for ISBN: $isbn")
@@ -109,13 +131,20 @@ class BookRepository @Inject constructor(
                 val body = response.body()
                 if (body != null && body.containsKey(bookKey)) {
                     val olBook = body[bookKey]!!
+                    
+                    val desc = when (val d = olBook.description) {
+                        is String -> d
+                        is Map<*, *> -> d["value"] as? String
+                        else -> null
+                    }
+
                     val volumeInfo = VolumeInfo(
                         title = olBook.title,
                         subtitle = null,
                         authors = olBook.authors?.map { it.name },
                         publisher = olBook.publishers?.firstOrNull()?.name,
                         publishedDate = olBook.publishDate,
-                        description = null,
+                        description = desc,
                         industryIdentifiers = olBook.identifiers?.let { ids ->
                             val identifiers = mutableListOf<GoogleBooksResponse.IndustryIdentifier>()
                             ids.isbn13?.forEach { identifiers.add(GoogleBooksResponse.IndustryIdentifier("ISBN_13", it)) }

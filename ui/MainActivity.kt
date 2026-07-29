@@ -4,9 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.personallibrary.ManageReadersActivity
@@ -23,11 +27,29 @@ class MainActivity : AppCompatActivity() {
     private lateinit var adapter: BookAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+
+        // Setup OnBackPressedCallback for Drawer
+        val callback = object : OnBackPressedCallback(false) {
+            override fun handleOnBackPressed() {
+                binding.drawerLayout.closeDrawer(GravityCompat.START)
+            }
+        }
+        onBackPressedDispatcher.addCallback(this, callback)
+
+        binding.drawerLayout.addDrawerListener(object : DrawerLayout.SimpleDrawerListener() {
+            override fun onDrawerOpened(drawerView: View) {
+                callback.isEnabled = true
+            }
+            override fun onDrawerClosed(drawerView: View) {
+                callback.isEnabled = false
+            }
+        })
 
         // Initialize ViewModel
         viewModel = ViewModelProvider(this)[BookViewModel::class.java]
@@ -96,14 +118,6 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    override fun onBackPressed() {
-        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
         }
     }
 }
