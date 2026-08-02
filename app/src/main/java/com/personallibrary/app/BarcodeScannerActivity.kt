@@ -39,6 +39,12 @@ class BarcodeScannerActivity : AppCompatActivity() {
         binding = ActivityBarcodeScannerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (!GoogleServicesUtils.isGooglePlayServicesAvailable(this)) {
+            Toast.makeText(this, "Google Play Services is required for barcode scanning", Toast.LENGTH_LONG).show()
+            finish()
+            return
+        }
+
         cameraExecutor = Executors.newSingleThreadExecutor()
         
         // Explicitly enable common book barcode formats (EAN-13 is standard ISBN)

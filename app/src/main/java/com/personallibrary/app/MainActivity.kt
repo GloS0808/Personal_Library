@@ -54,6 +54,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         
+        // Initial check for Google Play Services to improve stability
+        checkGooglePlayServices()
+
         if (!isSetupComplete()) {
             startActivity(Intent(this, WelcomeActivity::class.java))
             finish()
@@ -140,6 +143,14 @@ class MainActivity : ComponentActivity() {
 
     private fun isSetupComplete(): Boolean = getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
         .getBoolean("setup_complete", false)
+
+    private fun checkGooglePlayServices() {
+        if (!GoogleServicesUtils.isGooglePlayServicesAvailable(this)) {
+            // Note: On Compose we handle this via UI components, but this early check 
+            // can trigger the system dialog if necessary.
+            GoogleServicesUtils.checkAndShowErrorDialog(this)
+        }
+    }
 
     private fun setupCrashCatcher() {
         val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()

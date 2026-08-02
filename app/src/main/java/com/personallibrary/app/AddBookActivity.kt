@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -126,8 +127,12 @@ fun AddBookScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 SearchSection(isbn, onIsbnChange = { isbn = it }, onScan = {
-                    val intent = Intent(context, BarcodeScannerActivity::class.java)
-                    scanLauncher.launch(intent)
+                    if (GoogleServicesUtils.isGooglePlayServicesAvailable(context)) {
+                        val intent = Intent(context, BarcodeScannerActivity::class.java)
+                        scanLauncher.launch(intent)
+                    } else {
+                        Toast.makeText(context, "Barcode scanning is not available on this device", Toast.LENGTH_SHORT).show()
+                    }
                 }, onSearch = {
                     if (isbn.isNotBlank()) {
                         isSearching = true
@@ -174,8 +179,12 @@ fun AddBookScreen(
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     SearchSection(isbn, onIsbnChange = { isbn = it }, onScan = {
-                        val intent = Intent(context, BarcodeScannerActivity::class.java)
-                        scanLauncher.launch(intent)
+                        if (GoogleServicesUtils.isGooglePlayServicesAvailable(context)) {
+                            val intent = Intent(context, BarcodeScannerActivity::class.java)
+                            scanLauncher.launch(intent)
+                        } else {
+                            Toast.makeText(context, "Barcode scanning is not available on this device", Toast.LENGTH_SHORT).show()
+                        }
                     }, onSearch = {
                         if (isbn.isNotBlank()) {
                             isSearching = true

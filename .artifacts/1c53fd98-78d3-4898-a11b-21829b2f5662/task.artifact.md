@@ -20,3 +20,7 @@
 - [x] Privacy Hardening
     - [x] Implement Camera Permission Rationale in `BarcodeScannerActivity.kt`
     - [x] Verify Scoped Storage usage and CSV data minimization
+- [x] Stability & GMS Compatibility
+    - [x] Update `security-crypto` to stable version
+    - [x] Implement manual GMS availability check in `MainActivity.kt`
+    - [x] Add GMS guards in `BarcodeScannerActivity.kt`

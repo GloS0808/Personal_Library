@@ -49,6 +49,13 @@ Improved user transparency and data safety.
 - **Data Minimization**: Verified that CSV exports in [MainActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/MainActivity.kt) are limited to book metadata, excluding sensitive personal identifiers.
 - **Scoped Storage Compliance**: Confirmed that temporary export files are stored in the app-specific cache directory, ensuring user privacy and storage cleanliness.
 
+### 8. Stability & GMS Compatibility
+Addressed the "Something went wrong" error and improved app stability for devices without or with outdated Google Play Services (GMS).
+
+- **GMS Availability Check**: Implemented a manual check for Google Play Services at app startup in [MainActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/MainActivity.kt). This provides a friendly prompt to the user if an update is needed, preventing unexpected platform-level dialogs.
+- **Scanning Guards**: Added safety checks in [BarcodeScannerActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/BarcodeScannerActivity.kt) and [AddBookActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/AddBookActivity.kt) to ensure ML Kit (which depends on GMS components) is only initialized when the environment is ready.
+- **Dependency Optimization**: Upgraded `androidx.security:security-crypto` to the stable `1.1.0` version and added `play-services-base` to handle manual GMS lifecycle management.
+
 ## Verification Results
 
 ### Automated Tests

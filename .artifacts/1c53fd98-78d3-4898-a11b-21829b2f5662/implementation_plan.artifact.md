@@ -1,38 +1,37 @@
-# Implementation Plan - Privacy Hardening
+# Implementation Plan - Stability & GMS Compatibility
 
-This plan outlines steps to improve the "Personal Library" app's alignment with Android privacy best practices.
+This plan addresses the "Something went wrong" error related to Google Play Services (GMS) and improves overall app stability for test environments.
 
 ## User Review Required
 
-> [!NOTE]
-> I will be adding a **Permission Rationale** for the Camera. This will show an explanation to the user if they have previously denied the camera permission, helping them understand why it's needed for barcode scanning before requesting it again.
+> [!IMPORTANT]
+> The error message "Check that Google Play is enabled on your device..." is typically triggered by **Play Integrity** or **Google Play Services** availability checks.
+>
+> If you have enabled **"App Integrity"** or **"Integrity check on launch"** in the Google Play Console, it will block any app that is not installed directly from the Play Store. For testing sideloaded APKs, you should disable these checks in the console or use **Internal App Sharing**.
 
 ## Proposed Changes
 
-### Permissions
+### Build Configuration
 
-#### [MODIFY] [BarcodeScannerActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/BarcodeScannerActivity.kt)
-- Implement `shouldShowRequestPermissionRationale`.
-- Add an `AlertDialog` to explain the need for the camera if the user previously denied the request.
+#### [MODIFY] [app/build.gradle.kts](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/build.gradle.kts)
+- Update `androidx.security:security-crypto` from `1.1.0-alpha06` to `1.1.0` (Stable) to improve security module stability.
+- Explicitly add `com.google.android.gms:play-services-base` to allow manual GMS availability checks.
 
-### Data Handling
+### Stability Improvements
 
 #### [MODIFY] [MainActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/MainActivity.kt)
-- Review the `sendEmail` content for crash reports. Ensure that the stack trace and device info are presented transparently in the dialog before the user clicks "Send Report". (This is already mostly in place, but I will ensure the strings are clear).
+- Add a runtime check for **Google Play Services** at app startup.
+- If GMS is missing or outdated, show a friendly warning instead of letting the platform throw a generic "Something went wrong" dialog.
+- This will allow the app to function (except for barcode scanning) even on devices without full Google Play support.
+
+#### [MODIFY] [BarcodeScannerActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/BarcodeScannerActivity.kt)
+- Add a guard clause to check GMS availability before initializing ML Kit.
 
 ## Verification Plan
 
 ### Automated Tests
-- Build the app to ensure no compilation errors.
+- Run `:app:assembleDebug` to ensure no dependency conflicts.
 
 ### Manual Verification
-1.  **Permission Denial**:
-    - Open the barcode scanner.
-    - Deny the camera permission.
-    - Re-open the scanner.
-    - Verify that the rationale dialog appears explaining why the camera is needed.
-2.  **Permission Grant**:
-    - Grant the permission from the rationale or the system dialog.
-    - Verify the camera starts correctly.
-3.  **CSV Export**:
-    - Verify that the exported CSV only contains book-related data (Title, ISBN, etc.) and no user-sensitive data like the reader's email or personal notes.
+1.  **Device with GMS**: Verify the app opens and barcode scanning works as expected.
+2.  **Device without GMS (or disabled)**: Verify the app shows a clear message explaining that some features (scanning) might be unavailable, but still allows manual entry and library browsing.
