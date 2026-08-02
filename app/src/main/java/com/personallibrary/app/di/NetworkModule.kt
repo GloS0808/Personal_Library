@@ -1,5 +1,6 @@
 package com.personallibrary.app.di
 
+import com.personallibrary.app.BuildConfig
 import com.personallibrary.app.GoogleBooksApi
 import com.personallibrary.app.ITBookstoreApi
 import com.personallibrary.app.OpenLibraryApi
@@ -21,7 +22,11 @@ object NetworkModule {
     @Singleton
     fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         return HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
+            level = if (BuildConfig.DEBUG) {
+                HttpLoggingInterceptor.Level.BODY
+            } else {
+                HttpLoggingInterceptor.Level.NONE
+            }
         }
     }
 

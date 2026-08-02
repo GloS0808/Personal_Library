@@ -36,6 +36,19 @@ Improved the book search logic in [BookRepository.kt](file:///C:/Users/semg6/Stu
 
 - Updated [OpenLibraryResponse.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/OpenLibraryResponse.kt) to support flexible description formats (String or Map) used by Open Library.
 
+### 6. Security Hardening
+Implemented security improvements to protect user data and network communication.
+
+- **Enforced HTTPS**: Modified [network_security_config.xml](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/res/xml/network_security_config.xml) to disable cleartext traffic. This ensures all API communication is encrypted.
+- **Production Log Protection**: Updated [NetworkModule.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/di/NetworkModule.kt) to disable network request/response logging in production builds while keeping it active for debugging.
+
+### 7. Privacy Hardening
+Improved user transparency and data safety.
+
+- **Permission Rationale**: Added a rationale dialog to [BarcodeScannerActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/BarcodeScannerActivity.kt). If a user denies the Camera permission, the app now explains its purpose before re-requesting, adhering to Android privacy best practices.
+- **Data Minimization**: Verified that CSV exports in [MainActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/MainActivity.kt) are limited to book metadata, excluding sensitive personal identifiers.
+- **Scoped Storage Compliance**: Confirmed that temporary export files are stored in the app-specific cache directory, ensuring user privacy and storage cleanliness.
+
 ## Verification Results
 
 ### Automated Tests

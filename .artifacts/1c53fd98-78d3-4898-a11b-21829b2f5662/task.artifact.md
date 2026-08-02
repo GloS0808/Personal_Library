@@ -14,3 +14,9 @@
 - [x] Implement Fallback API for Book Description
     - [x] Update `OpenLibraryResponse.kt` to include description field
     - [x] Update `BookRepository.kt` to parse description and retry search across APIs if description is missing
+- [x] Security Hardening
+    - [x] Disable Cleartext Traffic in `network_security_config.xml`
+    - [x] Restrict network logging to Debug builds in `NetworkModule.kt`
+- [x] Privacy Hardening
+    - [x] Implement Camera Permission Rationale in `BarcodeScannerActivity.kt`
+    - [x] Verify Scoped Storage usage and CSV data minimization

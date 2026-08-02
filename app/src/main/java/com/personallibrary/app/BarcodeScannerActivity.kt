@@ -9,6 +9,7 @@ import android.util.Log
 import android.util.Size
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
@@ -55,6 +56,25 @@ class BarcodeScannerActivity : AppCompatActivity() {
 
         if (allPermissionsGranted()) {
             startCamera()
+        } else {
+            requestCameraPermission()
+        }
+    }
+
+    private fun requestCameraPermission() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
+            AlertDialog.Builder(this)
+                .setTitle(getString(R.string.camera_rationale_title))
+                .setMessage(getString(R.string.camera_rationale_message))
+                .setPositiveButton(getString(R.string.ok)) { _, _ ->
+                    ActivityCompat.requestPermissions(
+                        this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
+                    )
+                }
+                .setNegativeButton(getString(R.string.cancel)) { _, _ ->
+                    finish()
+                }
+                .show()
         } else {
             ActivityCompat.requestPermissions(
                 this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS

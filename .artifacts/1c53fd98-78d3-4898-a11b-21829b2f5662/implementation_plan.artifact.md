@@ -1,35 +1,38 @@
-# Implementation Plan - Fallback API for Book Description
+# Implementation Plan - Privacy Hardening
 
-This plan addresses the requirement to try alternative APIs if a book search succeeds but the description is missing ("N/A").
+This plan outlines steps to improve the "Personal Library" app's alignment with Android privacy best practices.
 
 ## User Review Required
 
 > [!NOTE]
-> The current logic returns the first successful API result. I will modify it to continue searching if the description is missing, while still returning the book details from the first API if no description is found anywhere.
+> I will be adding a **Permission Rationale** for the Camera. This will show an explanation to the user if they have previously denied the camera permission, helping them understand why it's needed for barcode scanning before requesting it again.
 
 ## Proposed Changes
 
-### Data Models
+### Permissions
 
-#### [MODIFY] [OpenLibraryResponse.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/OpenLibraryResponse.kt)
-- Add `description: Any?` to support fetching descriptions from Open Library.
+#### [MODIFY] [BarcodeScannerActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/BarcodeScannerActivity.kt)
+- Implement `shouldShowRequestPermissionRationale`.
+- Add an `AlertDialog` to explain the need for the camera if the user previously denied the request.
 
-### Repository Logic
+### Data Handling
 
-#### [MODIFY] [BookRepository.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/BookRepository.kt)
-- **`tryOpenLibrary`**: Extract description from the `Any?` field (handling both String and Map types).
-- **`searchBookByIsbn`**:
-    - Iterate through APIs (Google, Open Library, IT Bookstore).
-    - If an API returns a result:
-        - If it has a description, return it immediately.
-        - If it doesn't have a description, store it as `bestCandidate` if we don't have one yet, and continue to the next API.
-    - After checking all APIs, if we have a `bestCandidate`, return it.
+#### [MODIFY] [MainActivity.kt](file:///C:/Users/semg6/StudioProjects/Personal_Library/app/src/main/java/com/personallibrary/app/MainActivity.kt)
+- Review the `sendEmail` content for crash reports. Ensure that the stack trace and device info are presented transparently in the dialog before the user clicks "Send Report". (This is already mostly in place, but I will ensure the strings are clear).
 
 ## Verification Plan
 
 ### Automated Tests
-- I will attempt to build the project to ensure the `Any?` type in `OpenLibraryResponse` and its handling in `BookRepository` are correctly implemented.
-- I'll add a log statement to verify when a fallback is triggered due to a missing description.
+- Build the app to ensure no compilation errors.
 
 ### Manual Verification
-- Test with an ISBN that is known to have no description on Google Books but might have one on Open Library (or vice versa).
+1.  **Permission Denial**:
+    - Open the barcode scanner.
+    - Deny the camera permission.
+    - Re-open the scanner.
+    - Verify that the rationale dialog appears explaining why the camera is needed.
+2.  **Permission Grant**:
+    - Grant the permission from the rationale or the system dialog.
+    - Verify the camera starts correctly.
+3.  **CSV Export**:
+    - Verify that the exported CSV only contains book-related data (Title, ISBN, etc.) and no user-sensitive data like the reader's email or personal notes.
